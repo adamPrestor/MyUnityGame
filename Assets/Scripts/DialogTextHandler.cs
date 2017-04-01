@@ -61,6 +61,37 @@ public class DialogTextHandler : MonoBehaviour
         
     }
 
+    public void retrieveTextMsg(string name, string msg)
+    {
+        CanvasGroup cg_tmp = null;
+        Text txt = null;
+
+        switch (name)
+        {
+            case "Jozef":
+                cg_tmp = jozefDia;
+                txt = jozefText;
+                break;
+            case "Tesla":
+                cg_tmp = teslaDia;
+                txt = teslaText;
+                break;
+            case "Cankar":
+                cg_tmp = cankarDia;
+                txt = cankarText;
+                break;
+            case "Jenko":
+                cg_tmp = jenkoDia;
+                txt = jenkoText;
+                break;
+            default:
+                Debug.Log("Shame");
+                break;
+        }
+
+        StartCoroutine(showHide(cg_tmp, txt, msg, 3));
+    }
+
     IEnumerator showHide(CanvasGroup cg, Text txt, string msg, int SecondsToWait)
     {
         txt.text = msg;

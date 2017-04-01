@@ -2,9 +2,10 @@
 using System.Collections;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inventory : MonoBehaviour, IHasChanged  {
-	[SerializeField] Transform slots;
+	public Transform slots;
     public GameObject levelManager;
 	private string inventoryText;
     public CanvasGroup cg;
@@ -17,9 +18,11 @@ public class Inventory : MonoBehaviour, IHasChanged  {
 	{
 		System.Text.StringBuilder builder = new System.Text.StringBuilder ();
         int number = 0;
-		foreach (Transform slotTransform in slots) {
+		foreach (Transform slotTransform in slots)
+        {
 			GameObject item = slotTransform.GetComponent<Slot> ().item;
-			if (item) {
+			if (item)
+            {
 				builder.Append (item.name);
                 number++;
 			}
@@ -32,18 +35,11 @@ public class Inventory : MonoBehaviour, IHasChanged  {
             {
                 Hide_test.show_selected(cg);
             }
-            else {
-                Debug.Log("Poskusi znova.");
+            else
+            {
+                levelManager.GetComponent<Hide_test>().requestDialog("Jenko", "Bolj se bos moral potruditi.");
             }
         }
 	}
 	
-}
-
-
-
-namespace UnityEngine.EventSystems {
-	public interface IHasChanged : IEventSystemHandler {
-			void HasChanged();
-}
 }

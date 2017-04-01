@@ -11,15 +11,15 @@ public class Hide_test : MonoBehaviour {
     public DialogTextHandler dialogHandle;
 
     // Use this for initialization
-    void Start() {
+    void Start()
+    {
         hide();
     }
 
-    public void hide() {
-
+    public void hide()
+    {
         hide_selected(next_button);
         hide_selected(dialogs);
-
     }
 
     public static void hide_selected(CanvasGroup cg)
@@ -34,15 +34,14 @@ public class Hide_test : MonoBehaviour {
         cg.blocksRaycasts = true;
     }
 
-    public void loadNextLevel() {
-
+    public void loadNextLevel()
+    {
         SceneManager.LoadScene(levelToLoad);
-
     }
 
-    public void requestDialog(string req)
+    public void requestDialog(string req, string msg)
     {
-        dialogHandle.retrieveText(req);
+        dialogHandle.retrieveTextMsg(req, msg);
     }
 
 }
