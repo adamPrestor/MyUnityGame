@@ -20,23 +20,24 @@ public class AnimatedDialog : MonoBehaviour {
 
 	void Start () {
 		StartCoroutine (DisplayTimer ());
-			}
-		IEnumerator DisplayTimer (){
-		while (1 == 1) {
-			yield return new WaitForSeconds (speed);
-			if (characterIndex > strings [stringIndex].Length) {
-				continue;
-			}
-			TextArea.text = strings [stringIndex].Substring (0, characterIndex);
-			characterIndex++;
-		}
 	}
+
+	IEnumerator DisplayTimer (){
+	while (1 == 1) {
+		yield return new WaitForSeconds (speed);
+		if (characterIndex > strings [stringIndex].Length) {
+			continue;
+		}
+		TextArea.text = strings [stringIndex].Substring (0, characterIndex);
+		characterIndex++;
+	    }
+    }
 
 	// Update is called once per frame
 
-				void OnGUI() {
-					if (GUI.Button(new Rect(Screen.width / 2 - 50, 700, 100, 30), "Naprej"))
-					{
+	void OnGUI() {
+		if (GUI.Button(new Rect(Screen.width / 2 - 50, 700, 100, 30), "Naprej"))
+		{
 		if(OnClicked !=null)
 			OnClicked();
 			if (characterIndex < strings [stringIndex].Length) {
