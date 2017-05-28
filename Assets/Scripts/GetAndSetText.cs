@@ -6,8 +6,8 @@ using UnityEngine.SceneManagement;
 
 
 public  class GetAndSetText : MonoBehaviour {
-
-	public InputField ime;
+    
+    public InputField ime;
     public Text fText;
     private GameObject myObject;
     private int secondsToWait = 4;
@@ -21,7 +21,7 @@ public  class GetAndSetText : MonoBehaviour {
         StartCoroutine(TransitionToNextScene());
         
 	}
-
+    
     IEnumerator TransitionToNextScene() {
 
         Debug.Log(PlayerPrefs.GetString("Ime"));
