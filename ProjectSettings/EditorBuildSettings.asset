@@ -23,5 +23,19 @@ EditorBuildSettings:
     path: Assets/Scenes/Poskus.unity
   - enabled: 1
     path: Assets/Scenes/Game0-1.unity
-  - enabled: 1
+  - enabled: 0
     path: Assets/Game0-2.unity
+  - enabled: 1
+    path: Assets/Scenes/Game0-2.unity
+  - enabled: 1
+    path: Assets/Scenes/preseren_dialog.unity
+  - enabled: 1
+    path: Assets/Scenes/zdravljica.unity
+  - enabled: 1
+    path: Assets/Scenes/krpanov_kviz.unity
+  - enabled: 1
+    path: Assets/Scenes/darwin.unity
+  - enabled: 1
+    path: Assets/Scenes/pismo_srbov.unity
+  - enabled: 1
+    path: Assets/Scenes/pojmi_srbija.unity

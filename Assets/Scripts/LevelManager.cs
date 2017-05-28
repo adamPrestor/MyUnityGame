@@ -6,8 +6,8 @@ public class LevelManager : MonoBehaviour {
 	public Transform mainMenu, optionsMenu, optionsMenu2;
 
 
-	public void LoadScene(string name){
-		SceneManager.LoadScene (name);
+	public void LoadScene(int i){
+		SceneManager.LoadScene (i);
 	}
 
 	public void QuitGame (){
