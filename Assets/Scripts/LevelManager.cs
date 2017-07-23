@@ -43,5 +43,19 @@ public class LevelManager : MonoBehaviour {
 			mainMenu.gameObject.SetActive (true);
 		}
 	}
+
+    public void aboutGame ()
+    {
+        Debug.Log(Application.dataPath);
+        string path = Application.dataPath + "/Texts/O igri.docx";
+        Application.OpenURL(path);
+    }
+
+    public void howToPlay()
+    {
+        Debug.Log(Application.dataPath);
+        string path = Application.dataPath + "/Texts/CILJ IGRE.docx";
+        Application.OpenURL(path);
+    }
 		
 }

@@ -10,7 +10,7 @@ public class Inventory : MonoBehaviour, IHasChanged  {
 	private string inventoryText;
     public CanvasGroup cg;
 
-	void start () {
+	void start () { 
 		HasChanged ();
 	}
 
@@ -37,6 +37,7 @@ public class Inventory : MonoBehaviour, IHasChanged  {
             }
             else
             {
+                Hide_test.hide_selected(cg);
                 levelManager.GetComponent<Hide_test>().requestDialog("Jenko", "Bolj se bos moral potruditi.");
             }
         }

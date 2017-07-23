@@ -22,6 +22,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Poskus.unity
   - enabled: 1
+    path: Assets/Scenes/Uvod_1.unity
+  - enabled: 1
+    path: Assets/Scenes/Uvod_vpis.unity
+  - enabled: 1
     path: Assets/Scenes/Game0-1.unity
   - enabled: 0
     path: Assets/Game0-2.unity
@@ -39,3 +43,5 @@ EditorBuildSettings:
     path: Assets/Scenes/pismo_srbov.unity
   - enabled: 1
     path: Assets/Scenes/pojmi_srbija.unity
+  - enabled: 1
+    path: "Assets/Scenes/Zaklju\u010Dek_1.unity"
