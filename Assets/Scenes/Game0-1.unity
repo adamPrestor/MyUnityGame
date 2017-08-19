@@ -1166,7 +1166,6 @@ GameObject:
   - component: {fileID: 400756786}
   - component: {fileID: 400756785}
   - component: {fileID: 400756784}
-  - component: {fileID: 400756783}
   - component: {fileID: 400756780}
   m_Layer: 5
   m_Name: Canvas
@@ -1235,26 +1234,6 @@ MonoBehaviour:
   dialogs: {fileID: 390413472}
   levelToLoad: 4
   dialogHandle: {fileID: 1578118540}
---- !u!114 &400756783
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 114792974037980302, guid: b5dfd0929fb6f9044bbef91f78d1594f,
-    type: 2}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 400756779}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bb6698ff7eea8f4bb9f2f6afaafe9a1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dropdowns:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  rightResult: 0100000002000000030000000400000005000000
-  cg: {fileID: 400756776}
 --- !u!114 &400756784
 MonoBehaviour:
   m_ObjectHideFlags: 0

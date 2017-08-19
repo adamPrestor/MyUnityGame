@@ -24,6 +24,7 @@ public class MartinQuiz : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Random.InitState((int)System.DateTime.Now.Ticks);
         loadQuestion();
 	}
 
@@ -35,7 +36,7 @@ public class MartinQuiz : MonoBehaviour {
             Hide_test.show_selected(cg);
             return;
         }
-
+        
         temp = levels[numQuestion].questions[Random.Range(0, levels[numQuestion].questions.Length)];
         questionText.text = temp.Question;
         textA.text = temp.AnswerA;
