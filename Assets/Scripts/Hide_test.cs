@@ -34,6 +34,12 @@ public class Hide_test : MonoBehaviour {
         cg.blocksRaycasts = true;
     }
 
+    public void show(CanvasGroup cg)
+    {
+        cg.alpha = 1.0f;
+        cg.blocksRaycasts = true;
+    }
+
     public void loadNextLevel()
     {
         SceneManager.LoadScene(levelToLoad);
@@ -42,6 +48,26 @@ public class Hide_test : MonoBehaviour {
     public void requestDialog(string req, string msg)
     {
         dialogHandle.retrieveTextMsg(req, msg);
+    }
+
+    public void requestDialogJenko(string msg)
+    {
+        dialogHandle.retrieveTextMsg("Jenko", msg);
+    }
+
+    public void showAndHide(CanvasGroup cg)
+    {
+        StartCoroutine(showAndHideProcedure(cg));
+    }
+
+    IEnumerator showAndHideProcedure(CanvasGroup cg)
+    {
+        hide_selected(cg);
+        yield return new WaitForSeconds(0.1f);
+        show_selected(cg);
+        yield return new WaitForSeconds(2f);
+        hide_selected(cg);
+
     }
 
 }
