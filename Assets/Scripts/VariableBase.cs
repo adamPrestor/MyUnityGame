@@ -4,14 +4,26 @@ using UnityEngine;
 
 public static class VariableBase {
 
-    // variables
-    private static bool isIn = false;
+    private static Vector3[] cameraPositions = { new Vector3(1810f, 0f, 4.3f),
+                                                new Vector3(1870f, 0f, 7f),
+                                                new Vector3(1916.4f, 0f, 4.3f),
+                                                new Vector3(1970.38f, 0f, 4.3f) };
 
+    public static bool initiatePositions(Vector3[] positions)
+    {
+        cameraPositions = positions;
+        return true;
+    }
 
-    // set functions
-    public static bool isItIn() { return isIn; }
+    public static bool setCameraPosition(int index, Vector3 position)
+    {
+        cameraPositions[index] = position;
+        return true;
+    }
 
-    // get functions
-    public static void setIsIn(bool temp) { isIn = temp; }
+    public static Vector3 getCameraPosition(int index)
+    {
+       return cameraPositions[index];
+    }
 
 }

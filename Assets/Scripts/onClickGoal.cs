@@ -21,6 +21,7 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
         for(int i = 0; i<solution.Length; i++)
         {
             selected[i] = slots[i].GetComponent<onClickSlot>().isSelected;
+            slots[i].GetComponent<onClickSlot>().hardReset();
         }
 
         if(isRight())
