@@ -11,7 +11,6 @@ public class CameraMoveWithMouse : MonoBehaviour {
     public Vector2 yLim;
     public Vector2 zLim;
     public bool move = false;
-    public int cameraIndex;
 
 
     // Update is called once per frame

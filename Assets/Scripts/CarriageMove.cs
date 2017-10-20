@@ -45,7 +45,7 @@ public class CarriageMove : MonoBehaviour
 
     private bool isWithin()
     {
-        return currentPosition.x < road.Length && currentPosition.x >= 0;
+        return currentPosition.x < road.Length && currentPosition.x >= 0 && currentPosition.y >= 0 && currentPosition.y < 8;
     }
 
     // Update is called once per frame

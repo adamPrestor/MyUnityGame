@@ -53,7 +53,6 @@ public class DialogRules : MonoBehaviour, IHasChanged
 
         }
 
-        return true;
     }
 
 }

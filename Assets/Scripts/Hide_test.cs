@@ -9,6 +9,7 @@ public class Hide_test : MonoBehaviour {
     public CanvasGroup dialogs;
     public int levelToLoad;
     public DialogTextHandler dialogHandle;
+    public CanvasGroupGroup cgg;
 
     // Use this for initialization
     void Start()
@@ -57,11 +58,16 @@ public class Hide_test : MonoBehaviour {
 
     public void showAndHide(CanvasGroup cg)
     {
+        cgg.Hide_All();
+
+        //StopAllCoroutines();
+        
         StartCoroutine(showAndHideProcedure(cg));
     }
 
     IEnumerator showAndHideProcedure(CanvasGroup cg)
     {
+
         hide_selected(cg);
         yield return new WaitForSeconds(0.1f);
         show_selected(cg);
@@ -69,5 +75,23 @@ public class Hide_test : MonoBehaviour {
         hide_selected(cg);
 
     }
+
+    [System.Serializable]
+    public class CanvasGroupGroup
+    {
+        public CanvasGroup[] cgs;
+
+        public CanvasGroupGroup() { }
+
+        public void Hide_All()
+        {
+            foreach (CanvasGroup cg in cgs)
+            {
+                Hide_test.hide_selected(cg);
+            }
+        }
+
+    }
+
 
 }
