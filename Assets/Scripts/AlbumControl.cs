@@ -5,14 +5,17 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 
-public class AlbumControl : MonoBehaviour, IPointerClickHandler
+public class AlbumControl : MonoBehaviour
 {
+    public GameObject[] pages;
+    public GameObject previous;
+    public GameObject next;
 
-    public bool open;
-    public GameObject GO;
-
-    public void OnPointerClick(PointerEventData eventData)
+    private void Start()
     {
-        GO.SetActive(open);
+        AlbumConstants.setPages(pages);
+        AlbumConstants.setNext(next);
+        AlbumConstants.setPrevious(previous);
     }
+
 }
