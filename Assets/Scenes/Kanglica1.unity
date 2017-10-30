@@ -253,6 +253,14 @@ Prefab:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Zvon\u010Dek, ki prikazuje pomladno prebujenje slovenskega naroda, je
+        bilo treba skrbno negovati in dobro zalivati, da je pognal in zacvetel.\n\nV
+        zgornjem okvirju ima\u0161 razli\u010Dne predmete; s \u010Dim bi \"zalil\"
+        slovensko narodni razvoj?"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -560,6 +568,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &707984791
 MonoBehaviour:
@@ -613,6 +622,7 @@ MonoBehaviour:
   - {fileID: 1049616521}
   - {fileID: 863154547}
   - {fileID: 1415213763}
+  flower: {fileID: 1944477119}
   solution: 000000010101
 --- !u!224 &766854710 stripped
 RectTransform:

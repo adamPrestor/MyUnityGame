@@ -12,6 +12,9 @@ public class LetterToSrbia : MonoBehaviour {
     public CanvasGroup cg;
     int i = 0;
 
+    public bool requestDialog;
+    public string JenkoText;
+
 	// Use this for initialization
 	void Start () {
         inField.Select();
@@ -44,6 +47,9 @@ public class LetterToSrbia : MonoBehaviour {
         {
             inField.enabled = false;
             Hide_test.show_selected(cg);
+
+            if(requestDialog)
+                GameObject.Find("LevelManager").GetComponent<Hide_test>().requestDialogJenko(JenkoText);
         }
     }
 

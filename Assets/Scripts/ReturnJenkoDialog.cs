@@ -10,6 +10,8 @@ public class ReturnJenkoDialog : MonoBehaviour {
     public int[] rightAnswers;
     public GameObject manager;
     public CanvasGroup cg;
+    public CanvasGroup JenkoDialog;
+    public Text jenkoText;
 
     private int index = 0;
     private bool moveOn = false;
@@ -24,12 +26,14 @@ public class ReturnJenkoDialog : MonoBehaviour {
     {
         if (index < dialogParts.Length-1)
         {
-            manager.GetComponent<Hide_test>().requestDialogJenko(dialogParts[index]);
+            jenkoText.text = dialogParts[index];
+            JenkoDialog.alpha = 1.0f;
             clickable = true;
         }
         else
         {
-            manager.GetComponent<Hide_test>().requestDialogJenko(dialogParts[index]);
+            jenkoText.text = dialogParts[index];
+            JenkoDialog.alpha = 1.0f;
             Hide_test.show_selected(cg);
         }
     }
@@ -57,6 +61,7 @@ public class ReturnJenkoDialog : MonoBehaviour {
             index++;
 
             // disable clicks until dialog is loaded
+            JenkoDialog.alpha = 0;
             clickable = false;
 
             // call dialogRunner

@@ -271,8 +271,9 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Lepo so me tukaj sprejeli - ko bi me Slovenci takole radi
-            imeli!
+          m_StringArgument: "Lepo so me tukaj sprejeli - ko bi me Slovenci takole
+            radi imeli! Kar 45 let sem tu pre\u017Eivel, prijatelje, uspehe, ljubezen
+            imel ..."
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

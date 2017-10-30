@@ -492,6 +492,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 421312021}
+--- !u!225 &605478414 stripped
+CanvasGroup:
+  m_PrefabParentObject: {fileID: 225496660503774102, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2006464129}
 --- !u!1 &671804281
 GameObject:
   m_ObjectHideFlags: 0
@@ -660,6 +665,8 @@ MonoBehaviour:
   rightAnswers: 020000000400000001000000
   manager: {fileID: 1758057791}
   cg: {fileID: 1591406953}
+  JenkoDialog: {fileID: 605478414}
+  jenkoText: {fileID: 1875274831}
 --- !u!1 &869281650
 GameObject:
   m_ObjectHideFlags: 0
@@ -1581,6 +1588,12 @@ GameObject:
   m_PrefabParentObject: {fileID: 1850056159415424, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 2006464129}
+--- !u!114 &1875274831 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114841355005726902, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2006464129}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1916896426
 GameObject:
   m_ObjectHideFlags: 0

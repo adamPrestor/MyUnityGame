@@ -319,6 +319,13 @@ Prefab:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Dober predlog. Ampak potrebujemo tudi dobro melodijo. Bodi skladatelj
+        in sestavi refren nove kora\u010Dnice. Bo \u0161lo? (\u010Ce ne, po\u0161kili
+        pri Davorinu, njemu je \u0161lo!)"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

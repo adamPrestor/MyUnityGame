@@ -2358,7 +2358,7 @@ RectTransform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.38443884, y: 0}
-  m_AnchorMax: {x: 0.9538562, y: 0.98828125}
+  m_AnchorMax: {x: 0.95376986, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4043,6 +4043,13 @@ Prefab:
         type: 2}
       propertyPath: levelToLoad
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Jenko je v Beogradu pre\u017Eivel kar 45 let. Tu je imel prijatelje,
+        do\u017Eivel je veilo uspehov, spoznal svojo ljubezen. Pomagaj mu pod fotografije,
+        ki jih je tu posnel, izbrati ustrezne podnapise."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

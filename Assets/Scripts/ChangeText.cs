@@ -9,6 +9,8 @@ public class ChangeText : MonoBehaviour {
     public float[] waitTime;
     public Text textArea;
     public CanvasGroup cg;
+    public CanvasGroup cgBefore;
+    public bool hideAfter = false;
     
 
 	// Use this for initialization
@@ -24,6 +26,8 @@ public class ChangeText : MonoBehaviour {
             yield return new WaitForSeconds(waitTime[i]);
         }
 
+        if (hideAfter)
+            Hide_test.hide_selected(cgBefore);
         Hide_test.show_selected(cg);
 
     }

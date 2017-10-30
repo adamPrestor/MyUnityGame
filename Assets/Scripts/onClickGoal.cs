@@ -10,12 +10,18 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
 
     public CanvasGroup cg;
     public GameObject[] slots;
+    public GameObject flower;
 
     private bool[] selected;
     public bool[] solution;
 
+    private int maxSize = 120;
+    private int minSize = 20;
+
     public void OnPointerClick(PointerEventData eventData)
     {
+        int rights = 0;
+
         selected = new bool[solution.Length];
 
         for(int i = 0; i<solution.Length; i++)
@@ -24,7 +30,10 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
             slots[i].GetComponent<onClickSlot>().hardReset();
         }
 
-        if(isRight())
+        rights = isRight();
+        resizeIt(rights);
+
+        if (rights == solution.Length)
         {
             Hide_test.show_selected(cg);
         } else
@@ -33,13 +42,25 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public bool isRight()
+    public int isRight()
     {
+        int result = 0;
         for(int i = 0; i < solution.Length; i++)
         {
-            if (solution[i] != selected[i])
-                return false;
+            if (solution[i] == selected[i])
+                result++;
         }
-        return true;
+        return result;
+    }
+
+    public void resizeIt(int rights)
+    {
+        Debug.Log(flower.GetComponent<RectTransform>().rect);
+        Debug.Log(flower.GetComponent<RectTransform>().sizeDelta);
+
+        int size = minSize + rights * (maxSize / solution.Length);
+
+        flower.GetComponent<RectTransform>().sizeDelta = new Vector2(size, size);
+
     }
 }

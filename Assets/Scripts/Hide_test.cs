@@ -27,18 +27,19 @@ public class Hide_test : MonoBehaviour {
     {
         cg.alpha = 0.0f;
         cg.blocksRaycasts = false;
+        cg.interactable = false;
     }
 
     public static void show_selected(CanvasGroup cg)
     {
         cg.alpha = 1.0f;
         cg.blocksRaycasts = true;
+        cg.interactable = true;
     }
 
     public void show(CanvasGroup cg)
     {
-        cg.alpha = 1.0f;
-        cg.blocksRaycasts = true;
+        show_selected(cg);
     }
 
     public void loadNextLevel()

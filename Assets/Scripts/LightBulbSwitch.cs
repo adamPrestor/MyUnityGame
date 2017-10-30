@@ -22,12 +22,12 @@ public class LightBulbSwitch : MonoBehaviour, IPointerClickHandler
     {
         if (turnOn)
         {
-            Go.GetComponent<Image>().color = new Color32(255, 255, 0, 50);
+            Go.GetComponent<Light>().intensity = 2.0f;
             Hide_test.show_selected(cg);
         }
         else
         {
-            Go.GetComponent<Image>().color = new Color32(255, 255, 0, 0);
+            Go.GetComponent<Light>().intensity = 0.1f;
             Hide_test.hide_selected(cg);
         }
             

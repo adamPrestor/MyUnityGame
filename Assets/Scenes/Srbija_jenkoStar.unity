@@ -320,6 +320,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 640802724}
+--- !u!225 &1236211288 stripped
+CanvasGroup:
+  m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1256330976}
 --- !u!1001 &1256330976
 Prefab:
   m_ObjectHideFlags: 0
@@ -371,6 +376,29 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224898280289361018, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 1256330976}
+--- !u!1 &1348446841 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1850056159415424, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1256330976}
+--- !u!114 &1348446845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1348446841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44747ec56ad9bf14ab05b05f2f253ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lines:
+  - "Hitreje in hitreje se vrti ta svet, jaz pa vedno po\u010Dasneje romam in s palico
+    teptam planet ... Na stara leta vrnem se domov - \u0161e malo posedet in um ..."
+  waitTime:
+  - 6
+  textArea: {fileID: 466126405}
+  cg: {fileID: 1236211288}
 --- !u!1001 &1948546358
 Prefab:
   m_ObjectHideFlags: 0
