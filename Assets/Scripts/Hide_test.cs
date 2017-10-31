@@ -42,6 +42,11 @@ public class Hide_test : MonoBehaviour {
         show_selected(cg);
     }
 
+    public void hide_selected_nonStatic(CanvasGroup cg)
+    {
+        hide_selected(cg);
+    }
+
     public void loadNextLevel()
     {
         SceneManager.LoadScene(levelToLoad);

@@ -244,6 +244,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &145716644
 MonoBehaviour:
@@ -373,6 +374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &162905414
 MonoBehaviour:
@@ -454,6 +456,12 @@ Prefab:
         type: 2}
       propertyPath: levelToLoad
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Iz \u010Drk njegovega imena v krajevno tablo vpi\u0161i ime prvega kraja,
+        kamor ga je pot vodila od doma - v ljudsko \u0161olo."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -542,6 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &299077958
 MonoBehaviour:
@@ -682,6 +691,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &383263204
 MonoBehaviour:
@@ -857,6 +867,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &744280699
 MonoBehaviour:
@@ -914,6 +925,74 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!1 &797471397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 797471398}
+  - component: {fileID: 797471400}
+  - component: {fileID: 797471399}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &797471398
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797471397}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 178073908}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0.59800005}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &797471399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797471397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 9eb7d8b9ce5441a438b11900d56ad333, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &797471400
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 797471397}
 --- !u!224 &818097384 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 22491610, guid: ad1dfffc0be476b43893f6115109b6f8,
@@ -991,6 +1070,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &856622630
 MonoBehaviour:
@@ -1074,6 +1154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &856809334
 MonoBehaviour:
@@ -1173,10 +1254,10 @@ RectTransform:
   m_Father: {fileID: 178073908}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.59800005}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.000015259, y: 0.0019989014}
-  m_SizeDelta: {x: 0.000030518, y: -0.0039978}
+  m_AnchoredPosition: {x: -0.000015259, y: -0.000015258789}
+  m_SizeDelta: {x: 0.000061035, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &999582836
 MonoBehaviour:
@@ -1284,6 +1365,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1171125668
 MonoBehaviour:
@@ -1519,6 +1601,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1296999256
 MonoBehaviour:
@@ -1712,6 +1795,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1306500214
 MonoBehaviour:
@@ -1841,6 +1925,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1320377534
 MonoBehaviour:
@@ -1935,6 +2020,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1400494394
 MonoBehaviour:
@@ -2148,6 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1778121606
 MonoBehaviour:
@@ -2239,12 +2326,12 @@ RectTransform:
   - {fileID: 162905411}
   - {fileID: 2008692762}
   m_Father: {fileID: 178073908}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.095000006, y: 0.40251043}
+  m_AnchorMax: {x: 0.94000006, y: 0.55071884}
+  m_AnchoredPosition: {x: 0.5, y: 0}
+  m_SizeDelta: {x: -4.800003, y: -0.2000122}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1828347787
 MonoBehaviour:
@@ -2258,14 +2345,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2610,6 +2697,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &1990203497
 MonoBehaviour:
@@ -2739,6 +2827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &2008692765
 MonoBehaviour:
@@ -2909,6 +2998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
+  hide: 0
   maxCapacity: 1
 --- !u!114 &2066415776
 MonoBehaviour:

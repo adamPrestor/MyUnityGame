@@ -156,6 +156,12 @@ Prefab:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "V polje pod besedilom vnesite besede, ki manjkajo. Napi\u0161ite celotno
+        besedo."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -189,6 +195,8 @@ MonoBehaviour:
   inField: {fileID: 970075566}
   help: {fileID: 1201771150}
   cg: {fileID: 105011902}
+  requestDialog: 0
+  JenkoText: 
 --- !u!1 &538676107
 GameObject:
   m_ObjectHideFlags: 0

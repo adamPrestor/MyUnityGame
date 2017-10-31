@@ -1296,7 +1296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b2150fec0de8fa4f89672323eb3fadb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  notes: 02000000030000000100000006000000050000000400000002000000030000000400000005000000080000000700000007000000
+  notes: 02000000030000000100000006000000
   keys:
   - {fileID: 1023400378}
   - {fileID: 726666929}
@@ -1318,7 +1318,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a954bb60d70ce38429624304516cc8ab, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.3
   m_Pitch: 1
   Loop: 0
   Mute: 0

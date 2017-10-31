@@ -474,6 +474,12 @@ Prefab:
       propertyPath: m_Name
       value: base
       objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Ti nisi cesar in \u010De ho\u010De\u0161, da Martin odmakne kobilico
+        s poti, mora\u0161 pravilno odgovoriti na vpra\u0161anja."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

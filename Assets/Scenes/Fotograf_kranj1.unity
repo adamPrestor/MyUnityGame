@@ -161,6 +161,14 @@ Prefab:
       propertyPath: levelToLoad
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Kranj\u010Dan Janez Puhar je ravno tisti \u010Das izumil fotografijo
+        na steklo in vama z Martinom omogo\u010Dil fotografiranje turisti\u010Dnih
+        znamenitosti.\n\nPred teboj je Kranj v prvi polovici 19. stoletja. S klikom
+        naredi \u010Dim lep\u0161o fotografijo."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

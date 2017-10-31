@@ -228,7 +228,11 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: 
+      value: "V Kranju je spoznal so\u0161olca, s katerim sta ostala prijatelja in
+        sodelavca vse do \u0161tudentskih let na Dunaju. So\u0161olec je priznan slovenski
+        pesnik, dlje \u010Dasa pa je stanoval v Kranju. Njegovo stanovanje je bilo
+        v bli\u017Eini hi\u0161e s sivo streho. Klikni nanjo in spoznaj, kdo je bil
+        Martinov prijatelj."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

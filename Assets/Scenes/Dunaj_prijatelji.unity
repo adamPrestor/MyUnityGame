@@ -192,7 +192,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: Klikni na Davorina Jenka.
+      value: "To so \u010Dlani slovenskega zbora, ki ga je vodil Davorin.\n\nKlikni
+        na Davorina Jenka."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -377,7 +378,8 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: "Zve\u010Der bom spet \u0161el na kofe - tja, kjer zbirajo
-            se Simon, Josip in France!"
+            se Simon, Josip in France! Slovensko misliti, slovensko peti, za na\u0161o
+            kulturo poskrbeti, okove nem\u0161ke streti in zraven se lepo imeti!"
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,

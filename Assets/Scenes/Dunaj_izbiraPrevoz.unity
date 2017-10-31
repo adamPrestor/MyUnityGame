@@ -363,8 +363,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "V tem \u010Dasu je Avstrija zgradila svojo prvo \u017Eeleznico - od
-        glavnega pristini\u0161\u010Da do glavnega mesta. Poimenovali so jo:"
+      value: "Martin Jenko \u017Eeli \u0161tudirati pravo, zato ga mora\u0161 odpeljati
+        na Dunaj. Katero prevozno sredstvo bo\u0161 uporabil?"
       objectReference: {fileID: 0}
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
