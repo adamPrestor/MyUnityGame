@@ -28,7 +28,7 @@ public  class GetAndSetText : MonoBehaviour {
 
         yield return new WaitForSeconds(secondsToWait);
 
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(VariableBase.LevelNumber);
     }
 
 }

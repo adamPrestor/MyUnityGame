@@ -49,7 +49,7 @@ public class Hide_test : MonoBehaviour {
 
     public void loadNextLevel()
     {
-        SceneManager.LoadScene(levelToLoad);
+        SceneManager.LoadScene(VariableBase.LevelNumber);
     }
 
     public void requestDialog(string req, string msg)

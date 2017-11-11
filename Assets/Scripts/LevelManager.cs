@@ -19,10 +19,11 @@ public class LevelManager : MonoBehaviour {
 
     IEnumerator PlayGame()
     {
+        VariableBase.resetLevelNumber();
         show_selected(text);
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(2.0f);
         hide_selected(text);
-        SceneManager.LoadScene(i);
+        SceneManager.LoadScene(VariableBase.LevelNumber);
     }
 
     public static void hide_selected(CanvasGroup cg)

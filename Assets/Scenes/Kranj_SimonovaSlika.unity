@@ -127,6 +127,23 @@ MonoBehaviour:
   multipleStorage: 0
   hide: 1
   maxCapacity: 1
+--- !u!1 &93547246 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1471170636472348, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1528808297}
+--- !u!114 &93547247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 93547246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5780d713e614d94aa5777f738915be0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 558836626}
 --- !u!1 &176520925
 GameObject:
   m_ObjectHideFlags: 0
@@ -234,6 +251,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 176520925}
+--- !u!225 &558836626 stripped
+CanvasGroup:
+  m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1528808297}
 --- !u!1 &863498144
 GameObject:
   m_ObjectHideFlags: 0

@@ -7,41 +7,166 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Menu.unity
-  - enabled: 0
-    path: Assets/Game.unity
-  - enabled: 0
-    path: Assets/Game1-2.unity
-  - enabled: 0
-    path: Assets/Game1-3.unity
-  - enabled: 0
-    path: Assets/Game2-1.unity
-  - enabled: 0
-    path: Assets/Game2-1a.unity
-  - enabled: 0
-    path: Assets/Puzzle_Jenko.unity
-  - enabled: 0
-    path: Assets/Scenes/Poskus.unity
+    guid: 1941745fc7272ed46843c14c454a1383
   - enabled: 1
     path: Assets/Scenes/Uvod_1.unity
+    guid: 72f35f9324d82424f978991946e2d5f6
   - enabled: 1
     path: Assets/Scenes/Uvod_vpis.unity
+    guid: f7e3fe376f0fe774ca9032f42b5d3f0d
   - enabled: 1
     path: Assets/Scenes/Game0-1.unity
-  - enabled: 0
-    path: Assets/Game0-2.unity
+    guid: 949fd2793bf51f448814639bc2122b7b
+  - enabled: 1
+    path: Assets/Scenes/Fotograf_kranj1.unity
+    guid: b4ab2b4a11eedc4469a9f2c5cb449c7c
+  - enabled: 1
+    path: Assets/Scenes/Most.unity
+    guid: 06475ca6f6323014e8bff61a1ff252d2
+  - enabled: 1
+    path: Assets/Scenes/Kranj_SimonovaHisa.unity
+    guid: 547a7c419114fb346bdd9ff337065cbb
   - enabled: 1
     path: Assets/Scenes/Game0-2.unity
+    guid: a6add0ca5d7892941bb84f973b550280
+  - enabled: 1
+    path: Assets/Scenes/Kranj_SimonovaSlika.unity
+    guid: 953e58b8d5e874744bfe7e89892792e0
+  - enabled: 1
+    path: Assets/Scenes/Kranj_JenkoSolo.unity
+    guid: 298b1c221d8ff5e48b50cd33513af00b
+  - enabled: 1
+    path: Assets/Scenes/Kranj_Ljubljana.unity
+    guid: 2dc38bd5bf3611f46b48dd7f5da32f2f
+  - enabled: 1
+    path: Assets/Scenes/Ljubljana_prihod.unity
+    guid: 3013b01c4959f1545bdcd8bca546d617
+  - enabled: 1
+    path: Assets/Scenes/Ljubjana_fotograf2.unity
+    guid: b806ad237f640984a84e946e5a3449fd
+  - enabled: 1
+    path: Assets/Scenes/Ljubljana_trg.unity
+    guid: 35c544ef4fd1ba74182aea57763b0259
+  - enabled: 1
+    path: Assets/Scenes/Ljubljana_PreserenPriimek.unity
+    guid: 0424a70dcdfcb364ab4695bb925c24d6
   - enabled: 1
     path: Assets/Scenes/preseren_dialog.unity
+    guid: 9bcb46a79d8f0424abaa9bec97e45f20
+  - enabled: 1
+    path: Assets/Scenes/Preseren_solo.unity
+    guid: 2287a18a315d514479b9890f8c6c4f74
+  - enabled: 1
+    path: Assets/Scenes/Zvoncki.unity
+    guid: 5198a7bf5ad2bb8418897011cdc4b704
   - enabled: 1
     path: Assets/Scenes/zdravljica.unity
+    guid: 4272a38a5fbcc714d90f1149322324a2
+  - enabled: 1
+    path: Assets/Scenes/Ljubljana_izberiTrst.unity
+    guid: ab95e7066afabe3459e15e10af2c4286
+  - enabled: 1
+    path: Assets/Scenes/Ljubljana_trst.unity
+    guid: eac2601c392c4ca4ea8ca3420c5f3910
+  - enabled: 1
+    path: Assets/Scenes/Trst_ovira.unity
+    guid: ec7b4643a2f2f7d498a3e2ad76f29011
   - enabled: 1
     path: Assets/Scenes/krpanov_kviz.unity
+    guid: cb41ecb004a8dbe44839033ed98c2a63
+  - enabled: 1
+    path: Assets/Scenes/Trst_fotograf.unity
+    guid: 11cb7347e40bb09418b6c859926b6e6d
+  - enabled: 1
+    path: Assets/Scenes/Ladja.unity
+    guid: d52d043df0ebe774ea7f7d18e2626bc0
+  - enabled: 1
+    path: Assets/Scenes/Zeleznica_try.unity
+    guid: 7d854a610ae697647a8358d64b9b56b7
+  - enabled: 1
+    path: Assets/Scenes/Ime_zeleznice.unity
+    guid: 8dddfdccd06c5454e9246c036093f584
+  - enabled: 1
+    path: Assets/Scenes/Dunaj_izbiraPrevoz.unity
+    guid: ae224b10ca5f8be41b1eb1659609ee84
+  - enabled: 1
+    path: Assets/Scenes/Dunaj_trst.unity
+    guid: ab17dbfb1a9124346b3770312cd9cbf8
   - enabled: 1
     path: Assets/Scenes/darwin.unity
+    guid: c4d3428a33eb0424a94340e8f28df47a
+  - enabled: 1
+    path: Assets/Scenes/Martin_ime.unity
+    guid: c537349d68739f948af14b2455ca02b7
+  - enabled: 1
+    path: Assets/Scenes/Dunaj_kavarna.unity
+    guid: f789458b0cc777148bd8f351f12ec664
+  - enabled: 1
+    path: Assets/Scenes/Dunaj_prijatelji.unity
+    guid: a473b348e5daeb744a6544156d172dfe
+  - enabled: 1
+    path: Assets/Scenes/Dunaj_jenkoSolo.unity
+    guid: 8e9ee04ce2a12f041a4da18c706d51e4
+  - enabled: 1
+    path: Assets/Scenes/Kanglica1.unity
+    guid: 1fe0dfd98125d66468f77a6b846941c0
+  - enabled: 1
+    path: Assets/Scenes/Dunaj_pesem.unity
+    guid: 26f48dd2022d50a44a34a1cf0e1bb182
+  - enabled: 1
+    path: Assets/Scenes/Piano.unity
+    guid: acdff48bcd46db448bdfc0a123201bf2
+  - enabled: 1
+    path: "Assets/Scenes/Dunaj_narodneNo\u0161e.unity"
+    guid: ddf7b89888c6ad743b77789c6c4df946
   - enabled: 1
     path: Assets/Scenes/pismo_srbov.unity
+    guid: a61d6364255b8f345bf9e1e6596fe700
+  - enabled: 1
+    path: Assets/Scenes/Srbija_pancevo.unity
+    guid: 3ac162fe23b41ca47a7bf9aa4c88e645
+  - enabled: 1
+    path: Assets/Scenes/Srbija_glavniTrg.unity
+    guid: 68c244923ae06f441b562baeee5937f7
   - enabled: 1
     path: Assets/Scenes/pojmi_srbija.unity
+    guid: 75555e22fbaed40489caed17c056b1ea
+  - enabled: 1
+    path: Assets/Scenes/Srbija_dimniki.unity
+    guid: 436c51fab81aebe47a64a0ebc6d543a8
+  - enabled: 1
+    path: Assets/Scenes/Srbija_izumitelji.unity
+    guid: dbe72aed896c34c4c97584442e6c000f
+  - enabled: 1
+    path: Assets/Scenes/Srbija_zarnica.unity
+    guid: b5bcd33727ced5f40a4499254dc84279
+  - enabled: 1
+    path: Assets/Scenes/Srbija_radio.unity
+    guid: 40a7ba1895e4a7a4e95b879f91aafc70
+  - enabled: 1
+    path: Assets/Scenes/Srbija_rusjanDopolniText.unity
+    guid: ee5a73b67230c00488534ea7419e3303
+  - enabled: 1
+    path: Assets/Scenes/Srbija_rusjanLetalo.unity
+    guid: 53f0fab378b46f84db4124d946b617c5
+  - enabled: 1
+    path: Assets/Scenes/Srbija_jenkoStar.unity
+    guid: 3f78210136b2b9c4ea902ec2d8f48e7a
+  - enabled: 1
+    path: Assets/Scenes/Srbija_vrnitev.unity
+    guid: b69cbb5ab0301e34f99918c5336e2a54
+  - enabled: 1
+    path: Assets/Scenes/Vrnitev_1.unity
+    guid: 6a9312d9101c24741ba457d3acee2ff1
+  - enabled: 1
+    path: Assets/Scenes/Vrnitev_dialog.unity
+    guid: ee712b3d3000d184fae5bf90d33d8118
+  - enabled: 1
+    path: Assets/Scenes/Vrnitev_top.unity
+    guid: adbadbf9a542b6046b3ed8fb6e0b5642
   - enabled: 1
     path: "Assets/Scenes/Zaklju\u010Dek_1.unity"
+    guid: f1a560ff61daa1c4aaa5984bb9a78add
+  - enabled: 0
+    path: Assets/Scenes/Poskus.unity
+    guid: abb212250ebba8f4d9660f3f8aa26e13

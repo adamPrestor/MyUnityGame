@@ -4,6 +4,31 @@ using UnityEngine;
 
 public static class VariableBase {
 
+    #region LevelManagment
+
+    private static int _levelNumber = 1;
+
+    public static int LevelNumber
+    {
+        get
+        {
+            _levelNumber++;
+            return _levelNumber;
+        }
+        set
+        {
+            _levelNumber = value;
+        }
+    }
+
+    public static void resetLevelNumber()
+    {
+        _levelNumber = 0;
+    }
+
+    #endregion
+
+    #region CameraManagment
     private static Vector3[] cameraPositions = { new Vector3(1810f, 0f, 4.3f),
                                                 new Vector3(1870f, 0f, 7f),
                                                 new Vector3(1916.4f, 0f, 4.3f),
@@ -25,5 +50,6 @@ public static class VariableBase {
     {
        return cameraPositions[index];
     }
+    #endregion
 
 }
