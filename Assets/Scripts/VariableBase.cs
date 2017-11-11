@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public static class VariableBase {
 
@@ -12,7 +13,8 @@ public static class VariableBase {
     {
         get
         {
-            _levelNumber++;
+            Debug.Log(SceneManager.sceneCountInBuildSettings);
+            _levelNumber = (_levelNumber + 1)%SceneManager.sceneCountInBuildSettings;
             return _levelNumber;
         }
         set

@@ -40,7 +40,6 @@ public class CourserControl : MonoBehaviour
                 float cameraSize = camera.GetComponent<Camera>().orthographicSize;
                 VariableBase.setCameraPosition(cameraIndex, new Vector3(position.x, position.y, cameraSize));
                 
-                Debug.Log("Oppsie dassy!");
             }
         }
 	}
