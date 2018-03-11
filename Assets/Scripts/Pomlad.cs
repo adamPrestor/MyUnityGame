@@ -45,7 +45,7 @@ public class Pomlad : MonoBehaviour, IHasChanged {
         }
         else
         {
-            Hide_test.show_selected(cg);
+            Hide_test.StaticLoadNextLevel();
         }
 
     }

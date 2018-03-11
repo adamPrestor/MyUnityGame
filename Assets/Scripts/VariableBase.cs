@@ -7,13 +7,12 @@ public static class VariableBase {
 
     #region LevelManagment
 
-    private static int _levelNumber = 1;
+    private static int _levelNumber = 0;
 
     public static int LevelNumber
     {
         get
         {
-            Debug.Log(SceneManager.sceneCountInBuildSettings);
             _levelNumber = (_levelNumber + 1)%SceneManager.sceneCountInBuildSettings;
             return _levelNumber;
         }
@@ -54,4 +53,41 @@ public static class VariableBase {
     }
     #endregion
 
+    #region PlayerInfo
+
+    #region Values
+
+    private static string _playerName = "Učenec";
+    public static string PlayerName
+    {
+        get { return _playerName; }
+        set
+        {
+            if (value != _playerName)
+                _playerName = value;
+        }
+    }
+
+    private static int _savePoint;
+    public static int SavePoint
+    {
+        get { return _savePoint; }
+        set
+        {
+            if (value != _savePoint)
+                _savePoint = value;
+        }
+    }
+
+    #endregion
+
+    #region Methods
+
+    //shranjevanje podatkov - magari na disk; save game points - TODO
+
+    #endregion
+
+    #endregion PlayerInfo
+
+    
 }

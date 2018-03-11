@@ -9,7 +9,12 @@ public class LastNameTest : MonoBehaviour {
     public Text answer;
 
     public CanvasGroup cg;
-    
+
+    public void Start()
+    {
+        StartCoroutine(StartTheCountdown());
+    }
+
     private bool checkAnswer()
     {
         string text = answer.text;
@@ -24,6 +29,14 @@ public class LastNameTest : MonoBehaviour {
 	public void editEnd()
     {
         if (checkAnswer())
-            Hide_test.show_selected(cg);
+            Hide_test.StaticLoadNextLevel();
+    }
+
+    IEnumerator StartTheCountdown()
+    {
+        yield return new WaitForSeconds(5.0f);
+
+        this.GetComponent<Hide_test>().requestDialogJenko(VariableBase.PlayerName + ", to je priimek našega največjega pesnika!");
+
     }
 }

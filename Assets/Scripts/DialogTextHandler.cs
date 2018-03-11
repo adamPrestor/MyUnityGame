@@ -23,6 +23,7 @@ public class DialogTextHandler : MonoBehaviour
     public Text cankarText;
     public Text jenkoText;
 
+    public Text instructions;
 
     public void retrieveText(string name)
     {
@@ -54,7 +55,7 @@ public class DialogTextHandler : MonoBehaviour
                 break;
             default:
                 Debug.Log("Shame");
-                break;
+                return;
         }
                 
         StartCoroutine(showHide(cg_tmp, txt, msg, 3));
@@ -65,6 +66,9 @@ public class DialogTextHandler : MonoBehaviour
     {
         CanvasGroup cg_tmp = null;
         Text txt = null;
+
+        // {0} - playerName
+        msg = string.Format(msg, VariableBase.PlayerName);
 
         switch (name)
         {
@@ -84,12 +88,33 @@ public class DialogTextHandler : MonoBehaviour
                 cg_tmp = jenkoDia;
                 txt = jenkoText;
                 break;
+            case "Instructions":
+                instructions.text = msg;
+                return;
             default:
                 Debug.Log("Shame");
                 break;
         }
 
-        StartCoroutine(showHide(cg_tmp, txt, msg, 3));
+        showDialog(cg_tmp, txt, msg, true);
+
+    }
+
+    public void hideAllDialogs()
+    {
+        Hide_test.hide_selected(jozefDia);
+        Hide_test.hide_selected(teslaDia);
+        Hide_test.hide_selected(cankarDia);
+        Hide_test.hide_selected(jenkoDia);
+    }
+
+    public void showDialog(CanvasGroup cg, Text txt, string msg, bool theOnlyOne)
+    {
+        if (theOnlyOne)
+            hideAllDialogs();
+
+        txt.text = msg;
+        Hide_test.show_selected_dialog(cg);
     }
 
     IEnumerator showHide(CanvasGroup cg, Text txt, string msg, int SecondsToWait)

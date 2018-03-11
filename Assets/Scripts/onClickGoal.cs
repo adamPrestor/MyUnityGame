@@ -55,9 +55,6 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
 
     public void resizeIt(int rights)
     {
-        Debug.Log(flower.GetComponent<RectTransform>().rect);
-        Debug.Log(flower.GetComponent<RectTransform>().sizeDelta);
-
         int size = minSize + rights * (maxSize / solution.Length);
 
         flower.GetComponent<RectTransform>().sizeDelta = new Vector2(size, size);

@@ -77,15 +77,17 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +109,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &335621567
 Prefab:
@@ -115,6 +119,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4732685583070914, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 184
@@ -164,10 +178,176 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
+      value: "Pred teboj je Kranj v prvi polovici 19. stoletja. S klikom naredi \u010Dim
+        lep\u0161o fotografijo.\n\n\u010Ce ti fotografija ne bo v\u0161e\u010D, brez
+        skrbi! Klikni na fotoaparat in poskusi znova."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -433.76666
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 268.9229
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5249939
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.9961853
+      objectReference: {fileID: 0}
+    - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -212.05649
+      objectReference: {fileID: 0}
+    - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 121.055435
+      objectReference: {fileID: 0}
+    - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -433.7417
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 97.76697
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5499573
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.16899872
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -431.779
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 94.44172
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -11.427
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.685
+      objectReference: {fileID: 0}
+    - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 328
+      objectReference: {fileID: 0}
+    - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: startWithDialog
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.data[0]
+      value: Tesla
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.data[0]
       value: "Kranj\u010Dan Janez Puhar je ravno tisti \u010Das izumil fotografijo
         na steklo in vama z Martinom omogo\u010Dil fotografiranje turisti\u010Dnih
-        znamenitosti.\n\nPred teboj je Kranj v prvi polovici 19. stoletja. S klikom
-        naredi \u010Dim lep\u0161o fotografijo."
+        znamenitosti."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -261.90906
+      objectReference: {fileID: 0}
+    - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 146.18228
+      objectReference: {fileID: 0}
+    - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.23495483
+      objectReference: {fileID: 0}
+    - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 206.52405
+      objectReference: {fileID: 0}
+    - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 256.01068
+      objectReference: {fileID: 0}
+    - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.7000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -262.19403
+      objectReference: {fileID: 0}
+    - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 304.68246
+      objectReference: {fileID: 0}
+    - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.05001831
+      objectReference: {fileID: 0}
+    - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.8999939
+      objectReference: {fileID: 0}
+    - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.19299316
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 4.4957
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -1.37
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -211,16 +391,16 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 547709261}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.020568848, y: -0.9919739, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 335621569}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.22500001, y: 0.24339584}
-  m_AnchorMax: {x: 0.7652447, y: 0.75673974}
-  m_AnchoredPosition: {x: 3.5, y: 0}
-  m_SizeDelta: {x: -0.7999878, y: -7.799988}
+  m_AnchorMin: {x: 0.10181295, y: 0.095416665}
+  m_AnchorMax: {x: 0.89812964, y: 0.90200007}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &547709263
 MonoBehaviour:
@@ -325,6 +505,7 @@ GameObject:
   - component: {fileID: 1898792343}
   - component: {fileID: 1898792345}
   - component: {fileID: 1898792344}
+  - component: {fileID: 1898792346}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -383,6 +564,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1898792342}
+--- !u!114 &1898792346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1898792342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db69bcc60d6d59c479241b67b23bf7e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  go: {fileID: 2145957719}
 --- !u!1 &1943055005 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1020749406956582, guid: 6a24d2a401fe56042957d88705fa8866,

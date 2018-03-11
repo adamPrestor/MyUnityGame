@@ -4,7 +4,6 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 
-
 public  class GetAndSetText : MonoBehaviour {
     
     public InputField ime;
@@ -16,7 +15,7 @@ public  class GetAndSetText : MonoBehaviour {
 	public void setget ()
 	{
 		fText.text = "No, prijatelj " + ime.text + ", pa pojdiva na sprehod po moji življenski poti.";
-        PlayerPrefs.SetString("Ime", ime.text);
+        VariableBase.PlayerName = ime.text;
 
         StartCoroutine(TransitionToNextScene());
         

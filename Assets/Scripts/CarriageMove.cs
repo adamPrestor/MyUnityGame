@@ -12,7 +12,10 @@ public class CarriageMove : MonoBehaviour
 
     private bool notFinished = true;
 
+    public GameObject go;
     public CanvasGroup cg;
+
+    public string comment;
 
     private void Start()
     {
@@ -30,7 +33,7 @@ public class CarriageMove : MonoBehaviour
         if (currentPosition.x == road.Length-1)
         {
             notFinished = false;
-            Hide_test.show_selected(cg);
+            Hide_test.StaticLoadNextLevel();
             return true;
         }
         return false;
@@ -38,7 +41,7 @@ public class CarriageMove : MonoBehaviour
 
     private void resetRun()
     {
-        Debug.Log("Present.");
+        go.GetComponent<Hide_test>().requestDialogJenko(string.Format(comment, VariableBase.PlayerName));
         transform.Translate(new Vector3(currentPosition.y-startingPosition.y, 0, currentPosition.x-startingPosition.x));
         currentPosition = startingPosition;
     }

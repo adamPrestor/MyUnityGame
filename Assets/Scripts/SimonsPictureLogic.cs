@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class SimonsPictureLogic : MonoBehaviour, IHasChanged
 {
@@ -10,6 +11,6 @@ public class SimonsPictureLogic : MonoBehaviour, IHasChanged
 
     public void HasChanged()
     {
-        Hide_test.show_selected(cg);
+        SceneManager.LoadScene(VariableBase.LevelNumber);
     }
 }

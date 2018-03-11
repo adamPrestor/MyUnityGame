@@ -24,7 +24,7 @@ public class FlightSimulator : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
-
+        
         if (isMoving)
         {
 
@@ -38,20 +38,24 @@ public class FlightSimulator : MonoBehaviour
                 this.GetComponent<Rigidbody>().AddForce(new Vector3(0.0f, force, 0.0f));
             }
         }
-
 	}
 
     private void OnCollisionEnter(Collision collision)
     {
-        isMoving = false;
+        
+        Debug.Log(this.transform.position);
 
-        if (speed.y > -5.0f)
-            Hide_test.show_selected(cg);
-        else
+        if(this.transform.position.y < 435)
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            isMoving = false;
+            if (speed.y > -4.0f)
+                Hide_test.show_selected(cg);
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
+
         }
-            
     }
 
 }

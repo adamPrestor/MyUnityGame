@@ -11,10 +11,23 @@ public class Hide_test : MonoBehaviour {
     public DialogTextHandler dialogHandle;
     public CanvasGroupGroup cgg;
 
+    public bool startWithDialog = false;
+    public string[] dialogGivers;
+    public string[] dialogTexts;
+
     // Use this for initialization
     void Start()
     {
         hide();
+
+        if(startWithDialog)
+        {
+            for(int i = 0; i<dialogGivers.Length; i++)
+            {
+                requestDialog(dialogGivers[i], dialogTexts[i]);
+            }
+        }
+
     }
 
     public void hide()
@@ -37,6 +50,13 @@ public class Hide_test : MonoBehaviour {
         cg.interactable = true;
     }
 
+    public static void show_selected_dialog(CanvasGroup cg)
+    {
+        cg.alpha = 1.0f;
+        cg.blocksRaycasts = false;
+        cg.interactable = true;
+    }
+
     public void show(CanvasGroup cg)
     {
         show_selected(cg);
@@ -52,6 +72,19 @@ public class Hide_test : MonoBehaviour {
         SceneManager.LoadScene(VariableBase.LevelNumber);
     }
 
+    public void loadNextLevelWithDelay(float time)
+    {
+        if (time == 0.0f)
+            time = 3.0f;
+
+        StartCoroutine(delayNextLevel(time));
+    }
+
+    public static void StaticLoadNextLevel()
+    {
+        SceneManager.LoadScene(VariableBase.LevelNumber);
+    }
+
     public void requestDialog(string req, string msg)
     {
         dialogHandle.retrieveTextMsg(req, msg);
@@ -60,6 +93,21 @@ public class Hide_test : MonoBehaviour {
     public void requestDialogJenko(string msg)
     {
         dialogHandle.retrieveTextMsg("Jenko", msg);
+    }
+
+    public void requestDialogTesla(string msg)
+    {
+        dialogHandle.retrieveTextMsg("Tesla", msg);
+    }
+
+    public void requestDialogJozef(string msg)
+    {
+        dialogHandle.retrieveTextMsg("Jozef", msg);
+    }
+
+    public void requestDialogCankar(string msg)
+    {
+        dialogHandle.retrieveTextMsg("Cankar", msg);
     }
 
     public void showAndHide(CanvasGroup cg)
@@ -80,6 +128,13 @@ public class Hide_test : MonoBehaviour {
         yield return new WaitForSeconds(2f);
         hide_selected(cg);
 
+    }
+
+    IEnumerator delayNextLevel(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        loadNextLevel();
     }
 
     [System.Serializable]

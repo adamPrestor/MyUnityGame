@@ -8,9 +8,10 @@ public class PianoKey : MonoBehaviour {
     private int i = 0;
     public int[] notes;
     public Image[] keys;
+    public AudioClip[] noteSounds;
     public CanvasGroup cg;
 
-	public void PlayNote(float offset)
+	public void PlayNote(int offset)
     {        
         clearAllColors();
 
@@ -19,8 +20,7 @@ public class PianoKey : MonoBehaviour {
 
         Color clr;
 
-
-        if (checkIfCorrect((int) offset+3))
+        if (checkIfCorrect((int) offset))
         {
             Debug.Log("Right");
 
@@ -39,11 +39,11 @@ public class PianoKey : MonoBehaviour {
 
         }
 
-        colorSelectedKey((int)offset + 3, clr);
+        colorSelectedKey((int)offset, clr);
 
         Debug.Log(i);
 
-        GetComponent<AudioSource>().pitch = Mathf.Pow(2f, offset / 6.0f);
+        GetComponent<AudioSource>().clip = noteSounds[offset];
         GetComponent<AudioSource>().Play();
 
     }

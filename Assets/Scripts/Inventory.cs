@@ -33,12 +33,12 @@ public class Inventory : MonoBehaviour, IHasChanged  {
         {
             if (inventoryText.Equals("KRANJ"))
             {
-                Hide_test.show_selected(cg);
+                SceneManager.LoadScene(VariableBase.LevelNumber);
             }
             else
             {
                 Hide_test.hide_selected(cg);
-                levelManager.GetComponent<Hide_test>().requestDialog("Jenko", "Bolj se bos moral potruditi.");
+                levelManager.GetComponent<Hide_test>().requestDialog("Jenko", "Nočem v šolo! Raje bi - tako kot ti - po dvorišču vozil gnoj s karjolo!");
             }
         }
 	}

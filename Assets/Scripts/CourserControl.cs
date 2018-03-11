@@ -43,4 +43,14 @@ public class CourserControl : MonoBehaviour
             }
         }
 	}
+
+    public void takeAnotherPicture()
+    {
+        camera.GetComponent<CameraMoveWithMouse>().move = true;
+        pictureTaken = false;
+        Hide_test.hide_selected(cg);
+        
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 }

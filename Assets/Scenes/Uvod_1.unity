@@ -77,15 +77,17 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -107,6 +109,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1001 &127105490
 Prefab:
@@ -167,6 +171,91 @@ Prefab:
       propertyPath: dialogHandle
       value: 
       objectReference: {fileID: 708973971}
+    - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -212.05649
+      objectReference: {fileID: 0}
+    - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 121.055435
+      objectReference: {fileID: 0}
+    - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -433.76666
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 268.9229
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5249939
+      objectReference: {fileID: 0}
+    - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.9961853
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -433.7417
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 97.76697
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5499573
+      objectReference: {fileID: 0}
+    - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.16899872
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -433.74164
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 95.75097
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.5499878
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -2.1849976
+      objectReference: {fileID: 0}
+    - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 328
+      objectReference: {fileID: 0}
+    - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 237
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -195,10 +284,7 @@ MonoBehaviour:
   textArr:
   - "Pred 180 leti, ko je bil svet se \u010Drno-bel ko \u0161e niti niso poznali kamere
     ali fotoaparata, ko je bilo na svetu precej manj hi\u0161 kot danes, je skozi
-    Cerklje vodila \u0161e makadamska pot. Vodila je proti raju ... povsod naokrog
-    visoke gore, \u0161irna polja in zelene lipe ... povsod naokrog \u017Eenske v
-    rutah in dolgih krilih, mo\u0161ki, ko so se mogo\u010De enkrat na teden umili
-    v \u0161kafu z mrzlo vodo, otroci, ki so bose noge greli v toplem kravjeku ..."
+    Cerklje vodila \u0161e makadamska pot. Vodila je proti raju ..."
   - "In po tej poti se je pri\u0161lo do Podjedovih, kjer je bilo tega dne - 9. novembra
     1835 - vse narobe: mo\u0161ki so \u010Dakali zunaj, \u017Eenske so hitele po hi\u0161i
     ... niti slu\u010Dajno se niso zavedali, da se je pravkar rodil veliki skladatelj
@@ -253,7 +339,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 661256065}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 135.4237, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 127105492}
@@ -338,7 +424,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1156665435}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.1481781, y: -239.87381, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 127105492}

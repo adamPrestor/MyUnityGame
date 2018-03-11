@@ -67,8 +67,8 @@ public class TypeZdravljica : MonoBehaviour {
             i++;
         }
 
-        if(i == zdravljicaText.Length)
-            Hide_test.show_selected(cg);
+        if (i == zdravljicaText.Length)
+            Hide_test.StaticLoadNextLevel();
     }
 
     void askQuestion()

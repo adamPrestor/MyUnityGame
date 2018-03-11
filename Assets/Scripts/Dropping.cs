@@ -8,6 +8,7 @@ public class Dropping : MonoBehaviour, IDropHandler
 {
 
     public bool inventory = false;
+    public bool exchangeSlot = false;
 
     void IDropHandler.OnDrop(PointerEventData eventData)
     {
@@ -16,7 +17,14 @@ public class Dropping : MonoBehaviour, IDropHandler
 
         if(d != null)
         {
-            if(this.transform.childCount == 0 || inventory)
+            if(exchangeSlot && this.transform.childCount == 1)
+            {
+                Draggable d1 = this.transform.GetComponentInChildren<Draggable>();
+                d1.passedParent = d.passedParent;
+                d1.transform.SetParent(d1.passedParent);
+                d.passedParent = this.transform;
+
+            } else if(this.transform.childCount == 0 || inventory)
             {
                 d.passedParent = this.transform;
             }
