@@ -89,5 +89,18 @@ public static class VariableBase {
 
     #endregion PlayerInfo
 
-    
+    #region TextUtility
+    /*
+     * Write down every possible variable, that you might want to switch with in text,
+     * just so there's no confusion later:
+     * {0} - Player Name
+     * {1} - 
+     * {2} - 
+    */
+    public static string InsertVariables(string str)
+    {
+        return string.Format(str, VariableBase.PlayerName);
+    }
+    #endregion
+
 }

@@ -59,25 +59,25 @@ public class CarriageMove : MonoBehaviour
         Vector3 moveMade = new Vector3();
 
         // klasicno premikanje: wasd
-        if(Input.GetKeyDown("w"))
+        if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             //transform.Translate(new Vector3(0, 0, -1));
             moveMade = new Vector3(0, 0, -1);
             move = true;
             moveTo.x += 1;
-        } else if (Input.GetKeyDown("s"))
+        } else if (Input.GetKeyDown(KeyCode.S) || Input.GetKeyDown(KeyCode.DownArrow))
         {
             //transform.Translate(new Vector3(0, 0, 1));
             moveMade = new Vector3(0, 0, 1);
             move = true;
             moveTo.x -= 1;
-        } else if (Input.GetKeyDown("a"))
+        } else if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             //transform.Translate(new Vector3(1, 0));
             moveMade = new Vector3(1, 0);
             move = true;
             moveTo.y -= 1;
-        } else if (Input.GetKeyDown("d"))
+        } else if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
             //transform.Translate(new Vector3(-1, 0));
             moveMade = new Vector3(-1, 0);

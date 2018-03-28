@@ -20,7 +20,7 @@ public class ComplexDialogHandler : MonoBehaviour {
             Debug.Log(parts[k].lines);
             for (int i = 0; i < parts[k].lines.Length; i++)
             {
-                parts[k].textArea.text = parts[k].lines[i];
+                parts[k].textArea.text = VariableBase.InsertVariables(parts[k].lines[i]);
                 yield return new WaitForSeconds(parts[k].waitTime[i]);
             }
 
