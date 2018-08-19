@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -190,6 +191,11 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 237
       objectReference: {fileID: 0}
+    - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Izberi ustrezen pogled in klikni z mi\u0161ko."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -227,14 +233,14 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 842831000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.0515137, y: 1.0440369, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 493166359}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.101856075, y: 0.101}
-  m_AnchorMax: {x: 0.8952087, y: 0.90171885}
+  m_AnchorMin: {x: 0.19700001, y: 0.2041875}
+  m_AnchorMax: {x: 0.79720867, y: 0.803677}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}

@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -224,7 +225,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 145716641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -262.5, y: -52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 818097384}
@@ -332,7 +333,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 162905410}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 105, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828347786}
@@ -465,7 +466,8 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "Iz \u010Drk Jenkovega imena v krajevno tablo vpi\u0161i ime prvega kraja,
-        kamor ga je pot vodila od doma - v ljudsko \u0161olo."
+        kamor ga je pot vodila od doma - v ljudsko \u0161olo.\n\nZ mi\u0161ko povleci
+        ustrezne \u010Drke v okenca na krajevni tabli."
       objectReference: {fileID: 0}
     - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -485,22 +487,22 @@ Prefab:
     - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -433.74164
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 95.75097
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 0.5499878
+      value: -14
       objectReference: {fileID: 0}
     - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -2.1849976
+      value: 2.640297
       objectReference: {fileID: 0}
     - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -551,6 +553,26 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 10.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 43.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1017487032107626, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
+      propertyPath: m_Name
+      value: HelpDescription
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Ve\u010Dji kraj blizu Cerkelj. Prva \u010Drka je K. Napreduje\u0161,
+        ko bo odgovor pravilen.\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -615,7 +637,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 299077955}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -52.5, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1540773716}
@@ -723,7 +745,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 383263199}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -262.5, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 618276437}
@@ -932,7 +954,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 744280696}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 157.5, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1596827202}
@@ -1038,7 +1060,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 797471397}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -154.36798, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 178073908}
@@ -1113,7 +1135,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 856622626}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -105, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828347786}
@@ -1220,7 +1242,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 856809331}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -210, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828347786}
@@ -1326,7 +1348,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 999582834}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.000030517578, y: 229.632, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 383263200}
@@ -1430,7 +1452,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1171125665}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.5, y: -52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 596108944}
@@ -1666,7 +1688,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1296999253}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -52.5, y: -52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1348691984}
@@ -1860,7 +1882,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1306500211}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -157.5, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2077116267}
@@ -2085,7 +2107,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1400494391}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 157.5, y: -52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1712219834}
@@ -2299,7 +2321,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1778121603}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 52.5, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 535733041}
@@ -2406,7 +2428,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1828347785}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.246399, y: -17.92395, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 856809332}
@@ -2762,7 +2784,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1990203494}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 262.5, y: 52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1428997559}
@@ -2870,7 +2892,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008692761}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 210, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1828347786}
@@ -3063,7 +3085,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2066415773}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -157.5, y: -52.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1365346286}

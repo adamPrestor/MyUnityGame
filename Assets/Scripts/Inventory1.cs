@@ -91,7 +91,7 @@ public class Inventory1 : MonoBehaviour, IHasChanged
         {
             if (name.Equals("SIMON"))
             {
-                slots1.GetComponent<Image>().color = new Color32(0, 220, 30, 255);
+                slots1.GetComponent<Image>().color = new Color32(193, 230, 186, 200);
                 nameRight = true;
             }
             else
@@ -105,7 +105,7 @@ public class Inventory1 : MonoBehaviour, IHasChanged
         {
             if (surname.Equals("JENKO"))
             {
-                slots2.GetComponent<Image>().color = new Color32(0, 220, 30, 255);
+                slots2.GetComponent<Image>().color = new Color32(193, 230, 186, 200);
                 surnameRight = true;
             }
             else

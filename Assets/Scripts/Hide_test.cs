@@ -119,6 +119,11 @@ public class Hide_test : MonoBehaviour {
         StartCoroutine(showAndHideProcedure(cg));
     }
 
+    public void showHelpDialog(GameObject GO)
+    {
+        GO.SetActive(!GO.activeSelf);
+    }
+
     IEnumerator showAndHideProcedure(CanvasGroup cg)
     {
 

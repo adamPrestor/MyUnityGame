@@ -24,7 +24,6 @@ public class LetterToSrbia : MonoBehaviour {
     {
         if(i < correctAnswers.Length)
         {
-            Debug.Log(inField.text.ToLower());
             string temp = inField.text.ToLower();
             if(temp.Equals(correctAnswers[i]))
             {

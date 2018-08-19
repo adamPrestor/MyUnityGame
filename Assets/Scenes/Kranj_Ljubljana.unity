@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -276,9 +277,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &421577875
@@ -373,7 +374,8 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "Pelji Martina do Ljubljane. In sicer po rde\u010Di \u010Drti. Glej na
-        cesto, da ga varno pripelje\u0161 v mesto!"
+        cesto, da ga varno pripelje\u0161 v mesto!\n\nS pu\u0161\u010Dicami na tipkovnici
+        usmerjaj ko\u010Dijo, ki pelje Jenka v Ljubljano."
       objectReference: {fileID: 0}
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -384,6 +386,12 @@ Prefab:
         type: 2}
       propertyPath: m_LocalPosition.y
       value: 237
+      objectReference: {fileID: 0}
+    - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "S pu\u0161\u010Dicami na tipkovnici usmerjaj ko\u010Dijo, ki pelje Jenka
+        v Ljubljano."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -473,9 +481,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Convex: 0
-  m_InflateMesh: 0
+  m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!33 &909399666
@@ -997,6 +1005,7 @@ Camera:
   m_TargetEye: 3
   m_HDR: 1
   m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
