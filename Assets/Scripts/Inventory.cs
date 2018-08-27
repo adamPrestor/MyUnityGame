@@ -38,7 +38,7 @@ public class Inventory : MonoBehaviour, IHasChanged  {
             else
             {
                 Hide_test.hide_selected(cg);
-                levelManager.GetComponent<Hide_test>().requestDialog("Jenko", "Nočem v šolo! Raje bi - tako kot ti - po dvorišču vozil gnoj s karjolo!");
+                levelManager.GetComponent<Hide_test>().requestDialog("Jenko", "Narobe! Tudi jaz nočem v šolo! Raje bi - tako kot ti - po dvorišču vozil gnoj s karjolo!");
             }
         }
 	}

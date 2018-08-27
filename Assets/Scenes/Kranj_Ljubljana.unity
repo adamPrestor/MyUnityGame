@@ -391,7 +391,7 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "S pu\u0161\u010Dicami na tipkovnici usmerjaj ko\u010Dijo, ki pelje Jenka
-        v Ljubljano."
+        v Ljubljano. Poskakuje\u0161 lahko samo po rde\u010Dih poljih, zato bodi previden!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
