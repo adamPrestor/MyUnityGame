@@ -275,7 +275,7 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: Klikni na Davorina Jenka.
+      value: Kdo na sliki je Jenko? Klikni nanj.
       objectReference: {fileID: 0}
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -422,10 +422,10 @@ RectTransform:
   m_Father: {fileID: 718354102}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.55018705, y: 0.53139585}
-  m_AnchorMax: {x: 0.8003957, y: 0.8926042}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.48464745, y: 0.4202083}
+  m_AnchorMax: {x: 0.70664763, y: 0.7632812}
+  m_AnchoredPosition: {x: 0.9020996, y: 0.75}
+  m_SizeDelta: {x: -3.199997, y: 1.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1242807118
 MonoBehaviour:
@@ -467,11 +467,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 465211199}
-        m_MethodName: loadNextLevelWithDelay
-        m_Mode: 4
+        m_MethodName: show
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 1754019018}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 4
           m_StringArgument: 
@@ -530,8 +530,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -20, y: 0}
+  m_AnchoredPosition: {x: -44, y: -60.3}
+  m_SizeDelta: {x: -129.4, y: -120.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1709016657
 MonoBehaviour:
@@ -566,3 +566,8 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1709016655}
+--- !u!225 &1754019018 stripped
+CanvasGroup:
+  m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 276579935}

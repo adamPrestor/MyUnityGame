@@ -15,8 +15,8 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
     private bool[] selected;
     public bool[] solution;
 
-    private int maxSize = 120;
-    private int minSize = 20;
+    private int maxSize = 200;
+    private int minSize = 50;
 
     public void OnPointerClick(PointerEventData eventData)
     {

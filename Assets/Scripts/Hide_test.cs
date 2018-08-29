@@ -20,6 +20,8 @@ public class Hide_test : MonoBehaviour {
     {
         hide();
 
+        print(SceneManager.GetActiveScene().buildIndex);
+
         if(startWithDialog)
         {
             for(int i = 0; i<dialogGivers.Length; i++)

@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &1586216
 GameObject:
@@ -1148,17 +1153,17 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
-        Beogradu."
-      m_Image: {fileID: 0}
-    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
+    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
         izobera\u017Eevanje."
+      m_Image: {fileID: 0}
+    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
+        Beogradu."
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2042,17 +2047,17 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
-        Beogradu."
-      m_Image: {fileID: 0}
-    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
+    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
         izobera\u017Eevanje."
+      m_Image: {fileID: 0}
+    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
+        Beogradu."
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -2694,17 +2699,17 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
-        Beogradu."
-      m_Image: {fileID: 0}
-    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
+    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
         izobera\u017Eevanje."
+      m_Image: {fileID: 0}
+    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
+        Beogradu."
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3205,7 +3210,7 @@ MonoBehaviour:
   - {fileID: 324934665}
   - {fileID: 1250852404}
   - {fileID: 1008369076}
-  rightResult: 0100000002000000030000000400000005000000
+  rightResult: 0500000003000000020000000100000004000000
   cg: {fileID: 102634810}
 --- !u!1 &1210477519
 GameObject:
@@ -3442,17 +3447,17 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
-        Beogradu."
-      m_Image: {fileID: 0}
-    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
+    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
         izobera\u017Eevanje."
+      m_Image: {fileID: 0}
+    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
+        Beogradu."
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4609,17 +4614,17 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
-        Beogradu."
-      m_Image: {fileID: 0}
-    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
+    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
         izobera\u017Eevanje."
+      m_Image: {fileID: 0}
+    - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
+        Beogradu."
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
