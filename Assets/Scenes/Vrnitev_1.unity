@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!225 &501910388 stripped
 CanvasGroup:
@@ -528,7 +533,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "S trebuhom za kruhom, naprej v ZDA, na\u0161a lepotica jesti nam ne da!"
+  m_Text: "S trebuhom za kruhom. Naprej! V ZDA, na\u0161a lepotica jesti nam ne da!"
 --- !u!222 &1326914220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1057,12 +1062,12 @@ Prefab:
     - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 0.24369812
+      value: 0.24371338
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "V tem \u010Dasu, so se Ljudje mno\u017Ei\u010Dno podajali \u010Dez Atlantik
+      value: "V tem \u010Dasu, so se ljudje mno\u017Ei\u010Dno podajali \u010Dez Atlantik
         v Ameriko iskat kruha. Postavi 3 pare narodnih no\u0161 na ladjo, da jih popelje
         v de\u017Eelo prilo\u017Enosti."
       objectReference: {fileID: 0}

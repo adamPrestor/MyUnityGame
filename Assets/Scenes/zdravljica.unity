@@ -77,15 +77,18 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
-    m_PVRFiltering: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
     m_PVRFilteringMode: 1
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 0
 --- !u!196 &4
@@ -107,6 +110,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &20150758 stripped
 GameObject:
@@ -235,6 +240,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4732685583070914, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 184
@@ -270,8 +285,24 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Dopolnite besedilo zdravljice tako, kot jo je zapisal France Pre\u0161eren.
-        Izbirate lahko med besedama ob dnu papirja."
+      value: "Pomagaj Pre\u0161ernu izbrati prave besede in dokon\u010Dajta Zdravljico."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: startWithDialog
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.data[0]
+      value: Cankar
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.data[0]
+      value: "Tistega pomladnega leta so tudi Slovenci spoznali, koliko je ura! Ker
+        je odpovedala cenzura, so objavili Zdravljico: da oblast in z njo \u010Dast
+        spet na\u0161a bosta last!"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

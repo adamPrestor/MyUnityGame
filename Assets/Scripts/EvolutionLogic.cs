@@ -8,6 +8,7 @@ public class EvolutionLogic : MonoBehaviour, IHasChanged
 
     public Transform slots;
     public GameObject go;
+    public CanvasGroup cg;
 
     public void HasChanged()
     {
@@ -34,11 +35,11 @@ public class EvolutionLogic : MonoBehaviour, IHasChanged
 
     IEnumerator EndOfLevel()
     {
-        go.GetComponent<Hide_test>().requestDialogJenko("Hm, me zanima, kaj od tega sta bila Adam in Eva? In zakaj, če smo vsi iz opice nastali, Nemci večvredni so postali ?");
+        go.GetComponent<Hide_test>().requestDialogJenko("Hm, me zanima, kaj od tega sta bila Adam in Eva? In zakaj, če smo vsi iz opice nastali, Nemci večvredni so postali?");
 
         yield return new WaitForSeconds(5.0f);
 
-        Hide_test.StaticLoadNextLevel();
+        Hide_test.show_selected(cg);
 
     }
 }

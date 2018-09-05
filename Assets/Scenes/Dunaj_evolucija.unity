@@ -330,6 +330,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slots: {fileID: 1096978103}
   go: {fileID: 1114859175}
+  cg: {fileID: 971361401}
 --- !u!1 &524881729
 GameObject:
   m_ObjectHideFlags: 0
@@ -635,6 +636,11 @@ MonoBehaviour:
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
   m_ChildControlHeight: 1
+--- !u!225 &971361401 stripped
+CanvasGroup:
+  m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1329211101}
 --- !u!224 &1096978103 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224898280289361018, guid: b5dfd0929fb6f9044bbef91f78d1594f,

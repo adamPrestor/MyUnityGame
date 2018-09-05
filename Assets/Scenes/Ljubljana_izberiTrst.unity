@@ -88,6 +88,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -176,11 +177,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 876397176}
   m_Script: {fileID: 11500000, guid: d30c193e42d8f93428db1c1e87cef3ab, type: 3}
---- !u!225 &876397178 stripped
-CanvasGroup:
-  m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
-    type: 2}
-  m_PrefabInternal: {fileID: 876397176}
 --- !u!224 &876397179 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224898280289361018, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -210,7 +206,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029504865}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.000030517578, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 876397179}
@@ -279,7 +275,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1426473311}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -242.2558, y: -147.57, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1753206350}
@@ -288,7 +284,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.13081294, y: 0.28539583}
   m_AnchorMax: {x: 0.19379139, y: 0.32939583}
-  m_AnchoredPosition: {x: -0.29749, y: 0.34999}
+  m_AnchoredPosition: {x: -0.29748535, y: 0.34999084}
   m_SizeDelta: {x: -0.59502, y: 0.70002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426473313
@@ -331,11 +327,11 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 876397177}
-        m_MethodName: show
-        m_Mode: 2
+        m_MethodName: loadNextLevel
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 876397178}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.CanvasGroup, UnityEngine
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
