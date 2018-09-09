@@ -16,6 +16,7 @@ public class CarriageMove : MonoBehaviour
     public CanvasGroup cg;
 
     public string comment;
+    public bool enablePlay = true;
 
     private void Start()
     {
@@ -39,13 +40,6 @@ public class CarriageMove : MonoBehaviour
         return false;
     }
 
-    private void resetRun()
-    {
-        go.GetComponent<Hide_test>().requestDialogJenko(string.Format(comment, VariableBase.PlayerName));
-        transform.Translate(new Vector3(currentPosition.y-startingPosition.y, 0, currentPosition.x-startingPosition.x));
-        currentPosition = startingPosition;
-    }
-
     private bool isWithin()
     {
         return currentPosition.x < road.Length && currentPosition.x >= 0 && currentPosition.y >= 0 && currentPosition.y < 8;
@@ -53,6 +47,9 @@ public class CarriageMove : MonoBehaviour
 
     // Update is called once per frame
     void Update () {
+
+        if (!enablePlay)
+            return;
 
         bool move = false;
         Vector2 moveTo = new Vector2(0, 0);
@@ -90,18 +87,30 @@ public class CarriageMove : MonoBehaviour
             
             currentPosition += moveTo;
             transform.Translate(moveMade);
-
-            Debug.Log(isWithin());
-
+            
             if (isWithin() && checkRoad())
             {
                 checkFinish();
             } else
             {
-                resetRun();
+                StartCoroutine(ResetRun());
             }
         }
     }
+
+    IEnumerator ResetRun()
+    {
+        go.GetComponent<Hide_test>().requestDialogJenko(string.Format(comment, VariableBase.PlayerName));
+        enablePlay = false;
+
+        yield return new WaitForSeconds(3.0f);
+
+        transform.Translate(new Vector3(currentPosition.y - startingPosition.y, 0, currentPosition.x - startingPosition.x));
+        currentPosition = startingPosition;
+        go.GetComponent<Hide_test>().dialogHandle.hideAllDialogs();
+        enablePlay = true;
+    }
+
 }
 
 [System.Serializable]

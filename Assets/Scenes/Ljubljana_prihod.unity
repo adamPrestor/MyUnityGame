@@ -196,6 +196,11 @@ Prefab:
       propertyPath: m_Text
       value: "Izberi ustrezen pogled in klikni z mi\u0161ko."
       objectReference: {fileID: 0}
+    - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.099990845
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -239,8 +244,8 @@ RectTransform:
   m_Father: {fileID: 493166359}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.19700001, y: 0.2041875}
-  m_AnchorMax: {x: 0.79720867, y: 0.803677}
+  m_AnchorMin: {x: 0.102000006, y: 0.044187497}
+  m_AnchorMax: {x: 0.89937407, y: 0.89739585}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: -20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -323,11 +328,6 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4589576392434032, guid: 6a24d2a401fe56042957d88705fa8866, type: 2}
       propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114058171659960636, guid: 6a24d2a401fe56042957d88705fa8866,
-        type: 2}
-      propertyPath: move
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

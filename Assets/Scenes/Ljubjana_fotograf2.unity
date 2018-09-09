@@ -362,8 +362,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Ko se nagleda\u0161 150 let stare Ljubljanice, se sprehodi po mestu
-        in \u0161e enkrat fotografiraj."
+      value: "Pred teboj je kongresni trg. S klikom na mi\u0161ko naredi fotografijo.\n\n\u010Ce
+        ti slika ne bo v\u0161e\u010D brez skrbi! S klikom na fotograf jo lahko popravi\u0161."
       objectReference: {fileID: 0}
     - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

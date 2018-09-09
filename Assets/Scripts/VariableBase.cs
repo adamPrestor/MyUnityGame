@@ -30,10 +30,10 @@ public static class VariableBase {
     #endregion
 
     #region CameraManagment
-    private static Vector3[] cameraPositions = { new Vector3(1810f, 0f, 4.3f),
+    private static Vector3[] cameraPositions = { new Vector3(1810f, 0f, 8f),
                                                 new Vector3(1870f, 0f, 7f),
                                                 new Vector3(1916.4f, 0f, 4.3f),
-                                                new Vector3(1970.38f, 0f, 4.3f) };
+                                                new Vector3(1970.38f, 0f, 7f) };
 
     public static bool initiatePositions(Vector3[] positions)
     {

@@ -7,6 +7,9 @@ public class IntroductionText : MonoBehaviour {
 
     public Text textField;
     public CanvasGroup cg;
+    public Image imageFiled;
+    public Sprite[] sprites;
+
     private int page = 0;
     private const int max_pages = 3;
 
@@ -22,20 +25,25 @@ public class IntroductionText : MonoBehaviour {
     private void Start()
     {
         print(text.Length);
-        textField.text = text[page];
+        LoadPage();
     }
 
     public void NextPage()
     {
         page = Mathf.Min(page+1, max_pages-1);
-        textField.text = text[page];
-        Hide_test.show_selected(cg);
+        LoadPage();
     }
 
     public void PrevPage()
     {
         page = Mathf.Max(page-1, 0);
+        LoadPage();
+    }
+
+    private void LoadPage()
+    {
         textField.text = text[page];
+        imageFiled.sprite = sprites[page];
         Hide_test.show_selected(cg);
     }
 
