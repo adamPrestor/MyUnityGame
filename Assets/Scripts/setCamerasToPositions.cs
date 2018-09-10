@@ -12,7 +12,6 @@ public class setCamerasToPositions : MonoBehaviour {
 		for(int i = 0; i<cameras.Length; i++)
         {
             Vector3 properties = VariableBase.getCameraPosition(i);
-            Debug.Log(properties.z);
 
             cameras[i].transform.position = new Vector3(properties.x, properties.y, -38.5f);
             cameras[i].GetComponent<Camera>().orthographicSize = properties.z;
