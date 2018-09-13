@@ -5,38 +5,30 @@ using UnityEngine.UI;
 
 public class TracksLogic : MonoBehaviour {
 
-    public int[] rotations;
     public CanvasGroup cg;
- 
+    private SlotTrack[] slots;
 
     private void Start()
     {
-        rotations = new int[5];
-        for(int i = 0; i<rotations.Length; i++)
-        {
-            rotations[i] = 1;
-        }
+        slots = Object.FindObjectsOfType<SlotTrack>();
     }
 
-    public void changeRotations(int i, int r)
+    public void IsFinished()
     {
-        rotations[i] = r;
-        isFinished();
-    }
-
-    public void isFinished()
-    {
-        if (checkTracks())
+        if (CheckTracks())
             Hide_test.show_selected(cg);
         else
             Hide_test.hide_selected(cg);
     }
 
-    public bool checkTracks()
+    public bool CheckTracks()
     {
-        for (int i = 0; i<rotations.Length; i++)
+        if (slots == null)
+            return false;
+
+        for (int i = 0; i<slots.Length; i++)
         {
-            if (rotations[i] != 0)
+            if (! slots[i].CheckCorrect())
                 return false;
         }
         return true;
