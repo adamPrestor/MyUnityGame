@@ -301,7 +301,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -559,7 +559,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -845,7 +845,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -943,7 +943,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 0
@@ -986,33 +986,22 @@ MonoBehaviour:
       AnswerB: Martin Krpan
       AnswerC: Martin Klepec
       truth: 1
-    - Question: "S \u010Dim je znan slovenski junak tovoril sol prek meje?"
+    - Question: "S \u010Dim je Martin Krpan tovoril sol prek meje?"
       AnswerA: Kozo
       AnswerB: Konjem
       AnswerC: Kobilo
       truth: 2
-    - Question: Kaj je prek meje pretovarjal ta slovenski junak?
+    - Question: Kaj je Martin Krpan tihotapil?
       AnswerA: Sol
-      AnswerB: "Angle\u0161ko sol"
-      AnswerC: "Ameri\u0161ko sol"
-      truth: 1
+      AnswerB: Petarde
+      AnswerC: Begunce
+      truth: 0
   - questions:
     - Question: Kdo je napisal prvo slovensko povest, ki govori o tem junaku?
       AnswerA: "Fran Zme\u010Dan"
       AnswerB: Fran Levstik
       AnswerC: "Fran Mil\u010Dinski - Je\u017Eek"
       truth: 1
-    - Question: Tega vprasanja pa se ni
-      AnswerA: Tako je
-      AnswerB: Presneto res
-      AnswerC: Hudimana!
-      truth: 0
-    - Question: Kako naj vem, da to ni res?
-      AnswerA: Ne vem.
-      AnswerB: Enostavno ves.
-      AnswerC: Naj me koklja brcne.
-      truth: 0
-  - questions:
     - Question: "Kako se je imenoval orja\u0161ki nasprotnik, ki ga je Krpan na Dunaju
         premagal in s tem re\u0161il cesarstvo?"
       AnswerA: Bedanec
@@ -1024,11 +1013,27 @@ MonoBehaviour:
       AnswerB: Sekira
       AnswerC: "Gorja\u010Da"
       truth: 2
-    - Question: "Krpan je mo\u010Dnej\u0161i od Herkula?"
-      AnswerA: "Dr\u017Ei"
-      AnswerB: "Ne dr\u017Ei"
-      AnswerC: Ne moremo vedeti
-      truth: 2
+  - questions:
+    - Question: Kaj od navedenega ni izrekel Martin Krpan?
+      AnswerA: "Petnajst Brdavsov za malo ju\u017Eino, to je meni toliko, kolikor
+        vam kamen poriniti \u010Dez lu\u017Eo, ki jo presko\u010Di dete sedem let
+        staro."
+      AnswerB: Dunaja ni bilo meni treba, mene pa Dunaju!
+      AnswerC: "Bridka \u017Ealost me pre\u0161ine, ko se spomnim domovine! Vsemu
+        svetu nepoznane, od nikogar spo\u0161tovane."
+      truth: 1
+    - Question: "Mohorjevo dru\u017Ebo je ustanovil znani slovenski narodni buditelj,
+        Pre\u0161ernov so\u0161olec:"
+      AnswerA: "Matija \u010Cop"
+      AnswerB: "Anton Martin Slom\u0161ek"
+      AnswerC: "Lado Bizovi\u010Dar"
+      truth: 1
+    - Question: "V tistem \u010Dasu je za (preproste) slovenske knjige poskrbela tudi
+        prva slovenska zalo\u017Eba:"
+      AnswerA: "Mohorjeva dru\u017Eba"
+      AnswerB: Penguin
+      AnswerC: Mladinska knjiga
+      truth: 0
   questionText: {fileID: 1899455182}
   cg: {fileID: 1156780586}
   textA: {fileID: 666362688}

@@ -223,7 +223,7 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Klikna na modro kavarno pod najve\u010Djim zvonikom dunajske katedrale!"
+      value: "Klikni na modro kavarno pod najve\u010Djim zvonikom dunajske katedrale!"
       objectReference: {fileID: 0}
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

@@ -299,6 +299,14 @@ Prefab:
       value: "Zvon\u010Dek, ki prikazuje pomladno prebujenje slovenskega naroda, je
         bilo treba skrbno negovati in dobro zalivati, da je pognal in zacvetel."
       objectReference: {fileID: 0}
+    - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "V zgornjem kvadratu ima\u0161 6 izbir. Izberi tiste, ki se ti zdijo
+        pravilne in pritisni na kanglico (kanglica se nahaja pod Jenkom).\n\nVe\u010D
+        pravilnih si izbral, ve\u010Dji bo zvon\u010Dek.\nVe\u010D nepravilnih si
+        izbral, manj\u0161i bo zvon\u010Dek."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

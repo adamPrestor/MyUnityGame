@@ -497,7 +497,7 @@ MonoBehaviour:
   xLim: {x: 1800, y: 1820}
   yLim: {x: -8, y: 8}
   zLim: {x: 4, y: 10}
-  move: 1
+  move: 0
 --- !u!114 &114685659770381876
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -517,7 +517,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 941113320}
   m_LocalRotation: {x: 0.010907163, y: -0.7097557, z: 0.7042777, w: -0.010988151}
-  m_LocalPosition: {x: 3.27, y: -4.73, z: -1.94}
+  m_LocalPosition: {x: 3.75, y: -4.72, z: -1.94}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 909399663}
@@ -540,7 +540,7 @@ TextMesh:
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -558,7 +558,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -649,6 +649,7 @@ MonoBehaviour:
   cg: {fileID: 1758147241}
   comment: "Ej, {0} pazi! A se ti med vo\u017Enjo sanja ? \u0160e enkrat me lepo odpelji
     iz Kranja."
+  enablePlay: 1
 --- !u!23 &1206247947
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -726,7 +727,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1406669072}
   m_LocalRotation: {x: 0.010907163, y: -0.7097557, z: 0.7042777, w: -0.010988151}
-  m_LocalPosition: {x: 2.2, y: -4.78, z: 0.1}
+  m_LocalPosition: {x: 2.58, y: -4.77, z: 0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 421577872}
@@ -749,7 +750,7 @@ TextMesh:
   m_FontSize: 0
   m_FontStyle: 0
   m_RichText: 1
-  m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
   m_Color:
     serializedVersion: 2
     rgba: 4278190080
@@ -767,7 +768,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10100, guid: 0000000000000000e000000000000000, type: 0}
+  - {fileID: 2100000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
