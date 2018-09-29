@@ -399,7 +399,7 @@ Prefab:
     - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Mo\u017Enosti:\n\ntalent\nkulturo\nnemci\nkraljevino\nsrbi\nnapevov\nsrbiji"
+      value: "Mo\u017Enosti:\n\ntalent\nkulturo\nNemci\nKraljevino\nSrbi\nnapevov\nSrbiji"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

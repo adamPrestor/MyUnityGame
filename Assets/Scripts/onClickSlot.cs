@@ -19,16 +19,11 @@ public class onClickSlot : MonoBehaviour, IPointerClickHandler
 
         this.isSelected = !this.isSelected;
 
-        Debug.Log(this.isSelected);
-
-
         if(this.isSelected)
         {
-            Debug.Log(this.isSelectedColor.r);
             transform.gameObject.GetComponent<Image>().color = new Color32(109, 109, 109, 100);
         } else
         {
-            Debug.Log(this.isNotSelectedColor.r);
             transform.gameObject.GetComponent<Image>().color = new Color32(255, 255, 255, 100);
         }
 

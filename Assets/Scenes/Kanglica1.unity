@@ -641,6 +641,8 @@ GameObject:
   - component: {fileID: 863154551}
   - component: {fileID: 863154549}
   - component: {fileID: 863154550}
+  - component: {fileID: 863154553}
+  - component: {fileID: 863154554}
   m_Layer: 5
   m_Name: Panel (4)
   m_TagString: Untagged
@@ -735,6 +737,105 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 863154547}
+--- !u!114 &863154553
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863154547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74802dfb9b7ad5647a4d273fb761a30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 1909165582}
+--- !u!114 &863154554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 863154547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb2ded2c5808fa42ac107ae548da427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Slovenska narodna no\u0161a"
+  textArea: {fileID: 880996235}
+--- !u!1 &880996233
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 880996234}
+  - component: {fileID: 880996236}
+  - component: {fileID: 880996235}
+  m_Layer: 5
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &880996234
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880996233}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1909165585}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -60, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &880996235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880996233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
+    m_FontSize: 18
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 
+--- !u!222 &880996236
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 880996233}
 --- !u!1 &969167128
 GameObject:
   m_ObjectHideFlags: 0
@@ -850,7 +951,7 @@ RectTransform:
   - {fileID: 863154548}
   - {fileID: 1415213764}
   m_Father: {fileID: 766854710}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.33560416}
   m_AnchorMax: {x: 1, y: 0.67939585}
@@ -925,6 +1026,8 @@ GameObject:
   - component: {fileID: 1028792006}
   - component: {fileID: 1028792005}
   - component: {fileID: 1028792004}
+  - component: {fileID: 1028792008}
+  - component: {fileID: 1028792009}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -1019,6 +1122,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1028792002}
+--- !u!114 &1028792008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028792002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74802dfb9b7ad5647a4d273fb761a30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 1909165582}
+--- !u!114 &1028792009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1028792002}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb2ded2c5808fa42ac107ae548da427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: Barva
+  textArea: {fileID: 880996235}
 --- !u!1 &1049616521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1031,6 +1159,8 @@ GameObject:
   - component: {fileID: 1049616525}
   - component: {fileID: 1049616523}
   - component: {fileID: 1049616524}
+  - component: {fileID: 1049616527}
+  - component: {fileID: 1049616528}
   m_Layer: 5
   m_Name: Panel (3)
   m_TagString: Untagged
@@ -1125,6 +1255,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1049616521}
+--- !u!114 &1049616527
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049616521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74802dfb9b7ad5647a4d273fb761a30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 1909165582}
+--- !u!114 &1049616528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1049616521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb2ded2c5808fa42ac107ae548da427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Pre\u0161ernove Poezije"
+  textArea: {fileID: 880996235}
 --- !u!1 &1062450110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1137,6 +1292,8 @@ GameObject:
   - component: {fileID: 1062450114}
   - component: {fileID: 1062450112}
   - component: {fileID: 1062450113}
+  - component: {fileID: 1062450116}
+  - component: {fileID: 1062450117}
   m_Layer: 5
   m_Name: Panel (2)
   m_TagString: Untagged
@@ -1231,6 +1388,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1062450110}
+--- !u!114 &1062450116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1062450110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74802dfb9b7ad5647a4d273fb761a30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 1909165582}
+--- !u!114 &1062450117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1062450110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb2ded2c5808fa42ac107ae548da427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Cvetal, najbolj\u0161e gnojilo za ro\u017Ee"
+  textArea: {fileID: 880996235}
 --- !u!1 &1220345085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1498,8 @@ GameObject:
   - component: {fileID: 1415213767}
   - component: {fileID: 1415213765}
   - component: {fileID: 1415213766}
+  - component: {fileID: 1415213769}
+  - component: {fileID: 1415213770}
   m_Layer: 5
   m_Name: Panel (5)
   m_TagString: Untagged
@@ -1410,6 +1594,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1415213763}
+--- !u!114 &1415213769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1415213763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74802dfb9b7ad5647a4d273fb761a30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 1909165582}
+--- !u!114 &1415213770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1415213763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb2ded2c5808fa42ac107ae548da427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "Prvi zemljevid slovenskih de\u017Eel"
+  textArea: {fileID: 880996235}
 --- !u!224 &1654493226 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224868388650041624, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -1427,6 +1636,8 @@ GameObject:
   - component: {fileID: 1699634800}
   - component: {fileID: 1699634798}
   - component: {fileID: 1699634799}
+  - component: {fileID: 1699634802}
+  - component: {fileID: 1699634803}
   m_Layer: 5
   m_Name: Panel (1)
   m_TagString: Untagged
@@ -1521,6 +1732,31 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1699634796}
+--- !u!114 &1699634802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699634796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74802dfb9b7ad5647a4d273fb761a30b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cg: {fileID: 1909165582}
+--- !u!114 &1699634803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1699634796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb2ded2c5808fa42ac107ae548da427, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: "\u017Darnica"
+  textArea: {fileID: 880996235}
 --- !u!1 &1773781950
 GameObject:
   m_ObjectHideFlags: 0
@@ -1601,6 +1837,87 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1773781950}
+--- !u!1 &1909165581
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1909165585}
+  - component: {fileID: 1909165584}
+  - component: {fileID: 1909165583}
+  - component: {fileID: 1909165582}
+  m_Layer: 5
+  m_Name: DescriptionBG
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &1909165582
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909165581}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1909165583
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909165581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1909165584
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909165581}
+--- !u!224 &1909165585
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1909165581}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 880996234}
+  m_Father: {fileID: 766854710}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.33560416}
+  m_AnchorMax: {x: 1, y: 0.33560416}
+  m_AnchoredPosition: {x: 0, y: 21.925}
+  m_SizeDelta: {x: -20, y: 43.85}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1917625458 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1852366761349690, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -1725,7 +2042,7 @@ RectTransform:
   m_Children:
   - {fileID: 707984788}
   m_Father: {fileID: 766854710}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0.33560416}

@@ -170,7 +170,7 @@ Prefab:
     - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Mo\u017Enosti:\n\ntraku\nbenz\nzemlji\nzraku"
+      value: "Mo\u017Enosti:\n\ntraku\nBenz\nzemlji\nzraku"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
