@@ -15,10 +15,11 @@ public class IntroductionText : MonoBehaviour {
 
     string[] text = new string[max_pages] {
         "Pred 180 leti, ko je bil svet še črno-bel, ko še niti niso poznali kamere ali fotoaparata, ko je bilo na svetu precej manj hiš kot danes, je skozi" +
-        "Cerklje vodila še makedamska pot. Vodila je proti raju ... povsod naokrog visoke gore, širina polja in zelene lipe ... povsod naokrog ženske v rutah" +
-        "in dolgih krilih, moški, ki so se mogoče enkrat na teden umili v škafu z mrzlo vodo, otroci, ki so bose noge greli v toplem kravjeku ...",
+        "Cerklje vodila še makedamska pot. Vodila je proti raju ... povsod naokrog visoke gore, širina polja in zelene lipe ...",
+
         "In po tej poti se je prišlo do Podjedovih, kjer je bilo tega dne - 9. novembra 1835 - vse narobe: moški so čakali zunaj, ženske so hitele po hiši ... " +
         "niti slučajno se niso zavedali, da se je pravkar rodil velik skladatelj in pevovodja.",
+
         "Na svet je pokukal sin. Rekli so mu Martin. \n Skakal je, trgal hlače, rasel kot kopriva. In ko domača lipa ni bila več dovolj zanimiva, so ga starši poslali v svet."
     };
 

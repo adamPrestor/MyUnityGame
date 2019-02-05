@@ -17,6 +17,9 @@ public class SlotTrack : MonoBehaviour, IPointerClickHandler
     public int[] correctRotation = new int[1];
     public bool isImportant = false;
 
+    private Color correct = new Color(0, 180, 0, 150);
+    private Color uncorrect = new Color(180, 0, 0, 150);
+
     // Use this for initialization
     void Start()
     {
@@ -24,6 +27,7 @@ public class SlotTrack : MonoBehaviour, IPointerClickHandler
         this.Rotation = Random.Range(0, 100)%2;
 
         ChangeRotation();
+        CheckCorrect();
     }
 
     private void ChangeRotation()
@@ -48,9 +52,11 @@ public class SlotTrack : MonoBehaviour, IPointerClickHandler
             {
                 if (Rotation == correctRotation[i])
                 {
+                    this.GetComponent<Image>().color = this.correct;
                     return true;
                 }
             }
+            this.GetComponent<Image>().color = this.uncorrect;
             return false;
         }
         return true;

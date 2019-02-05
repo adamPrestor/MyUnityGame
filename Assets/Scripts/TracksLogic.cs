@@ -26,12 +26,14 @@ public class TracksLogic : MonoBehaviour {
         if (slots == null)
             return false;
 
+        bool result = true;
+
         for (int i = 0; i<slots.Length; i++)
         {
-            if (! slots[i].CheckCorrect())
-                return false;
+            if (!slots[i].CheckCorrect())
+                result = false;
         }
-        return true;
+        return result;
     }
 	
 }

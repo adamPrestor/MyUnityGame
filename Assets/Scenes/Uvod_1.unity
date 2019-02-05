@@ -157,6 +157,26 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: -0.099990845
       objectReference: {fileID: 0}
+    - target: {fileID: 224190792889768094, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.5249634
+      objectReference: {fileID: 0}
+    - target: {fileID: 224190792889768094, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 224036875639407100, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.12600708
+      objectReference: {fileID: 0}
+    - target: {fileID: 224036875639407100, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -500,9 +520,9 @@ MonoBehaviour:
   cg: {fileID: 399096605}
   imageFiled: {fileID: 1017249406}
   sprites:
-  - {fileID: 21300000, guid: 21e95ee253a24cf49ae0f8c6a189b8b8, type: 3}
+  - {fileID: 21300000, guid: beaf25bebe68b294cab971d051941e25, type: 3}
   - {fileID: 21300000, guid: d7a1910b7e29e4f41aca64ab7fa1c078, type: 3}
-  - {fileID: 21300000, guid: 7b5f94173b443434e8a3ffadc4bea790, type: 3}
+  - {fileID: 21300000, guid: d7a1910b7e29e4f41aca64ab7fa1c078, type: 3}
 --- !u!1001 &1731694910
 Prefab:
   m_ObjectHideFlags: 0

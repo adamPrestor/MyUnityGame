@@ -16,7 +16,7 @@ public class TypeZdravljica : MonoBehaviour {
         "Žive naj vsi narodi,\n" +
         "ki hrepene dočakat dan,\n" +
         "da koder sonce hodi\n" +
-        "prepir iz sveta bo pregnan\n" +
+        "prepir iz sveta bo pregnan,\n" +
         "da rojak\n" +
         "prost bo vsak\n" +
         "ne vrag, le sosed bo mejak!";
