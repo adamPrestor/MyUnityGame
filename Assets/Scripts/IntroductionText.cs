@@ -7,7 +7,7 @@ public class IntroductionText : MonoBehaviour {
 
     public Text textField;
     public CanvasGroup cg;
-    public Image imageFiled;
+    public Image imageFiled, LeftArrow, RightArrow;
     public Sprite[] sprites;
 
     private int page = 0;
@@ -20,24 +20,32 @@ public class IntroductionText : MonoBehaviour {
         "In po tej poti se je prišlo do Podjedovih, kjer je bilo tega dne - 9. novembra 1835 - vse narobe: moški so čakali zunaj, ženske so hitele po hiši ... " +
         "niti slučajno se niso zavedali, da se je pravkar rodil velik skladatelj in pevovodja.",
 
-        "Na svet je pokukal sin. Rekli so mu Martin. \n Skakal je, trgal hlače, rasel kot kopriva. In ko domača lipa ni bila več dovolj zanimiva, so ga starši poslali v svet."
+        "Na svet je pokukal sin. \n Rekli so mu Martin. \n Skakal je, trgal hlače, rasel kot kopriva. \n In ko domača lipa ni bila več dovolj zanimiva, \n so ga starši poslali v svet: \n\n IN SEDAJ GREŠ LAHKO Z NJIM TUDI TI!"
     };
 
     private void Start()
     {
-        print(text.Length);
+        LeftArrow.GetComponent<Image>().color = Color.clear;
         LoadPage();
     }
 
     public void NextPage()
     {
         page = Mathf.Min(page+1, max_pages-1);
+        if (page == max_pages-1)
+            RightArrow.GetComponent<Image>().color = Color.clear;
+        else
+            LeftArrow.GetComponent<Image>().color = new Color(255,255,255,255);
         LoadPage();
     }
 
     public void PrevPage()
     {
         page = Mathf.Max(page-1, 0);
+        if (page == 0)
+            LeftArrow.GetComponent<Image>().color = Color.clear;
+        else
+            RightArrow.GetComponent<Image>().color = new Color(255, 255, 255, 255);
         LoadPage();
     }
 

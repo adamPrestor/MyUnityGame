@@ -319,7 +319,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ime: {fileID: 2008555966}
   fText: {fileID: 1462934489}
-  levelToLoad: 3
+  cg: {fileID: 1140533925}
+--- !u!225 &1140533925 stripped
+CanvasGroup:
+  m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1140533921}
 --- !u!1 &1349088630
 GameObject:
   m_ObjectHideFlags: 0
@@ -865,7 +870,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: NAPREJ
+  m_Text: POTRDI
 --- !u!222 &2077824116
 CanvasRenderer:
   m_ObjectHideFlags: 0

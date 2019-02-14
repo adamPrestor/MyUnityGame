@@ -519,10 +519,12 @@ MonoBehaviour:
   textField: {fileID: 1952917877}
   cg: {fileID: 399096605}
   imageFiled: {fileID: 1017249406}
+  LeftArrow: {fileID: 348929293}
+  RightArrow: {fileID: 763709082}
   sprites:
   - {fileID: 21300000, guid: beaf25bebe68b294cab971d051941e25, type: 3}
   - {fileID: 21300000, guid: d7a1910b7e29e4f41aca64ab7fa1c078, type: 3}
-  - {fileID: 21300000, guid: d7a1910b7e29e4f41aca64ab7fa1c078, type: 3}
+  - {fileID: 21300000, guid: aa4400452584a89459318f7ab8b3087c, type: 3}
 --- !u!1001 &1731694910
 Prefab:
   m_ObjectHideFlags: 0

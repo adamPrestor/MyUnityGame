@@ -421,6 +421,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4732685583070914, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 184
@@ -465,9 +475,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Iz \u010Drk Jenkovega imena v krajevno tablo vpi\u0161i ime prvega kraja,
-        kamor ga je pot vodila od doma - v ljudsko \u0161olo.\n\nZ mi\u0161ko povleci
-        ustrezne \u010Drke v okenca na krajevni tabli."
+      value: "Prva Jenkova postaja je bila ljudska \u0161ola. Kje? Iz \u010Drk njegovega
+        imena sestavi ime kraja, kamor se je prvi\u010D odpravil od doma."
       objectReference: {fileID: 0}
     - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -571,8 +580,34 @@ Prefab:
     - target: {fileID: 114218282179957308, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Ve\u010Dji kraj blizu Cerkelj. Prva \u010Drka je K. Napreduje\u0161,
-        ko bo odgovor pravilen.\r"
+      value: "Ve\u010Dji kraj blizu Cerkelj. Mogo\u010De bo\u0161 tudi ti tam nadaljeval/a
+        svoje \u0161olanje. Prva \u010Drka je K. Ko bo odgovor pravilen, lahko nadaljuje\u0161."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Prvi odhod od doma: ljudska \u0161ola"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: startWithDialog
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.data[0]
+      value: Jenko
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.data[0]
+      value: "O\u010De so rekli, da bo treba od doma \u2013 taka je menda usoda pametnih
+        otrok \u2026 "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

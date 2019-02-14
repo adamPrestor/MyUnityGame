@@ -13,7 +13,8 @@ public static class VariableBase {
     {
         get
         {
-            _levelNumber = (_levelNumber + 1)%SceneManager.sceneCountInBuildSettings;
+            // TODO: change back - fix so it's more intuitive
+            _levelNumber = (SceneManager.GetActiveScene().buildIndex + 1)%SceneManager.sceneCountInBuildSettings;
             return _levelNumber;
         }
         set

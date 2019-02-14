@@ -24,12 +24,12 @@ public class CarriageMove : MonoBehaviour
         notFinished = true;
     }
 
-    private bool checkRoad()
+    private bool CheckRoad()
     {
         return road[(int)currentPosition.x].getTile((int)currentPosition.y);
     }
 
-    private bool checkFinish()
+    private bool CheckFinish()
     {
         if (currentPosition.x == road.Length-1)
         {
@@ -55,7 +55,7 @@ public class CarriageMove : MonoBehaviour
         Vector2 moveTo = new Vector2(0, 0);
         Vector3 moveMade = new Vector3();
 
-        // klasicno premikanje: wasd
+        // klasicno premikanje: wasd + arrow keys
         if(Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             //transform.Translate(new Vector3(0, 0, -1));
@@ -88,9 +88,9 @@ public class CarriageMove : MonoBehaviour
             currentPosition += moveTo;
             transform.Translate(moveMade);
             
-            if (isWithin() && checkRoad())
+            if (isWithin() && CheckRoad())
             {
-                checkFinish();
+                CheckFinish();
             } else
             {
                 StartCoroutine(ResetRun());

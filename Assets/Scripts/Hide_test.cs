@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Hide_test : MonoBehaviour {
@@ -10,10 +11,14 @@ public class Hide_test : MonoBehaviour {
     public int levelToLoad;
     public DialogTextHandler dialogHandle;
     public CanvasGroupGroup cgg;
+    public Text AgeText;
 
     public bool startWithDialog = false;
     public string[] dialogGivers;
     public string[] dialogTexts;
+    public int Age;
+
+    private string AgeString = "Starost:\n{0} let";
 
     // Use this for initialization
     void Start()
@@ -27,12 +32,13 @@ public class Hide_test : MonoBehaviour {
                 requestDialog(dialogGivers[i], dialogTexts[i]);
             }
         }
-
+        AgeText.text = string.Format(AgeString, Age.ToString());
     }
 
     public void hide()
     {
-        hide_selected(next_button);
+        if (next_button)
+            hide_selected(next_button);
         hide_selected(dialogs);
     }
 

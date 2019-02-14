@@ -766,7 +766,7 @@ Prefab:
     - target: {fileID: 224331642721018178, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 224982758068292984, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -791,17 +791,18 @@ Prefab:
     - target: {fileID: 224190792889768094, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Iz besede smejko, najdite ime Martinovega prijatelja iz srednje \u0161ole."
+      value: "Iz besede SMEJKO sestavi ime Martinovega so\u0161olca in prijatelja,
+        slovenskega pesnika."
       objectReference: {fileID: 0}
     - target: {fileID: 224947444517552042, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114389868158873788, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -827,6 +828,16 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "Pi\u0161e se kot Davorin, ime pa se za\u010Denja na \u010Drko S."
+      objectReference: {fileID: 0}
+    - target: {fileID: 224887101973469926, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
