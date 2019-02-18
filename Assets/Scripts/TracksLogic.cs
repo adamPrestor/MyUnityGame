@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
 
-public class TracksLogic : MonoBehaviour {
+public class TracksLogic : MonoBehaviour, IPointerClickHandler {
 
     public CanvasGroup cg;
+
     private SlotTrack[] slots;
 
     private void Start()
@@ -35,5 +37,12 @@ public class TracksLogic : MonoBehaviour {
         }
         return result;
     }
-	
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        foreach (SlotTrack slot in slots)
+        {
+            slot.GetComponent<Image>().color = slot.c_neutral;
+        }
+    }
 }

@@ -28,7 +28,7 @@ public class Slot : MonoBehaviour, IDropHandler {
 	{
         this.multipleStorage = checkCapacity();
 		if (!item || this.multipleStorage) {
-			DragHandealer.ItemBeingDragged.transform.SetParent (transform);
+			DragHandealer.ItemBeingDragged.transform.SetParent(transform);
 			ExecuteEvents.ExecuteHierarchy<IHasChanged>(gameObject,null, (x,y) => x.HasChanged());
 		}
         if(hide)

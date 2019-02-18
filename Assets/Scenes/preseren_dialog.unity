@@ -189,8 +189,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2123210405}
-        m_MethodName: goPathB
+      - m_Target: {fileID: 2123210404}
+        m_MethodName: ChooseB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -580,8 +580,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2123210405}
-        m_MethodName: goPathA
+      - m_Target: {fileID: 2123210404}
+        m_MethodName: ChooseA
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -894,7 +894,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1850056159415424, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 499593508}
---- !u!114 &2123210405
+--- !u!114 &2123210404
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -902,13 +902,59 @@ MonoBehaviour:
   m_GameObject: {fileID: 2123210403}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b4d3d009d9207418089773af7244ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PunishmentExecutionair:
+  - Jozef
+  - Cankar
+  PunishmentDelivered:
+  - "{0}, \u0161e jaz ne bi s takim gospodom norca bril. Bodi bolj spo\u0161tljiv!"
+  - " Jezikanje ti gre, a med ljudmi ve\u010D velja kultura. Priu\u010Di se je in
+    zamenjaj odgovor! "
+  DialogQuestions:
+  - question: "Fant, bo\u0161 kaj fig?"
+    choiceA: "Uau, od Pre\u0161erna figo dobiti - to pa je podvig!"
+    choiceB: "Ne maram! Kar Juliji jih nesi, \u010De jih ho\u010De."
+    CorrectA: 1
+  - question: "Nameravam v Kranj oditi, kjer sem vendare dobil samostojno odvetni\u0161ko
+      pisarno."
+    choiceA: Res? Vem za dobro stanovanje; nad kavarno!
+    choiceB: Ah, ne hodi tja. Tam te nobena punca ne pozna.
+    CorrectA: 1
+  - question: "Tam bo dobro zame. In ti? Je tudi tebe uka \u017Eeja od doma odpeljala?"
+    choiceA: "Ne, jaz sem \u0161el s ko\u010Dijo!"
+    choiceB: "Ja, pravnik bom postal kot ti! \u010Ceprav me tudi pesem veseli ..."
+    CorrectA: 0
+  - question: "Pesniti? Ve\u0161, slep je, kdor se s petjem ukvarja. Kranjec moj mu
+      osle ka\u017Ee, njemu vedno sre\u010Da la\u017Ee, on \u017Eivi, umrje brez dnarja."
+    choiceA: Ampak jaz bom uglasbil himno, pa bo!
+    choiceB: "Zakaj pa potem zastonj fige deli\u0161, \u010De nima\u0161 denarja?"
+    CorrectA: 1
+  - question: "Jaz sem jo napisal, pa mi je od takrat \u0161e bolj slabo."
+    choiceA: Slabo od Zdravljice ali nazdravljanja?
+    choiceB: Saj ne bom uglasbil tvoje! Hvala za sladico!
+    CorrectA: 0
+  - question: "Ko bi imel, bi ti dal \u0161e za potico. Kam?"
+    choiceA: NAZAJ!
+    choiceB: NAPREJ!
+    CorrectA: 0
+  presernovText: {fileID: 1721037687}
+  answerA: {fileID: 1595467839}
+  answerB: {fileID: 1088480838}
+  cg: {fileID: 1376391714}
+  levelManager: {fileID: 2123210403}
+--- !u!114 &2123210405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2123210403}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ab154138b19a9e446af2b24777ca3726, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currQuestion:
-    question: 
-    choiceA: 
-    choiceB: 
   treeSet:
   - question: "Fant, bo\u0161 kaj fig?"
     choiceA: "Uau, od Pre\u0161erna figo dobiti - to pa je podvig!"

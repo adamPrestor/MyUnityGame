@@ -31,6 +31,10 @@ public class TypeZdravljica : MonoBehaviour {
 
     bool contin = true;
 
+    private Color c_success = new Color32(124, 255, 6, 255);
+    private Color c_error = new Color32(255, 169, 21, 255);
+    private Color c_default = new Color32(255, 255, 255, 255);
+
 
     // Use this for initialization
     void Start () {
@@ -39,7 +43,7 @@ public class TypeZdravljica : MonoBehaviour {
 
 	}
 
-    bool isStop(int i)
+    bool IsStop(int i)
     {
         for(int j = 0; j<stop.Length; j++)
         {
@@ -57,10 +61,10 @@ public class TypeZdravljica : MonoBehaviour {
         while(i < zdravljicaText.Length && contin)
         {
             Debug.Log(i + " at " + zdravljicaText[i]);
-            if(isStop(i))
+            if(IsStop(i))
             {
                 contin = false;
-                askQuestion();
+                AskQuestion();
             }
             yield return new WaitForSeconds(waitTime);
             textArea.text = zdravljicaText.Substring(0, i+1);
@@ -71,14 +75,15 @@ public class TypeZdravljica : MonoBehaviour {
             Hide_test.StaticLoadNextLevel();
     }
 
-    void askQuestion()
+    void AskQuestion()
     {
         choice1Text.text = choices[stopAt].Choice1;
         choice2Text.text = choices[stopAt].Choice2;
     }
 
-    public void choosen1()
+    public void Choosen1()
     {
+        Debug.Log("Here");
         //ce vprasanje se ni bilo zastavljeno, potem ne more odgovarjati
         if (contin)
             return;
@@ -87,7 +92,7 @@ public class TypeZdravljica : MonoBehaviour {
         bool gotIt = choices[stopAt].truth;
 
         //poklici funkcijo za spremembo barve
-        StartCoroutine(changeColor(choice1, gotIt));
+        StartCoroutine(ChangeColor(choice1, gotIt));
 
         //ob vrnitvi odgovora spustimo izpisovanje naprej
         contin = true;
@@ -96,7 +101,7 @@ public class TypeZdravljica : MonoBehaviour {
         StartCoroutine(Typer());
     }
 
-    public void choosen2()
+    public void Choosen2()
     {
         //ce vprasanje se ni bilo zastavljeno, potem ne more odgovarjati
         if (contin)
@@ -106,7 +111,7 @@ public class TypeZdravljica : MonoBehaviour {
         bool gotIt = !choices[stopAt].truth;
 
         //poklici funkcijo za spremembo barve
-        StartCoroutine(changeColor(choice2, gotIt));
+        StartCoroutine(ChangeColor(choice2, gotIt));
 
         //ob vrnitvi odgovora spustimo izpisovanje naprej
         contin = true;
@@ -115,16 +120,16 @@ public class TypeZdravljica : MonoBehaviour {
         StartCoroutine(Typer());
     }
 
-    IEnumerator changeColor(Button choice, bool gotIt)
+    IEnumerator ChangeColor(Button choice, bool gotIt)
     {
-        if(gotIt)
-            choice.image.color = new Color32(0, 255, 0, 255);
+        if (gotIt)
+            choice.image.color = c_success;
         else
-            choice.image.color = new Color32(255, 0, 0, 255);
+            choice.image.color = c_error;
 
         yield return new WaitForSeconds(0.5f);
 
-        choice.image.color = new Color32(255, 255, 255, 255);
+        choice.image.color = c_default;
 
     }
 

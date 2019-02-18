@@ -329,7 +329,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Kdaj spremeni se klima in odtaja se evropska zima?
+  m_Text: "Kdaj spremeni se klima \nin odtaja se evropska zima?"
 --- !u!222 &846537293
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -621,7 +621,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Kdaj pomladno bomo peli, Kdaj vsi narodi prosto \u017Eiveli?"
+  m_Text: "Kdaj pomladno bomo peli,\nkdaj vsi narodi prosto \u017Eiveli?"
 --- !u!222 &1871005351
 CanvasRenderer:
   m_ObjectHideFlags: 0

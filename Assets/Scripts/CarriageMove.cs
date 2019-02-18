@@ -34,10 +34,16 @@ public class CarriageMove : MonoBehaviour
         if (currentPosition.x == road.Length-1)
         {
             notFinished = false;
-            Hide_test.StaticLoadNextLevel();
+            StartCoroutine(LoadNextLevel());
             return true;
         }
         return false;
+    }
+
+    IEnumerator LoadNextLevel()
+    {
+        yield return new WaitForSeconds(2.0f);
+        Hide_test.StaticLoadNextLevel();
     }
 
     private bool isWithin()

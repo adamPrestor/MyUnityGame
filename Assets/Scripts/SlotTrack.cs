@@ -12,13 +12,15 @@ public class SlotTrack : MonoBehaviour, IPointerClickHandler
     public int index;
     public Image image;
     public GameObject GO;
+    public GameObject help;
 
     // For Track Logic purposes
     public int[] correctRotation = new int[1];
     public bool isImportant = false;
 
-    private Color correct = new Color(0, 180, 0, 150);
-    private Color uncorrect = new Color(180, 0, 0, 150);
+    private Color c_correct = new Color32(124, 211, 6, 150);
+    private Color c_incorrect = new Color32(231, 100, 5, 150);
+    public Color c_neutral = new Color(255, 255, 255, 100);
 
     // Use this for initialization
     void Start()
@@ -52,11 +54,13 @@ public class SlotTrack : MonoBehaviour, IPointerClickHandler
             {
                 if (Rotation == correctRotation[i])
                 {
-                    this.GetComponent<Image>().color = this.correct;
+                    if(help.activeSelf)
+                        this.GetComponent<Image>().color = this.c_correct;
                     return true;
                 }
             }
-            this.GetComponent<Image>().color = this.uncorrect;
+            if(help.activeSelf)
+                this.GetComponent<Image>().color = this.c_incorrect;
             return false;
         }
         return true;

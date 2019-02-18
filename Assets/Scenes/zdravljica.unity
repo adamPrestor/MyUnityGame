@@ -417,7 +417,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 20150760}
-        m_MethodName: choosen2
+        m_MethodName: Choosen2
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -808,7 +808,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 20150760}
-        m_MethodName: choosen1
+        m_MethodName: Choosen1
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -32,6 +32,11 @@ public class ComplexDialogHandler : MonoBehaviour {
 
         }
     }
+
+    public void PrintSomething()
+    {
+        print("Something.");
+    }
 }
 
 [System.Serializable]

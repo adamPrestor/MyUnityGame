@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class PathMaker : MonoBehaviour {
 
-    public QuestionTree currQuestion;
+    private QuestionTree currQuestion;
     public QuestionTree[] treeSet;
 
     public Text presernovText;
