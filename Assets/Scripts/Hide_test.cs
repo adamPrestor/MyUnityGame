@@ -116,6 +116,11 @@ public class Hide_test : MonoBehaviour {
         dialogHandle.retrieveTextMsg("Cankar", msg);
     }
 
+    public void HideAllDialogs()
+    {
+        dialogHandle.hideAllDialogs();
+    }
+
     public void showAndHide(CanvasGroup cg)
     {
         cgg.Hide_All();

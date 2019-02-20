@@ -15,8 +15,10 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
     private bool[] selected;
     public bool[] solution;
 
-    private int maxSize = 250;
+    private int maxSize = 650;
     private int minSize = 50;
+
+    private int positionYInitial = -100;
 
     public void OnPointerClick(PointerEventData eventData)
     {
@@ -30,8 +32,8 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
             slots[i].GetComponent<onClickSlot>().hardReset();
         }
 
-        rights = isRight();
-        resizeIt(rights);
+        rights = IsRight();
+        ResizeIt(rights);
 
         if (rights == solution.Length)
         {
@@ -42,7 +44,7 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
         }
     }
 
-    public int isRight()
+    public int IsRight()
     {
         int result = 0;
         for(int i = 0; i < solution.Length; i++)
@@ -53,11 +55,16 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
         return result;
     }
 
-    public void resizeIt(int rights)
+    public void ResizeIt(int rights)
     {
         int size = minSize + rights * (maxSize / solution.Length);
 
-        flower.GetComponent<RectTransform>().sizeDelta = new Vector2(size, size);
+        RectTransform temp = flower.GetComponent<RectTransform>();
+        temp.sizeDelta = new Vector2(size, size);
+
+        Vector3 position = temp.localPosition;
+        position.y = positionYInitial + size / 2;
+        temp.localPosition = position;
 
     }
 }

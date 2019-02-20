@@ -404,12 +404,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
---- !u!114 &1176733617 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1176733616}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!225 &1176733618 stripped
 CanvasGroup:
   m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -437,19 +431,28 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctAnswers:
-  - talent
+  - 'talent '
   - napevov
-  - srbi
-  - nemci
-  - kraljevino
+  - 'Srbi '
+  - Nemci
+  - 'Kraljevino '
   - kulturo
-  - srbiji
+  - Srbiji
   inField: {fileID: 1833613872}
-  help: {fileID: 1176733617}
+  LetterText: {fileID: 923713074}
   cg: {fileID: 1176733618}
+  answerReplacements:
+  - 't_____ '
+  - n______
+  - 'S__ '
+  - N____
+  - 'K_________ '
+  - k______
+  - S_____
   requestDialog: 1
   JenkoText: "Tujina vabi... Bolje slu\u017Eba v tujini, kot dobra izobrazba v domovini!
     Naprej!"
+  FinalInputTextHolder: Kaj pa slovenski narodni razvoj???
 --- !u!1 &1833613870
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,7 +541,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1176733621}
-        m_MethodName: enterSolution
+        m_MethodName: EnterSolution
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

@@ -10,53 +10,62 @@ public class PianoKey : MonoBehaviour {
     public Image[] keys;
     public AudioClip[] noteSounds;
     public CanvasGroup cg;
+    public GameObject LevelManager;
 
-	public void PlayNote(int offset)
+    private bool finished = false;
+
+    private Color c_correct = new Color32(124, 211, 6, 150);
+    private Color c_incorrect = new Color32(231, 100, 5, 150);
+    private Color c_neutral = new Color(255, 255, 255, 100);
+
+    public void PlayNote(int offset)
     {        
-        clearAllColors();
+        ClearAllColors();
 
-        if (checkIfEnd())
+        if (finished)
+        {
+            GetComponent<AudioSource>().clip = noteSounds[offset];
+            GetComponent<AudioSource>().Play();
             return;
+        }
 
         Color clr;
 
-        if (checkIfCorrect((int) offset))
+        if (CheckIfCorrect(offset))
         {
-            Debug.Log("Right");
-
-            clr = Color.green;
+            clr = c_correct;
             i++;
 
-            checkIfEnd();
+            CheckIfEnd();
 
+            LevelManager.GetComponent<Hide_test>().dialogHandle.hideAllDialogs();
         }
         else
         {
-            Debug.Log("Wrong");
-
-            clr = Color.red;
+            clr = c_incorrect;
             i = 0;
 
+            // Dialog, request to start over
+            LevelManager.GetComponent<Hide_test>().requestDialogJenko("Ta ton mi ni najbolj všeč. Poskusi znova od začetka.");
         }
 
-        colorSelectedKey((int)offset, clr);
-
-        Debug.Log(i);
-
+        ColorSelectedKey(offset, clr);
+        
         GetComponent<AudioSource>().clip = noteSounds[offset];
         GetComponent<AudioSource>().Play();
 
     }
 
-    private bool checkIfCorrect(int offset)
+    private bool CheckIfCorrect(int offset)
     {
         return offset == notes[i];
     }
 
-    private bool checkIfEnd()
+    private bool CheckIfEnd()
     {
         if (i == notes.Length)
         {
+            finished = true;
             Hide_test.show_selected(cg);
             return true;
         }
@@ -65,12 +74,12 @@ public class PianoKey : MonoBehaviour {
         return false;
     }
 
-    private void colorSelectedKey(int index, Color clr)
+    private void ColorSelectedKey(int index, Color clr)
     {
         keys[index].color = clr;
     }
 
-    private void clearAllColors()
+    private void ClearAllColors()
     {
         foreach (Image key in keys)
         {

@@ -927,7 +927,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: Na tem nivoju ne potrebujete dodatnih pomagal.
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -1327,6 +1327,15 @@ Prefab:
     - target: {fileID: 224358498097729870, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224441588905017776, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1511242959530294, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

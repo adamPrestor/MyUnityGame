@@ -8,39 +8,53 @@ public class LetterToSrbia : MonoBehaviour {
 
     public string[] correctAnswers;
     public InputField inField;
-    public Text help;
+    public Text LetterText;
     public CanvasGroup cg;
-    int i = 0;
+    public string[] answerReplacements;
 
     public bool requestDialog;
     public string JenkoText;
+    public string FinalInputTextHolder = "";
+
+    int i = 0;
+
+    private string LetterString;
 
 	// Use this for initialization
 	void Start () {
         inField.Select();
+        LetterString = LetterText.text;
 	}
 
-    public void enterSolution()
+    public void EnterSolution()
     {
         if(i < correctAnswers.Length)
         {
             string temp = inField.text.ToLower();
-            if(temp.Equals(correctAnswers[i]))
+            if(temp.Equals(correctAnswers[i].Trim().ToLower()))
             {
+                LetterString = LetterString.Replace(answerReplacements[i], correctAnswers[i]);
+                LetterText.text = LetterString;
                 i++;
+            }
+
+            if(i < correctAnswers.Length)
+            {
+                inField.text = "";
+                inField.placeholder.GetComponent<Text>().text = "Vnesi besedo na " + (i + 1) + ". mestu.";
+                EventSystem.current.SetSelectedGameObject(inField.gameObject, null);
+                inField.OnPointerClick(new PointerEventData(EventSystem.current));
+            } else
+            {
+                inField.text = string.Empty;
+                inField.placeholder.GetComponent<Text>().text = FinalInputTextHolder;
             }
         }
 
-        help.text = "Vnesi besedo na " + (i+1) + " mestu.";
-        inField.text = "";
-        inField.placeholder.GetComponent<Text>().text = "Vnesi besedo na " + (i + 1) + ". mestu.";
-        EventSystem.current.SetSelectedGameObject(inField.gameObject, null);
-        inField.OnPointerClick(new PointerEventData(EventSystem.current));
-
-        checkIfEnd();
+        CheckIfEnd();
     }
 
-    void checkIfEnd()
+    void CheckIfEnd()
     {
         if(i == correctAnswers.Length)
         {

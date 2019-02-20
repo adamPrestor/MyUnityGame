@@ -925,10 +925,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Bravo! Najbr\u017E bi bil dober vrtnar. Manjka pa \u0161e nekaj: odli\u010Dna
-        pesem, kora\u010Dnica, ki bo Slovencem vlivala pogum!\n\nPrijatelj Simon Jenko
-        je pesnil. Izberi najrpimernej\u0161e besedilo za spodbudno narodno pesem
-        med njegovimi tremi predlogi:"
+      value: "Prijatelj Simon Jenko je pesnil. Izberi najrpimernej\u0161e besedilo
+        za spodbudno narodno pesem med njegovimi tremi predlogi:"
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
