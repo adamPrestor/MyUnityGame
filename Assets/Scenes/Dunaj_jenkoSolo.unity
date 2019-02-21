@@ -120,6 +120,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4732685583070914, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
       propertyPath: m_LocalPosition.x
       value: 184
@@ -151,6 +161,21 @@ Prefab:
     - target: {fileID: 4732685583070914, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: startWithDialog
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogGivers.Array.data[0]
+      value: Jenko
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: dialogTexts.Array.data[0]
+      value: Kako bi ti poskrbel za slovenski narodni razvoj?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -220,10 +245,10 @@ RectTransform:
   m_Father: {fileID: 22589682}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.082460396, y: 0.10700001}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.75927734, y: 0.7601929}
-  m_SizeDelta: {x: 1.5185852, y: -1.5203857}
+  m_AnchorMin: {x: 0.07966902, y: 0.04560417}
+  m_AnchorMax: {x: 0.5, y: 0.44018754}
+  m_AnchoredPosition: {x: 0.24072266, y: -0.5}
+  m_SizeDelta: {x: -0.4814148, y: -2.5203857}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730100113
 MonoBehaviour:
@@ -363,17 +388,17 @@ RectTransform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1434026328}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: -0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 22589682}
-  m_RootOrder: 2
+  m_Father: {fileID: 1836704761}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.33687767, y: 0.55579174}
-  m_AnchorMax: {x: 0.8417914, y: 0.7916251}
-  m_AnchoredPosition: {x: -0.000061035156, y: 0.00012207031}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.11078661, y: 0.38332734}
+  m_AnchorMax: {x: 0.896, y: 0.91416365}
+  m_AnchoredPosition: {x: -1.4298706, y: -0.79833984}
+  m_SizeDelta: {x: 0.44610596, y: -0.69532776}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1836704760
 GameObject:
@@ -401,14 +426,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: -1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1434026331}
   m_Father: {fileID: 22589682}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.27281296, y: 0.3802605}
-  m_AnchorMax: {x: 0.9004821, y: 0.8347917}
-  m_AnchoredPosition: {x: 2.0999756, y: 0.6000366}
-  m_SizeDelta: {x: 10.399933, y: -6.4000244}
+  m_AnchorMin: {x: 0.2727914, y: 0.27439585}
+  m_AnchorMax: {x: 0.91437405, y: 0.72379166}
+  m_AnchoredPosition: {x: 0.19999981, y: 0.41999817}
+  m_SizeDelta: {x: 0.39993286, y: -2.4000244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836704762
 MonoBehaviour:

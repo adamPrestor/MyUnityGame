@@ -25,7 +25,7 @@ public class DialogTextHandler : MonoBehaviour
 
     public Text instructions;
 
-    public void retrieveText(string name)
+    public void RetrieveText(string name)
     {
         string msg = null;
         CanvasGroup cg_tmp = null;
@@ -58,7 +58,7 @@ public class DialogTextHandler : MonoBehaviour
                 return;
         }
                 
-        StartCoroutine(showHide(cg_tmp, txt, msg, 3));
+        showDialog(cg_tmp, txt, msg, true);
         
     }
 

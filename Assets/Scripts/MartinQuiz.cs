@@ -5,64 +5,106 @@ using UnityEngine.UI;
 
 public class MartinQuiz : MonoBehaviour {
 
-    public MartinQuestion temp;
+    private MartinQuestion temp;
     public QuizQuestions[] levels;
     
     int numQuestion = 0;
     int maxQuestion = 3;
 
+    int DifficultyLevel = 0;
+
     public Text questionText;
+
     public CanvasGroup cg;
+    public CanvasGroup KrpanDialogCG;
+    public CanvasGroup PortfolioCG;
 
     public Text textA;
     public Text textB;
     public Text textC;
+    public Text textD;
 
-    public Button buttonA;
-    public Button buttonB;
-    public Button buttonC;
+    public Button[] buttons;
 
-    // Use this for initialization
+    public Image Obstacle;
+    private Vector2 ObstacleDimensions;
+    private Vector3 ObstaclePosition;
+
     void Start () {
-        Random.InitState((int)System.DateTime.Now.Ticks);
-        loadQuestion();
-	}
+        this.GetComponent<Hide_test>().requestDialogJenko("Koliko si star/a?");
+        ObstaclePosition = Obstacle.GetComponent<RectTransform>().localPosition;
+        ObstacleDimensions = Obstacle.GetComponent<RectTransform>().sizeDelta;
+    }
 
+    public void SetDifficulty(int difficulty)
+    {
+        DifficultyLevel = difficulty;
+        this.GetComponent<Hide_test>().HideAllDialogs();
+        LoadQuestion();
+    }
+    
     //potrebujemo novo vprasanje!
-    void loadQuestion()
+    void LoadQuestion()
     {
         if (numQuestion == maxQuestion)
         {
             Hide_test.show_selected(cg);
+            Hide_test.hide_selected(PortfolioCG);
             return;
         }
         
-        temp = levels[numQuestion].questions[Random.Range(0, levels[numQuestion].questions.Length)];
+        temp = levels[DifficultyLevel].questions[numQuestion];
+
         questionText.text = temp.Question;
         textA.text = temp.AnswerA;
         textB.text = temp.AnswerB;
         textC.text = temp.AnswerC;
+        textD.text = temp.AnswerD;
     }
 
-    IEnumerator changeColor(Button choice, bool gotIt)
+    IEnumerator ChangeColor(int choice, bool gotIt)
     {
         if (gotIt)
-            choice.image.color = new Color32(0, 255, 0, 255);
+            buttons[choice].image.color = new Color32(0, 255, 0, 255);
         else
-            choice.image.color = new Color32(255, 0, 0, 255);
+            buttons[choice].image.color = new Color32(255, 0, 0, 255);
 
         yield return new WaitForSeconds(0.5f);
 
-        choice.image.color = new Color32(255, 255, 255, 255);
+        buttons[choice].image.color = new Color32(255, 255, 255, 255);
 
-        //na koncu prestavimo stevec naprej in poklicemo novo vprasanje
-        numQuestion++;
-        loadQuestion();
+        if (gotIt)
+        {
+            //na koncu prestavimo stevec naprej in poklicemo novo vprasanje
+            numQuestion++;
+            LoadQuestion();
+            RemoveObstacle();
+            Hide_test.hide_selected(KrpanDialogCG);
+        }
+        else
+        {
+            Hide_test.show_selected(KrpanDialogCG);
+        }
 
     }
 
-    //izberemo odgovor A
-    public void choosenA()
+    void RemoveObstacle()
+    {
+        float ObstacleHeight = (maxQuestion - numQuestion) * ObstacleDimensions.y / maxQuestion;
+        Vector2 temp_dim = ObstacleDimensions;
+        Vector3 temp_pos = ObstaclePosition;
+        temp_dim.y = ObstacleHeight;
+        temp_pos.y = (ObstacleHeight-ObstacleDimensions.y) / 2;
+        Obstacle.GetComponent<RectTransform>().sizeDelta = temp_dim;
+        Obstacle.GetComponent<RectTransform>().localPosition = temp_pos;
+    }
+
+    //izberemo odgovor
+    // A - 0
+    // B - 1
+    // C - 2
+    // D - 3
+    public void GetAnswer(int answer)
     {
         //preveri, ce si prisel do zadnjega vprasanja!
         if (numQuestion == maxQuestion)
@@ -71,43 +113,10 @@ public class MartinQuiz : MonoBehaviour {
         }
 
         //preverimo ce smo pravilno odgovorili
-        bool gotIt = temp.truth == 0;
+        bool gotIt = (temp.truth == answer);
 
-        StartCoroutine(changeColor(buttonA, gotIt));
-              
+        StartCoroutine(ChangeColor(answer, gotIt));
     }
-
-    //izberemo odgovor B
-    public void choosenB()
-    {
-        //preveri, ce si prisel do zadnjega vprasanja!
-        if (numQuestion == maxQuestion)
-        {
-            return;
-        }
-
-        //preverimo ce smo pravilno odgovorili
-        bool gotIt = temp.truth == 1;
-
-        StartCoroutine(changeColor(buttonB, gotIt));
-
-    }
-
-    //izberemo odgovor C
-    public void choosenC()
-    {
-        //preveri, ce si prisel do zadnjega vprasanja!
-        if (numQuestion == maxQuestion)
-        {
-            return;
-        }
-        //preverimo ce smo pravilno odgovorili
-        bool gotIt = temp.truth == 2;
-
-        StartCoroutine(changeColor(buttonC, gotIt));
-
-    }
-
 }
 
 

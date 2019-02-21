@@ -9,6 +9,7 @@ public class MartinQuestion {
     public string AnswerA;
     public string AnswerB;
     public string AnswerC;
+    public string AnswerD;
     public int truth;
 
 }
