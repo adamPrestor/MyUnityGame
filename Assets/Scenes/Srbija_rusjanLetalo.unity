@@ -349,8 +349,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Pomo\u010D! Brata Wright imata problem Pomagaj bratoma Dwigth ne\u017Eno
-        pristati letalo."
+      value: "Pomo\u010D! Edvard Rusjan ima te\u017Eavo s pristankom. Pomagaj mu s
+        tipko presledek \u010Dim bolj ne\u017Eno pristati letalo.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 224190792889768094, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

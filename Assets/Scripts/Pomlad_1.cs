@@ -20,7 +20,6 @@ public class Pomlad_1 : MonoBehaviour, IHasChanged
 
     public void HasChanged()
     {
-        int count = 0;
         int correct = 0;
 
         foreach (Transform slot in slots)

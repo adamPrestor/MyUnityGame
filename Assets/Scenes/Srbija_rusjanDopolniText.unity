@@ -197,15 +197,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctAnswers:
-  - benz
-  - zemlji
+  - med
+  - Benz
   - traku
   - zraku
   inField: {fileID: 970075566}
-  help: {fileID: 1201771150}
+  LetterText: {fileID: 832109896}
   cg: {fileID: 105011902}
+  answerReplacements:
+  - m__
+  - B__
+  - t____
+  - z____
   requestDialog: 0
   JenkoText: 
+  FinalInputTextHolder: "Sedaj pa \u0161e ti poskusi poleteti!"
 --- !u!1 &538676107
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,19 +456,20 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 714866f9ea27fa44f9a3ab68e044e17a, type: 3}
-    m_FontSize: 14
+    m_FontSize: 13
     m_FontStyle: 0
     m_BestFit: 1
-    m_MinSize: 8
-    m_MaxSize: 23
+    m_MinSize: 1
+    m_MaxSize: 21
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jenko, vem, da je nek Nemec, B___, izumil avto.\r\nPo z____ pelje te kot
-    po teko\u010Dem t____ \u2013\r\nA jaz lahko zapeljem te po z____!"
+  m_Text: "Jenko, vem, da poje\u0161 kot pti\u010De, a jaz pojem m__ pti\u010Dki!\nVem,
+    da je nek Nemec, B__, izumil avto.\nVem, da po zemlji pelje te kot po teko\u010Dem
+    t____ \u2013\nA jaz \u2013 dragi Jenko \u2013 lahko zapeljem te po z____! "
 --- !u!222 &832109897
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -557,7 +564,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 529807373}
-        m_MethodName: enterSolution
+        m_MethodName: EnterSolution
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -614,12 +621,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 970075564}
---- !u!114 &1201771150 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
-    type: 2}
-  m_PrefabInternal: {fileID: 529807370}
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1290017688
 GameObject:
   m_ObjectHideFlags: 0

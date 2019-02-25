@@ -90,7 +90,8 @@ public class CarriageMove : MonoBehaviour
 
         if (move && notFinished)
         {
-            
+            if(!GetComponent<AudioSource>().isPlaying)
+                this.GetComponent<AudioSource>().Play();
             currentPosition += moveTo;
             transform.Translate(moveMade);
             

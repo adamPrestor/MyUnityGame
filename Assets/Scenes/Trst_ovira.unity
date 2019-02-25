@@ -1367,8 +1367,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A, ti si pa tisti Martin, ki tihotapi sol in brez ob\u010Dutka seka lipe
-    zelenele?"
+  m_Text: A, ti si pa tisti Martin, ki tihotapi sol in seka zelene lipe?
 --- !u!222 &2074908441
 CanvasRenderer:
   m_ObjectHideFlags: 0

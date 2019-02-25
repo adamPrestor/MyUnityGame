@@ -440,9 +440,8 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Pelji Martina do Ljubljane. In sicer po rde\u010Di \u010Drti. Glej na
-        cesto, da ga varno pripelje\u0161 v mesto!\n\nS pu\u0161\u010Dicami na tipkovnici
-        usmerjaj ko\u010Dijo, ki pelje Jenka v Ljubljano."
+      value: "Pelji Martina do Ljubljane po rde\u010Di poti.\n\nS pu\u0161\u010Dicami
+        na tipkovnici usmerjaj ko\u010Dijo, ki pelje Jenka v Ljubljano."
       objectReference: {fileID: 0}
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -518,8 +517,6 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: 114a2a77b2f74af4a8f30409b9715653, type: 2}
-  - {fileID: 2100000, guid: 114a2a77b2f74af4a8f30409b9715653, type: 2}
   - {fileID: 2100000, guid: 114a2a77b2f74af4a8f30409b9715653, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -748,6 +745,7 @@ GameObject:
   - component: {fileID: 1206247948}
   - component: {fileID: 1206247947}
   - component: {fileID: 1206247946}
+  - component: {fileID: 1206247950}
   m_Layer: 0
   m_Name: RoadRunner
   m_TagString: Untagged
@@ -862,6 +860,86 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1206247944}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!82 &1206247950
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1206247944}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c29fbb2b3c5805945adcf8aa368000d0, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1406669072
 GameObject:
   m_ObjectHideFlags: 0

@@ -4052,9 +4052,9 @@ Prefab:
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Jenko je v Beogradu pre\u017Eivel kar 45 let. Tu je imel prijatelje,
-        do\u017Eivel je veilo uspehov, spoznal svojo ljubezen. Pomagaj mu pod fotografije,
-        ki jih je tu posnel, izbrati ustrezne podnapise."
+      value: "Jenko je v Beogradu do\u017Eivel veliko uspehov, vodil srbsko narodno
+        gledali\u0161\u010De, spisal srbsko himno, spoznal ljubezen \u2026 Pomagaj
+        mu pod fotografije, ki jih je tu posnel, izbrati ustrezne podnapise.\r"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
