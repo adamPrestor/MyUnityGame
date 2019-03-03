@@ -584,6 +584,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4593711931226086, guid: 6a24d2a401fe56042957d88705fa8866, type: 2}
       propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4950235347179916, guid: 6a24d2a401fe56042957d88705fa8866, type: 2}
+      propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -760,6 +764,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3d27a2bde2c744da8d08624fdfb415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1943055005}
+  Controlled_Camera: {fileID: 1943055005}
   cameraIndex: 2
   cg: {fileID: 377493685}

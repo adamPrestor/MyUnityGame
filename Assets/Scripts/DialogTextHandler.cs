@@ -100,6 +100,44 @@ public class DialogTextHandler : MonoBehaviour
 
     }
 
+    public void RetrieveTextMsgMul(string name, string msg)
+    {
+        CanvasGroup cg_tmp = null;
+        Text txt = null;
+
+        // {0} - playerName
+        msg = string.Format(msg, VariableBase.PlayerName);
+
+        switch (name)
+        {
+            case "Jozef":
+                cg_tmp = jozefDia;
+                txt = jozefText;
+                break;
+            case "Tesla":
+                cg_tmp = teslaDia;
+                txt = teslaText;
+                break;
+            case "Cankar":
+                cg_tmp = cankarDia;
+                txt = cankarText;
+                break;
+            case "Jenko":
+                cg_tmp = jenkoDia;
+                txt = jenkoText;
+                break;
+            case "Instructions":
+                instructions.text = msg;
+                return;
+            default:
+                Debug.Log("Shame");
+                break;
+        }
+
+        showDialog(cg_tmp, txt, msg, false);
+
+    }
+
     public void hideAllDialogs()
     {
         Hide_test.hide_selected(jozefDia);

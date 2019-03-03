@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +11,10 @@ public class FlightSimulator : MonoBehaviour
     private float dropingSpeed = 5.81f;
     public float force = 25.8f;
     public CanvasGroup cg;
+    public GameObject LevelManager;
+    public Button restartButton;
+    public GameObject AfterGame;
+    public GameObject Background;
 
     private Vector3 speed;
     private bool isMoving = true;
@@ -47,15 +52,41 @@ public class FlightSimulator : MonoBehaviour
 
         if(this.transform.position.y < 435)
         {
+            Vector3 tempPos = transform.localPosition;
+            tempPos.y = 0.84f;
+            transform.localPosition = tempPos;
+
             isMoving = false;
             if (speed.y > -4.0f)
-                Hide_test.show_selected(cg);
+            {
+                tempPos = Background.transform.localPosition;
+                tempPos.z = -0.3f;
+                Background.transform.localPosition = tempPos;
+                AfterGame.SetActive(true);
+
+                LevelManager.GetComponent<Hide_test>().requestDialog("Instructions", "Zapelji letalo v kmečko skrinjo. Mogoče ga nekoč razstavijo na brniškem letališču …");
+            }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                LevelManager.GetComponent<Hide_test>().requestDialogJenko("To se je zgodilo tudi Edvardu Rusjanu. Ravno v Beogradu. Ampak, {0} – ti polet lahko ponoviš, on ga ni več mogel …");
+
+                restartButton.gameObject.SetActive(true);
+
             }
 
         }
+    }
+    
+    public void Restart()
+    {
+        Vector3 tempPos = transform.localPosition;
+        tempPos.y = 10;
+        transform.localPosition = tempPos;
+        LevelManager.GetComponent<Hide_test>().HideAllDialogs();
+
+        restartButton.gameObject.SetActive(false);
+
+        isMoving = true;
     }
 
 }

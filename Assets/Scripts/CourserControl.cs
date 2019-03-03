@@ -10,7 +10,7 @@ public class CourserControl : MonoBehaviour
     private bool locked = true;
     private bool pictureTaken = false;
 
-    public GameObject camera;
+    public GameObject Controlled_Camera;
     public int cameraIndex;
     public CanvasGroup cg;
 
@@ -29,7 +29,7 @@ public class CourserControl : MonoBehaviour
                 // proglasimo, da smo zajeli sliko
                 pictureTaken = true;
                 // ustavimo premikanje kamere
-                camera.GetComponent<CameraMoveWithMouse>().move = false;
+                Controlled_Camera.GetComponent<CameraMoveWithMouse>().move = false;
                 // sprostimo cursor
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -37,8 +37,8 @@ public class CourserControl : MonoBehaviour
                 Hide_test.show_selected(cg);
 
                 // zapomnimo si koordinate kamere
-                Vector3 position = camera.transform.position;
-                float cameraSize = camera.GetComponent<Camera>().orthographicSize;
+                Vector3 position = Controlled_Camera.transform.position;
+                float cameraSize = Controlled_Camera.GetComponent<Camera>().orthographicSize;
                 VariableBase.setCameraPosition(cameraIndex, new Vector3(position.x, position.y, cameraSize));
                 
             }
@@ -47,7 +47,7 @@ public class CourserControl : MonoBehaviour
 
     public void takeAnotherPicture()
     {
-        camera.GetComponent<CameraMoveWithMouse>().move = true;
+        Controlled_Camera.GetComponent<CameraMoveWithMouse>().move = true;
         pictureTaken = false;
         Hide_test.hide_selected(cg);
         

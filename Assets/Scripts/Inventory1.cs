@@ -33,7 +33,7 @@ public class Inventory1 : MonoBehaviour, IHasChanged
             try
             {
                 item = slotTransform.GetComponent<Slot>().item;
-            } catch(System.Exception e)
+            } catch (System.Exception)
             {
                 if (slotTransform.name.Equals("Slot (1)"))
                 {
@@ -60,7 +60,7 @@ public class Inventory1 : MonoBehaviour, IHasChanged
             {
                 item = slotTransform.GetComponent<Slot>().item;
             }
-            catch (System.Exception e)
+            catch (System.Exception)
             {
                 if (slotTransform.name.Equals("Slot (2)"))
                 {

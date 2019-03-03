@@ -4,10 +4,19 @@ using UnityEngine;
 
 public class DarwinShipLogic : MonoBehaviour {
 
+    public Animator ship;
+    public double timeZero;
+
 	// Use this for initialization
 	void Start () {
-        this.GetComponent<Hide_test>().loadNextLevelWithDelay(4.0f);
+        ship.SetBool("Drive", true);
+
+        timeZero = Time.time;
     }
-	
-	
+
+    private void Update()
+    {
+        print(Time.time);
+    }
+
 }
