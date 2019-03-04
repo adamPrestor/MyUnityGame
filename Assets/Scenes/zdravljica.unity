@@ -130,7 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waitTime: 0.07
-  stop: 0c00000026000000340000003f0000005d0000006300000086000000
+  stop: 0c00000026000000340000003f0000005e0000006400000087000000
   choices:
   - Choice1: ljudje
     Choice2: narodi
@@ -303,6 +303,27 @@ Prefab:
       value: "Tistega pomladnega leta so tudi Slovenci spoznali, koliko je ura! Ker
         je odpovedala cenzura, so objavili Zdravljico: da oblast in z njo \u010Dast
         spet na\u0161a bosta last!"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a27f4f4adde7d042bc0df80002e1288,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1848"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: POMLAD NARODOV, prva javna objava Zdravljice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

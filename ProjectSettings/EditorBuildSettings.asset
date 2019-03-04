@@ -99,6 +99,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Dunaj_trst.unity
     guid: ab17dbfb1a9124346b3770312cd9cbf8
   - enabled: 1
+    path: Assets/Scenes/Dunaj_fotograf.unity
+    guid: 310736c243580c7478cd895c25cd41fd
+  - enabled: 1
     path: Assets/Scenes/Dunaj_darwinLadja.unity
     guid: 4593c24797d5a07419b704098b64d103
   - enabled: 1
@@ -143,6 +146,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/pojmi_srbija.unity
     guid: 75555e22fbaed40489caed17c056b1ea
+  - enabled: 1
+    path: Assets/Scenes/Srbija_barve.unity
+    guid: ef32a1665df7c8e4d8707c1823dfa39f
   - enabled: 1
     path: Assets/Scenes/Srbija_dimniki.unity
     guid: 436c51fab81aebe47a64a0ebc6d543a8

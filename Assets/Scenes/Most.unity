@@ -454,12 +454,12 @@ Prefab:
     - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -433.7417
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 97.76697
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224476759783366234, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -474,12 +474,12 @@ Prefab:
     - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -433.76666
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 268.9229
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224170223636539656, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -494,12 +494,12 @@ Prefab:
     - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -212.05649
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 121.055435
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224006866911733708, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -529,12 +529,12 @@ Prefab:
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 328
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 237
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224015868550492784, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -550,6 +550,22 @@ Prefab:
         type: 2}
       propertyPath: Age
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 27dfff804d7a18349a7d2d77e88e766e,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1842"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Prvi odhod od doma: ljudska \u0161ola"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

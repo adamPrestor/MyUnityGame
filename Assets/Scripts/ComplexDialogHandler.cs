@@ -17,7 +17,6 @@ public class ComplexDialogHandler : MonoBehaviour {
     {
         for(int k = 0; k<parts.Length;k++)
         {
-            Debug.Log(parts[k].lines);
             for (int i = 0; i < parts[k].lines.Length; i++)
             {
                 parts[k].textArea.text = VariableBase.InsertVariables(parts[k].lines[i]);
@@ -31,11 +30,6 @@ public class ComplexDialogHandler : MonoBehaviour {
             yield return new WaitForSeconds(waitBetween);
 
         }
-    }
-
-    public void PrintSomething()
-    {
-        print("Something.");
     }
 }
 

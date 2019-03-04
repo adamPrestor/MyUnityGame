@@ -358,9 +358,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: '
-
-'
+      value: "Trst, pristani\u0161\u010De za celo avstrijsko monarhijo."
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -391,6 +389,22 @@ Prefab:
         type: 2}
       propertyPath: dialogTexts.Array.data[0]
       value: Bravo, {0}! Hitro Trst poslikaj in fotografije arhiviraj!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 10643d3316c486a42ae12bd88c3c1708,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1858"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -426,7 +440,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3d27a2bde2c744da8d08624fdfb415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 472735115}
+  Controlled_Camera: {fileID: 472735115}
   cameraIndex: 1
   cg: {fileID: 1399877216}
 --- !u!1 &1493631351

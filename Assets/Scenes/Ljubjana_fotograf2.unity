@@ -374,14 +374,14 @@ Prefab:
       propertyPath: move
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114528796234418786, guid: 6a24d2a401fe56042957d88705fa8866,
+        type: 2}
+      propertyPath: move
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6a24d2a401fe56042957d88705fa8866, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &1094698081 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1288484778869708, guid: 6a24d2a401fe56042957d88705fa8866,
-    type: 2}
-  m_PrefabInternal: {fileID: 1094698080}
 --- !u!1 &1390902907
 GameObject:
   m_ObjectHideFlags: 0
@@ -451,6 +451,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1390902907}
+--- !u!1 &1664535495 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1332736549327250, guid: 6a24d2a401fe56042957d88705fa8866,
+    type: 2}
+  m_PrefabInternal: {fileID: 1094698080}
 --- !u!1001 &1753813197
 Prefab:
   m_ObjectHideFlags: 0
@@ -493,9 +498,8 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: '
-
-'
+      value: "Normalka (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
+        mestu s popolnim u\u010Dnim programom)"
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -573,6 +577,22 @@ Prefab:
       propertyPath: m_Text
       value: "Izberi ustrezen pogled in klikni z mi\u0161ko."
       objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 93da3fa01d7dad940b805ff281c5d80e,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1847"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -607,6 +627,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3d27a2bde2c744da8d08624fdfb415, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camera: {fileID: 1094698081}
+  Controlled_Camera: {fileID: 1664535495}
   cameraIndex: 3
   cg: {fileID: 1753813200}
