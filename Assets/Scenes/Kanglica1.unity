@@ -245,7 +245,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: 
+      value: Spodbujanje slovenske narodne zavesti.
       objectReference: {fileID: 0}
     - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -306,6 +306,22 @@ Prefab:
         pravilne in pritisni na kanglico (kanglica se nahaja pod Jenkom).\n\nVe\u010D
         pravilnih si izbral, ve\u010Dji bo zvon\u010Dek.\nVe\u010D nepravilnih si
         izbral, manj\u0161i bo zvon\u010Dek."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5269cf0462c87e4895494eab39811df,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1860"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

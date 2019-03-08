@@ -979,7 +979,7 @@ RectTransform:
   m_Children:
   - {fileID: 2096519945}
   m_Father: {fileID: 1759694390}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1621,30 +1621,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1754909630}
---- !u!1 &1759694389 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1852366761349690, guid: b5dfd0929fb6f9044bbef91f78d1594f,
-    type: 2}
-  m_PrefabInternal: {fileID: 1873753519}
 --- !u!224 &1759694390 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224868388650041624, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 1873753519}
---- !u!114 &1759694392
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1759694389}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15adb8b656f9cdf4381e9399239c6f0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  multipleStorage: 0
-  hide: 0
-  maxCapacity: 1
 --- !u!1 &1796531342
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,58 +1720,74 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: 
+      value: "Za\u010Detek Velike vojne, smrt Davorina Jenka"
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.043
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0.9464152
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 75.77707
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: -297.93536
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: -3
       objectReference: {fileID: 0}
     - target: {fileID: 224634271813023108, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
       value: "Z mi\u0161ko pripelji v Avstrijo top, ga usmeri na Srbijo in pritisni
         na spro\u017Eilec."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 79
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2b67bfb92c2957e44bf55ab0c7ec2310,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1914"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

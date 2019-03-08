@@ -172,6 +172,28 @@ Prefab:
       propertyPath: m_Text
       value: "Mo\u017Enosti:\n\nmed\ntraku\nBenz\nzraku"
       objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "IZUM MOTORNGA LETALA: Brata Wright prva poletita, kmalu jima slovenska
+        brata Rusjan sledita \u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 68
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6bc81b08da91b75419fe2eb2fcde018b,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1903"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

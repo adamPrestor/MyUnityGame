@@ -90,9 +90,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Zeleznica_try.unity
     guid: 7d854a610ae697647a8358d64b9b56b7
   - enabled: 1
-    path: Assets/Scenes/Ime_zeleznice.unity
-    guid: 8dddfdccd06c5454e9246c036093f584
-  - enabled: 1
     path: Assets/Scenes/Dunaj_izbiraPrevoz.unity
     guid: ae224b10ca5f8be41b1eb1659609ee84
   - enabled: 1
@@ -155,12 +152,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Srbija_izumitelji.unity
     guid: dbe72aed896c34c4c97584442e6c000f
-  - enabled: 1
-    path: Assets/Scenes/Srbija_zarnica.unity
-    guid: b5bcd33727ced5f40a4499254dc84279
-  - enabled: 1
-    path: Assets/Scenes/Srbija_radio.unity
-    guid: 40a7ba1895e4a7a4e95b879f91aafc70
   - enabled: 1
     path: Assets/Scenes/Srbija_rusjanDopolniText.unity
     guid: ee5a73b67230c00488534ea7419e3303

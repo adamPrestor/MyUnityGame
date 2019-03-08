@@ -9,7 +9,10 @@ public class LandmarksLogic : MonoBehaviour, IHasChanged {
     public Transform giver;
     public CanvasGroup cg;
     public Text InstructionText;
-    
+    public DialogTextHandler dth;
+    public AudioSource audioSrc;
+    public Text MalhaText;
+
     public Transform[] slots;
     public string[] instructions;
 
@@ -17,16 +20,44 @@ public class LandmarksLogic : MonoBehaviour, IHasChanged {
     private int maxAssignmet = 3;
     private int used = 0;
 
+    public string[] JenkoDialogString;
+    public string[] DialogGiver;
+    public string[] DialogText;
+    public string[] MalhaString;
+
+    private string JenkoString = "Ampak uspehov nisem dosegel samo jaz, v tem času svet dobiva nov obraz:\n" +
+                                 "Politične glave ustanavljajo nove države …";
+
     // Use this for initialization
     void Start () {
         SetInstructions();
+        SetDialogs();
+        SetAudio();
+    }
+
+    void SetAudio()
+    {
+        print((float)(assignment + 1.0f) / (maxAssignmet + 1));
+        audioSrc.volume = (float)(assignment + 1.0f) / (maxAssignmet + 1);
+    }
+
+    void SetDialogs()
+    {
+        if (assignment < JenkoDialogString.Length)
+            JenkoString += '\n' + JenkoDialogString[assignment];
+        dth.retrieveTextMsg("Jenko", JenkoString);
+        if (assignment < DialogGiver.Length)
+            dth.RetrieveTextMsgMul(DialogGiver[assignment], DialogText[assignment]);
     }
 
     void SetInstructions()
     {
         if (assignment < instructions.Length)
             InstructionText.text = instructions[assignment];
+        if (assignment < MalhaString.Length)
+            MalhaText.text = MalhaString[assignment];
     }
+    
 
     public void HasChanged()
     {
@@ -54,6 +85,8 @@ public class LandmarksLogic : MonoBehaviour, IHasChanged {
         {
             assignment++;
             SetInstructions();
+            SetDialogs();
+            SetAudio();
         }
 
         if (assignment >= maxAssignmet)

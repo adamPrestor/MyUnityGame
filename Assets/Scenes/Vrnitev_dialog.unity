@@ -835,6 +835,27 @@ Prefab:
       propertyPath: m_Text
       value: "Mo\u017Enosti:\n\npodil\nutopil\npobil"
       objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 379747dd6d65eb34cad47ea261878c22,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1897"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Mno\u017Ei\u010Dno izseljevanje Slovencev, Jenko se upokoji"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 63
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

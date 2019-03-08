@@ -396,6 +396,12 @@ Prefab:
       propertyPath: Age
       value: 23
       objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Gradnja prve avstrijske \u017Eeleznice od glavnega mesta do glavnega
+        pristani\u0161\u010Da: Dunaj - Trst."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0

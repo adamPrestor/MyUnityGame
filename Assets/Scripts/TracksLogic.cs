@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 public class TracksLogic : MonoBehaviour, IPointerClickHandler {
 
     public CanvasGroup cg;
+    public GameObject go;
 
     private SlotTrack[] slots;
 
@@ -18,7 +19,10 @@ public class TracksLogic : MonoBehaviour, IPointerClickHandler {
     public void IsFinished()
     {
         if (CheckTracks())
+        {
             Hide_test.show_selected(cg);
+            go.GetComponent<Hide_test>().requestDialog("Instructions", "V tem času je Avstrija zgradila svojo prvo železnico - od glavnega pristinišča do glavnega mesta. Poimenovali so jo:");
+        }
         else
             Hide_test.hide_selected(cg);
     }

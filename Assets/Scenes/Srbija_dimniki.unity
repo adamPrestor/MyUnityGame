@@ -1248,6 +1248,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1037837298}
+--- !u!114 &1103572583 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114322832551747658, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1434714062}
+  m_Script: {fileID: 11500000, guid: 6e70e438ce569b64781c32ad915df943, type: 3}
 --- !u!1 &1128863631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1456,6 +1462,9 @@ MonoBehaviour:
   giver: {fileID: 949368682}
   cg: {fileID: 1031566945}
   InstructionText: {fileID: 195864475}
+  dth: {fileID: 1103572583}
+  audioSrc: {fileID: 1350982170}
+  MalhaText: {fileID: 1434714065}
   slots:
   - {fileID: 1969673940}
   - {fileID: 346442130}
@@ -1470,6 +1479,105 @@ MonoBehaviour:
   - "Namesto dreves po zemljevidu Evrope razporedi tovarni\u0161ke dimnike. "
   - "Namesto konjske vprege po Evropi razporedi \u017Eelezni\u0161ke tire. "
   - "Namesto svetlobe, ki jo daje sve\u010Da, po Evropi razporedi daljnovode."
+  JenkoDialogString:
+  - "namesto zelenih dreves tovarne puhajo \u010Drno zmes \u2026"
+  - "nastajajo velika mesta, povezuje jih \u017Eelezna cesta \u2026"
+  - "namesto energije parne gradijo elektrarne \u2026"
+  DialogGiver:
+  - Jozef
+  - Cankar
+  - Tesla
+  DialogText:
+  - "To nam bo prineslo velik napredek, razvoj \u2013 \u017Eal pa tudi tekmovanje
+    in boj!"
+  - "Stroji ne prinesejo manj krivic, poni\u017Eanja, trpljenja \u2013 ne ve\u010D
+    sanj, mladosti, \u017Eivljenja \u2026"
+  - "\u010Ce bi se zloba lahko pretvorila v elektriko, bi bilo energije dovolj za
+    vse!"
+  MalhaString:
+  - Industrializacija zajame Evropo.
+  - "Ljudje se mno\u017Ei\u010Dno selijo v mesta, delat v tovarne. "
+  - 'Druga industrijska revolucija: razvoj poganjata elektrika in nafta.'
+--- !u!82 &1350982170
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1350982163}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 50f053ad484829741a8efadc75cb37f4, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.25
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
 --- !u!1 &1382070065
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,7 +1632,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 971f22ed672d4f242a19ed6544bc75c2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 03f943c142e77534a89d59ab944d4ec5, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -1812,6 +1920,27 @@ Prefab:
       propertyPath: m_LocalPosition.y
       value: 237
       objectReference: {fileID: 0}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1861-1871"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 1d567716ca43d624ebe5c0344437e122,
+        type: 3}
+    - target: {fileID: 81932722391855026, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -1825,6 +1954,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224898280289361018, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 1434714062}
+--- !u!114 &1434714065 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1434714062}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1436389503
 GameObject:
   m_ObjectHideFlags: 0

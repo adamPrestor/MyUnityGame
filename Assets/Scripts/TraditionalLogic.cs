@@ -38,7 +38,7 @@ public class TraditionalLogic : MonoBehaviour, IHasChanged {
         if (correct > 0.0f && !AudioSrc.isPlaying)
             AudioSrc.Play();
         
-        AudioSrc.volume = correct / (float)slots.Length;
+        AudioSrc.volume = correct / slots.Length;
 
         if (correct == slots.Length)
         {

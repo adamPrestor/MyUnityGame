@@ -11,17 +11,31 @@ public class ColoringLogic : MonoBehaviour, IHasChanged {
     public GameObject[] slots;
     public Image map;
     public Sprite[] map_images;
+    public Text AgeText;
+    public DialogTextHandler dth;
 
     public Text InstructionText;
     public string[] instructions;
+    public int[] age;
 
     int flowUsed = 0;
+    private string AgeString = "Starost:\n{0} let";
+
+    private string JenkoString = "Ampak uspehov nisem dosegel samo jaz, v tem času svet dobiva nov obraz:\n" +
+                                 "Politične glave ustanavljajo nove države …";
 
     // Use this for initialization
     void Start () {
         SetActiveSlots();
         SetImage();
         SetInstructions();
+        SetAge();
+        SetDialogs();
+    }
+
+    void SetDialogs()
+    {
+        dth.RetrieveTextMsgMul("Jenko", JenkoString);
     }
 
     void SetActiveSlots()
@@ -44,6 +58,12 @@ public class ColoringLogic : MonoBehaviour, IHasChanged {
     {
         if (flowUsed < instructions.Length)
             InstructionText.text = instructions[flowUsed];
+    }
+
+    void SetAge()
+    {
+        if (flowUsed < age.Length)
+            AgeText.text = string.Format(AgeString, age[flowUsed]);
     }
 
     public void HasChanged()
@@ -82,6 +102,7 @@ public class ColoringLogic : MonoBehaviour, IHasChanged {
             SetImage();
             SetActiveSlots();
             SetInstructions();
+            SetAge();
         }
     }
 }

@@ -177,6 +177,28 @@ Prefab:
       propertyPath: dialogTexts.Array.data[0]
       value: Kako bi ti poskrbel za slovenski narodni razvoj?
       objectReference: {fileID: 0}
+    - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: Age
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e5269cf0462c87e4895494eab39811df,
+        type: 3}
+    - target: {fileID: 114114803669646700, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "\u010CASOVNI TRAK 1860"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Text
+      value: "Charles Darwin izda knjigo o nastanku in razvoju \u017Eivalskih in rastlinskih
+        vrst."
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
@@ -433,7 +455,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.2727914, y: 0.27439585}
   m_AnchorMax: {x: 0.91437405, y: 0.72379166}
-  m_AnchoredPosition: {x: 0.19999981, y: 0.41999817}
+  m_AnchoredPosition: {x: 0.19999695, y: 0.41999817}
   m_SizeDelta: {x: 0.39993286, y: -2.4000244}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1836704762
