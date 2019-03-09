@@ -47,9 +47,6 @@ public class FlightSimulator : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        
-        Debug.Log(this.transform.position);
-
         if(this.transform.position.y < 435)
         {
             Vector3 tempPos = transform.localPosition;

@@ -12,7 +12,6 @@ public class CourserControl : MonoBehaviour
 
     public GameObject Controlled_Camera;
     public int cameraIndex;
-    public CanvasGroup cg;
 
     private void Start()
     {
@@ -33,9 +32,7 @@ public class CourserControl : MonoBehaviour
                 // sprostimo cursor
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
-                // prikazemo gumb za naprej
-                Hide_test.show_selected(cg);
-
+                
                 // zapomnimo si koordinate kamere
                 Vector3 position = Controlled_Camera.transform.position;
                 float cameraSize = Controlled_Camera.GetComponent<Camera>().orthographicSize;
@@ -49,7 +46,6 @@ public class CourserControl : MonoBehaviour
     {
         Controlled_Camera.GetComponent<CameraMoveWithMouse>().move = true;
         pictureTaken = false;
-        Hide_test.hide_selected(cg);
         
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;

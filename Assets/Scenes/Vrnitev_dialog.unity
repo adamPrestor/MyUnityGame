@@ -290,11 +290,25 @@ MonoBehaviour:
   - pobil
   inField: {fileID: 1866470707}
   LetterText: {fileID: 140800047}
+  cankarDial: {fileID: 2006464130}
+  jozefDial: {fileID: 2006464132}
+  teslaDial: {fileID: 2006464131}
   cg: {fileID: 1591406953}
   answerReplacements:
   - p_____
   - u_____
   - p____
+  dialogs:
+  - Jozef: polovil
+    Tesla: povabil
+    Cankar: podil
+  - Jozef: uzakonil
+    Tesla: utopil
+    Cankar: ulovil
+  - Jozef: pobil
+    Tesla: pomil
+    Cankar: popraskal
+  animator: {fileID: 2006464134}
   requestDialog: 0
   JenkoText: 
   FinalInputTextHolder: "A Slovenci smo ostali kremeniti \u2026"
@@ -859,3 +873,43 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &2006464130 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114174937659711046, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2006464129}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &2006464131 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114299879258507854, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2006464129}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &2006464132 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114227735828799832, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2006464129}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!1 &2006464133 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1086615378500116, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 2006464129}
+--- !u!95 &2006464134
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2006464133}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdb19c13819de3d4c9f95532156c7611, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1

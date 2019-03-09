@@ -113,6 +113,18 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &160530073 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114227735828799832, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1176733616}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &309540098 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114174937659711046, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1176733616}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &735572678
 GameObject:
   m_ObjectHideFlags: 0
@@ -422,9 +434,29 @@ Prefab:
       propertyPath: m_Text
       value: "Vabilo za pevovodjo in u\u010Ditelja v Pan\u010Devu, v Srbiji."
       objectReference: {fileID: 0}
+    - target: {fileID: 225892332172788356, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225614956046588994, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 225081791729584376, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_Alpha
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1176733617 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1086615378500116, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1176733616}
 --- !u!225 &1176733618 stripped
 CanvasGroup:
   m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -461,6 +493,9 @@ MonoBehaviour:
   - Srbiji
   inField: {fileID: 1833613872}
   LetterText: {fileID: 923713074}
+  cankarDial: {fileID: 309540098}
+  jozefDial: {fileID: 160530073}
+  teslaDial: {fileID: 1542638600}
   cg: {fileID: 1176733618}
   answerReplacements:
   - 't_____ '
@@ -470,10 +505,56 @@ MonoBehaviour:
   - 'K_________ '
   - k______
   - S_____
+  dialogs:
+  - Jozef: Teror
+    Tesla: transformator
+    Cankar: talent
+  - Jozef: "Nesre\u010D"
+    Tesla: Napetosti
+    Cankar: Napevov
+  - Jozef: "\u010Cehi"
+    Tesla: Srbi
+    Cankar: Hrvati
+  - Jozef: Nemci
+    Tesla: Daljnovodom
+    Cankar: Lastnim znanjem
+  - Jozef: Kraljevino
+    Tesla: Veliko
+    Cankar: Republiko
+  - Jozef: Ustavo
+    Tesla: Elektriko
+    Cankar: Kulturo
+  - Jozef: Srbiji
+    Tesla: Srbiji
+    Cankar: Srbiji
+  animator: {fileID: 1176733622}
   requestDialog: 1
   JenkoText: "Tujina vabi... Bolje slu\u017Eba v tujini, kot dobra izobrazba v domovini!
     Naprej!"
   FinalInputTextHolder: Kaj pa slovenski narodni razvoj???
+--- !u!95 &1176733622
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1176733617}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: fdb19c13819de3d4c9f95532156c7611, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1542638600 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114299879258507854, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1176733616}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1833613870
 GameObject:
   m_ObjectHideFlags: 0
