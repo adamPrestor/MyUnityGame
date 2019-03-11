@@ -72,7 +72,10 @@ public class TypeZdravljica : MonoBehaviour {
         }
 
         if (i == zdravljicaText.Length)
+        {
+            yield return new WaitForSeconds(2.0f);
             Hide_test.StaticLoadNextLevel();
+        }
     }
 
     void AskQuestion()

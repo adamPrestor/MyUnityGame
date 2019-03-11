@@ -25,7 +25,8 @@ public class LetterToSrbia : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        SetDialogs();
+        if (animator != null)
+            SetDialogs();
         inField.Select();
         LetterString = LetterText.text;
     }
@@ -56,7 +57,8 @@ public class LetterToSrbia : MonoBehaviour {
                 inField.OnPointerClick(new PointerEventData(EventSystem.current));          
             } else
             {
-                animator.SetBool("help", false);
+                if(animator != null)
+                    animator.SetBool("help", false);
                 inField.text = string.Empty;
                 inField.placeholder.GetComponent<Text>().text = FinalInputTextHolder;
             }
