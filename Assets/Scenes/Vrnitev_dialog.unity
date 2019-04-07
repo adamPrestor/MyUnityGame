@@ -223,7 +223,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Pre\u0161eren je sovra\u017Enike z gromom p_____, Gregor\u010Di\u010D bi
-    jih najraje v So\u010Di u_____. Moj prijatelj Jenko jih s pu\u0161ko p____! A
+    jih najraje v So\u010Di u_____, moj prijatelj Jenko jih s pu\u0161ko p____! A
     ljudje zdaj sami hodijo iskat kruh in svobodo ... tja dale\u010D \u010Dez veliko
     vodo ..."
 --- !u!222 &140800048
@@ -863,7 +863,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Mno\u017Ei\u010Dno izseljevanje Slovencev, Jenko se upokoji"
+      value: "MNO\u017DI\u010CNO IZSELJEVANJE SLOVENCEV, Jenko se upokoji "
       objectReference: {fileID: 0}
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

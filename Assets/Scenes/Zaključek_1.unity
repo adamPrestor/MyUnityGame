@@ -450,7 +450,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: e274362005d1ec642beed55b2b87c38d, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -519,7 +519,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_Sprite: {fileID: 21300000, guid: e274362005d1ec642beed55b2b87c38d, type: 3}
   m_Type: 0
-  m_PreserveAspect: 1
+  m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -913,7 +913,7 @@ MonoBehaviour:
   - lines:
     - Dve domovini sem ljubil, vojni vihar obe bo pogubil? Ah, jaz sem se utrudil.
     waitTime:
-    - 5
+    - 7
     textArea: {fileID: 1223204075}
     cgAfter: {fileID: 920242778}
     cgBefore: {fileID: 1631346573}
@@ -921,7 +921,7 @@ MonoBehaviour:
   - lines:
     - 'Dragi/a {0}, zdaj si na vrsti ti, in zapomni si: vedno NAPREJ!'
     waitTime:
-    - 5
+    - 7
     textArea: {fileID: 2138060791}
     cgAfter: {fileID: 1744021950}
     cgBefore: {fileID: 920242778}
@@ -931,12 +931,12 @@ MonoBehaviour:
       se iz njih - tudi s pomo\u010Djo ra\u010Dunalni\u0161ke igre DAVORIN JENKO SPOZNAVA
       SVET!"
     waitTime:
-    - 6
+    - 9
     textArea: {fileID: 872887171}
     cgAfter: {fileID: 0}
     cgBefore: {fileID: 0}
     hideAfter: 0
-  waitBetween: 0
+  waitBetween: 2
 --- !u!1 &1691627840
 GameObject:
   m_ObjectHideFlags: 0

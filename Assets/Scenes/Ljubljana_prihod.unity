@@ -147,7 +147,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlled_Camera: {fileID: 1114190430}
+  hide_Test: {fileID: 493166360}
   cameraIndex: 0
+  beforeClick: "Bravo, ko\u010Dija\u017E! Sedaj pa spet fotografiraj in sliko arhiviraj."
+  afterClick: "Bravo, ko\u010Dija\u017E! Sedaj pa spet fotografiraj in sliko arhiviraj."
 --- !u!1 &358041613
 GameObject:
   m_ObjectHideFlags: 0
@@ -259,7 +262,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Normalka (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
+      value: "NORMALKA (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
         mestu s popolnim u\u010Dnim programom)"
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -316,6 +319,12 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224898280289361018, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 493166357}
+--- !u!114 &493166360 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 493166357}
+  m_Script: {fileID: 11500000, guid: d30c193e42d8f93428db1c1e87cef3ab, type: 3}
 --- !u!224 &536637709 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224947444517552042, guid: b5dfd0929fb6f9044bbef91f78d1594f,

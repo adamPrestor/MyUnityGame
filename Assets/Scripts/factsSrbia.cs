@@ -32,7 +32,7 @@ public class factsSrbia : MonoBehaviour {
         }
 
         Hide_test.show_selected(cg);
-        GameObject.Find("LevelManager").GetComponent<Hide_test>().requestDialogJenko("Ampak uspehov nisem, dosegel samo jaz, v tem času svet dobiva nov obraz!");
+        GameObject.Find("LevelManager").GetComponent<Hide_test>().requestDialogJenko("Ampak uspehov nisem dosegel samo jaz, v tem času svet dobiva nov obraz!");
 
     }
 	

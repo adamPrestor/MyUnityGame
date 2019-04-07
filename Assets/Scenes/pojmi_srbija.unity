@@ -1153,14 +1153,14 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Moja ljubezen, igralka srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
     - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
-        izobera\u017Eevanje."
+        izobra\u017Eevanje."
       m_Image: {fileID: 0}
     - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
         Beogradu."
@@ -2047,14 +2047,14 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Moja ljubezen, igralka srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
     - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
-        izobera\u017Eevanje."
+        izobra\u017Eevanje."
       m_Image: {fileID: 0}
     - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
         Beogradu."
@@ -2699,14 +2699,14 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Moja ljubezen, igralka srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
     - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
-        izobera\u017Eevanje."
+        izobra\u017Eevanje."
       m_Image: {fileID: 0}
     - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
         Beogradu."
@@ -3447,14 +3447,14 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Moja ljubezen, igralka srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
     - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
-        izobera\u017Eevanje."
+        izobra\u017Eevanje."
       m_Image: {fileID: 0}
     - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
         Beogradu."
@@ -4075,7 +4075,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Jenkovo delo v Srbiji, kjer je pre\u017Eivel plodnih 35 let."
+      value: "JENKOVO DELO V SRBIJI, kjer je pre\u017Eivel plodnih 35 let."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
@@ -4635,14 +4635,14 @@ MonoBehaviour:
     m_Options:
     - m_Text: 
       m_Image: {fileID: 0}
-    - m_Text: "Moja ljubezen, igralska srbskega narodnega gledali\u0161\u010Da."
+    - m_Text: "Moja ljubezen, igralka srbskega narodnega gledali\u0161\u010Da."
       m_Image: {fileID: 0}
     - m_Text: "Znamka, ki mi jo bodo hvale\u017Eni Srbi posvetili \u010Dez mnoga leta."
       m_Image: {fileID: 0}
     - m_Text: "Srbska himna, ki sem jo zlo\u017Eil tukaj."
       m_Image: {fileID: 0}
     - m_Text: "Praga, glavno mesto \u010Ce\u0161ke, kamor sem sko\u010Dil na enoletno
-        izobera\u017Eevanje."
+        izobra\u017Eevanje."
       m_Image: {fileID: 0}
     - m_Text: "Moji prijatelji, igralci srbskega narodnega gledali\u0161\u010Da v
         Beogradu."

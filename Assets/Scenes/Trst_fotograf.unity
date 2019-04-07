@@ -387,7 +387,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Trst, pristani\u0161\u010De za celo avstrijsko monarhijo."
+      value: "TRST, pristani\u0161\u010De za celo avstrijsko monarhijo."
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -470,7 +470,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlled_Camera: {fileID: 472735115}
+  hide_Test: {fileID: 1399877221}
   cameraIndex: 1
+  beforeClick: Bravo! Hitro Trst poslikaj in fotografije arhiviraj!
+  afterClick: Bravo! Hitro Trst poslikaj in fotografije arhiviraj!
 --- !u!114 &1399877220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +486,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cg: {fileID: 1399877216}
+--- !u!114 &1399877221 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1399877214}
+  m_Script: {fileID: 11500000, guid: d30c193e42d8f93428db1c1e87cef3ab, type: 3}
 --- !u!1 &1493631351
 GameObject:
   m_ObjectHideFlags: 0

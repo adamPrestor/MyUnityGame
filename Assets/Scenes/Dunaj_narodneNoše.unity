@@ -611,8 +611,8 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Jenko uglasbi svojo najbolj znano pesem Naprej zastava Slave, prvo slovensko
-        narodno himno.\r"
+      value: "\rJENKO UGLASBI SVOJO NAJBOLJ ZNANO PESEM: Naprej zastave Slave, prvo
+        slovensko narodno himno.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

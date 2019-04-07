@@ -26,7 +26,7 @@ public class ColoringLogic : MonoBehaviour, IHasChanged {
 
     // Use this for initialization
     void Start () {
-        SetActiveSlots();
+        //SetActiveSlots();
         SetImage();
         SetInstructions();
         SetAge();
@@ -42,9 +42,7 @@ public class ColoringLogic : MonoBehaviour, IHasChanged {
     {
         for (int i = 0; i < slots.Length; i++)
         {
-            if (i == flowUsed)
-                slots[i].SetActive(true);
-            else
+            if (i == flowUsed-1)
                 slots[i].SetActive(false);
         }
     }

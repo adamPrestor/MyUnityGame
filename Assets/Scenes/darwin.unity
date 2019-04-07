@@ -453,6 +453,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passedParent: {fileID: 0}
+  foster: {fileID: 0}
 --- !u!1 &629566598
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +548,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passedParent: {fileID: 0}
+  foster: {fileID: 0}
 --- !u!1 &809695734
 GameObject:
   m_ObjectHideFlags: 0
@@ -641,6 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passedParent: {fileID: 0}
+  foster: {fileID: 0}
 --- !u!1 &894159298
 GameObject:
   m_ObjectHideFlags: 0
@@ -1591,6 +1594,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   passedParent: {fileID: 0}
+  foster: {fileID: 0}
 --- !u!225 &1772711123
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1695,7 +1699,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Charles Darwin izda knjigo o nastanku in razvoju \u017Eivalskih in rastlinskih
+      value: "CHARLES DARWIN izda knjigo o nastanku in razvoju \u017Eivalskih in rastlinskih
         vrst."
       objectReference: {fileID: 0}
     m_RemovedComponents: []

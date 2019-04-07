@@ -18,7 +18,7 @@ public class Hide_test : MonoBehaviour {
     public string[] dialogTexts;
     public int Age;
 
-    private string AgeString = "Starost:\n{0} let";
+    private string AgeString = "Starost:\n{0} let\n";
 
     // Use this for initialization
     void Start()

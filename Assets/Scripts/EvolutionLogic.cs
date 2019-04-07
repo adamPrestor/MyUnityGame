@@ -25,7 +25,7 @@ public class EvolutionLogic : MonoBehaviour, IHasChanged
             temp = slot.GetChild(0);
             if (temp.name != slot.name)
             {
-                Debug.Log("Failed at " + slot.name + "with picture " + temp.name);
+                Debug.Log("Failed at " + slot.name + " with picture " + temp.name);
                 return false;
             }
         }

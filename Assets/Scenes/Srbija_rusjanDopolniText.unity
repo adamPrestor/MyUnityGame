@@ -225,12 +225,17 @@ MonoBehaviour:
   - zraku
   inField: {fileID: 970075566}
   LetterText: {fileID: 832109896}
+  cankarDial: {fileID: 0}
+  jozefDial: {fileID: 0}
+  teslaDial: {fileID: 0}
   cg: {fileID: 105011902}
   answerReplacements:
   - m__
   - B__
   - t____
   - z____
+  dialogs: []
+  animator: {fileID: 0}
   requestDialog: 0
   JenkoText: 
   FinalInputTextHolder: "Sedaj pa \u0161e ti poskusi poleteti!"
@@ -577,7 +582,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Jenko, vem, da poje\u0161 kot pti\u010De, a jaz pojem m__ pti\u010Dki!\nVem,
+  m_Text: "Jenko, vem, da poje\u0161 kot pti\u010Dek, a jaz pojem m__ pti\u010Dki!\nVem,
     da je nek Nemec, B__, izumil avto.\nVem, da po zemlji pelje te kot po teko\u010Dem
     t____ \u2013\nA jaz \u2013 dragi Jenko \u2013 lahko zapeljem te po z____! "
 --- !u!222 &832109897
