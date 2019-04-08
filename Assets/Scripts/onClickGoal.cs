@@ -10,13 +10,14 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
 
     public CanvasGroup cg;
     public GameObject[] slots;
+    public Transform[] dropplets;
     public GameObject flower;
 
     private bool[] selected;
-    public bool[] solution;
+    public int[] solution;
 
     private int maxSize = 650;
-    private int minSize = 50;
+    private int minSize = 100;
 
     private int positionYInitial = -100;
 
@@ -25,39 +26,62 @@ public class onClickGoal : MonoBehaviour, IPointerClickHandler
         int rights = 0;
 
         selected = new bool[solution.Length];
-
-        for(int i = 0; i<solution.Length; i++)
+        foreach(Transform child in transform)
         {
-            selected[i] = slots[i].GetComponent<onClickSlot>().isSelected;
-            slots[i].GetComponent<onClickSlot>().hardReset();
+            int k = -1;
+            int.TryParse(child.name.ToString(), out k);
+
+            print(k);
+
+            if (IsRight(k))
+                rights++;
+            else
+                rights--;
+                
+
         }
 
-        rights = IsRight();
+        print(rights);
+        
         ResizeIt(rights);
 
         if (rights == solution.Length)
         {
+            // success
             Hide_test.show_selected(cg);
         } else
         {
+            // restart
+            RestartGame();
             Hide_test.hide_selected(cg);
         }
     }
 
-    public int IsRight()
+    public bool IsRight(int k)
     {
-        int result = 0;
         for(int i = 0; i < solution.Length; i++)
         {
-            if (solution[i] == selected[i])
-                result++;
+            if (solution[i] == k)
+                return true;
         }
-        return result;
+        return false;
+    }
+
+    public void RestartGame()
+    {
+        for(int i = 0; i<slots.Length; i++)
+        {
+            Hide_test.show_selected(dropplets[i].GetComponent<CanvasGroup>());
+            dropplets[i].SetParent(slots[i].transform);
+        }
     }
 
     public void ResizeIt(int rights)
     {
-        int size = minSize + rights * (maxSize / solution.Length);
+        int size = minSize + (rights + slots.Length - solution.Length) * (maxSize / slots.Length);
+
+        print(size);
+        print((maxSize / solution.Length));
 
         RectTransform temp = flower.GetComponent<RectTransform>();
         temp.sizeDelta = new Vector2(size, size);

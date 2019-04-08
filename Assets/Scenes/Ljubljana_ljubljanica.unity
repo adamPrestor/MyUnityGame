@@ -249,7 +249,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Normalka (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
+      value: "NORMALKA (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
         mestu s popolnim u\u010Dnim programom)"
       objectReference: {fileID: 0}
     - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,

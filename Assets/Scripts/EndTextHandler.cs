@@ -14,7 +14,7 @@ public class EndTextHandler : MonoBehaviour {
     IEnumerator EndGame()
     {
 
-        yield return new WaitForSeconds(16.0f);
+        yield return new WaitForSeconds(28.0f);
         
         SceneManager.LoadScene(0);
         

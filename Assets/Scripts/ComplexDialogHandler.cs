@@ -23,11 +23,11 @@ public class ComplexDialogHandler : MonoBehaviour {
                 yield return new WaitForSeconds(parts[k].waitTime[i]);
             }
 
+            yield return new WaitForSeconds(waitBetween);
+
             if (parts[k].hideAfter)
                 Hide_test.hide_selected(parts[k].cgBefore);
             Hide_test.show_selected(parts[k].cgAfter);
-
-            yield return new WaitForSeconds(waitBetween);
 
         }
     }

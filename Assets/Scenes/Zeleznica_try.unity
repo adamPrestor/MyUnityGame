@@ -2629,7 +2629,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Gradnja prve avstrijske \u017Eeleznice od glavnega mesta do glavnega
+      value: "GRADNJA PRVE AVSTRIJSKE \u017DELEZNICE od glavnega mesta do glavnega
         pristani\u0161\u010Da: Dunaj - Trst."
       objectReference: {fileID: 0}
     - target: {fileID: 224692916204025182, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -3910,7 +3910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Kako bo moja kobilica s tekmovala s tem puhajo\u010Dim kupom \u017Eeleza?
+  m_Text: "Kako bo moja kobilica tekmovala s tem puhajo\u010Dim kupom \u017Eeleza?
     \ Jaz re\u0161il Dunaj, Dunaj bo pa moj biznis uni\u010Dil \u2026\r"
 --- !u!222 &1451504081
 CanvasRenderer:

@@ -21,8 +21,7 @@ public class LevelManager : MonoBehaviour {
     {
         VariableBase.resetLevelNumber();
         show_selected(text);
-        yield return new WaitForSeconds(2.0f);
-        hide_selected(text);
+        yield return new WaitForSeconds(4.0f);
         SceneManager.LoadScene(VariableBase.LevelNumber);
     }
 

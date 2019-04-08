@@ -169,7 +169,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Prvi odhod od doma: ljudska \u0161ola"
+      value: "PRVI ODHOD OD DOMA: ljudska \u0161ola"
       objectReference: {fileID: 0}
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -486,6 +486,12 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &838266729 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 335621567}
+  m_Script: {fileID: 11500000, guid: d30c193e42d8f93428db1c1e87cef3ab, type: 3}
 --- !u!1 &937186501
 GameObject:
   m_ObjectHideFlags: 0
@@ -900,4 +906,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlled_Camera: {fileID: 1943055005}
+  hide_Test: {fileID: 838266729}
   cameraIndex: 2
+  beforeClick: "Pred teboj je Kranj v 19. stoletju. Gleda\u0161 ga skozi fotografski
+    objektiv: poi\u0161\u010Di \u010Dim lep\u0161i motiv in klikni za tvojo prvo fotografijo."
+  afterClick: "Martin bi shrani sliko za spomin. Z mi\u0161ko povleci fotografijo
+    v kme\u010Dko skrinjo, potem pritisni tipko Naprej. "

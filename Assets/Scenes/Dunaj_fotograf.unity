@@ -412,7 +412,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Dunaj: Jenko bo tu \u0161tudiral pravo."
+      value: "DUNAJ: Jenko bo tu \u0161tudiral pravo."
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -432,7 +432,7 @@ Prefab:
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: dialogTexts.Array.data[0]
-      value: "Uau, koliko ljudi, trgovin, deklet - tuakj bo te\u017Eko trezno glavo
+      value: "Uau, koliko ljudi, trgovin, deklet - tukaj bo te\u017Eko trezno glavo
         imet!"
       objectReference: {fileID: 0}
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -486,7 +486,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlled_Camera: {fileID: 1769964587}
+  hide_Test: {fileID: 1658006306}
   cameraIndex: 4
+  beforeClick: Hitro velemesto fotografiraj in sliko arhiviraj!
+  afterClick: Hitro velemesto fotografiraj in sliko arhiviraj!
 --- !u!224 &1658006304 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224947444517552042, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -504,6 +507,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cg: {fileID: 1658006300}
+--- !u!114 &1658006306 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1658006298}
+  m_Script: {fileID: 11500000, guid: d30c193e42d8f93428db1c1e87cef3ab, type: 3}
 --- !u!1001 &1769964586
 Prefab:
   m_ObjectHideFlags: 0

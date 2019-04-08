@@ -1136,13 +1136,13 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "V tem \u010Dasu, so se ljudje mno\u017Ei\u010Dno podajali \u010Dez Atlantik
-        v Ameriko iskat kruha. Postavi 3 pare narodnih no\u0161 na ladjo, da jih popelje
+        v Ameriko iskat kruh. Postavi 3 pare narodnih no\u0161 na ladjo, da jih popelje
         v de\u017Eelo prilo\u017Enosti."
       objectReference: {fileID: 0}
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Mno\u017Ei\u010Dno izseljevanje Slovencev, Jenko se upokoji."
+      value: "MNO\u017DI\u010CNO IZSELJEVANJE SLOVENCEV, Jenko se upokoji "
       objectReference: {fileID: 0}
     - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

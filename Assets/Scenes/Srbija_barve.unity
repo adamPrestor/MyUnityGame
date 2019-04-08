@@ -645,13 +645,13 @@ Prefab:
         type: 2}
       propertyPath: dialogTexts.Array.data[0]
       value: "Politika ne po\u010Diva! V tem \u010Dasu z zdru\u017Eitvijo manj\u0161ih
-        dr\u017Eavic nastaneta dve mo\u010Dni Evropski dr\u017Eavi, iz moje Avstrije
+        dr\u017Eavic nastaneta dve mo\u010Dni evropski dr\u017Eavi, iz moje Avstrije
         pa nastane Avstro-Ogrska."
       objectReference: {fileID: 0}
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Narodna gibanja so uspe\u0161na: nastajajo nove dr\u017Eave.\r"
+      value: "NARODNA GIBANJA SO USPE\u0160NA: nastajajo nove dr\u017Eave.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}

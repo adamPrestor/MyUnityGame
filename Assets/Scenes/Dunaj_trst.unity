@@ -602,7 +602,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Gradnja prve avstrijske \u017Eeleznice od glavnega mesta do glavnega
+      value: "GRADNJA PRVE AVSTRIJSKE \u017DELEZNICE od glavnega mesta do glavnega
         pristani\u0161\u010Da: Dunaj - Trst."
       objectReference: {fileID: 0}
     - target: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,

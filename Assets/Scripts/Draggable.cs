@@ -8,11 +8,15 @@ public class Draggable : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
 {
 
     public Transform passedParent = null;
+    public Transform foster = null;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         passedParent = this.transform.parent;
-        this.transform.SetParent( this.transform.parent.parent );
+        if (!foster)
+            this.transform.SetParent(this.transform.parent.parent);
+        else
+            this.transform.SetParent(foster);
 
         this.GetComponent<CanvasGroup>().blocksRaycasts = false;
     }

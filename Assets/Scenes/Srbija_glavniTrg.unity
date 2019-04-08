@@ -182,7 +182,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Jenkovo delo v Srbiji, kjer je pre\u017Eivel plodnih 35 let. "
+      value: "JENKOVO DELO V SRBIJI, kjer je pre\u017Eivel plodnih 35 let. "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

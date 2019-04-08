@@ -656,8 +656,8 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Jenko uglasbi svojo najbolj znano pesem Naprej zastava Slave, prvo slovensko
-        narodno himno.\r"
+      value: "\rJENKO UGLASBI SVOJO NAJBOLJ ZNANO PESEM: Naprej zastave Slave, prvo
+        slovensko narodno himno.\r"
       objectReference: {fileID: 0}
     - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -669,6 +669,16 @@ Prefab:
         type: 2}
       propertyPath: m_Text
       value: "\u010CASOVNI TRAK 1860"
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

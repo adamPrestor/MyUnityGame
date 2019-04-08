@@ -1123,9 +1123,8 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Fran Levstik bo kmalu izdal prvo slovensko umetni\u0161ko pripovedko,
-        uspe\u0161nico Martin Krpan z Vrha, Jenko pa v Trstu obiskoval vi\u0161jo
-        gimnazijo."
+      value: "FRAN LEVSTIK BO KMALU IZDAL PRVO SLOVENSKO UMETNO PRIPOVEDKO, uspe\u0161nico
+        Martin Krpan z Vrha, Jenko pa v Trstu obiskoval vi\u0161jo gimnazijo."
       objectReference: {fileID: 0}
     - target: {fileID: 114292947740514426, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -1142,6 +1141,16 @@ Prefab:
         type: 2}
       propertyPath: Age
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+        type: 2}
+      propertyPath: m_FontData.m_MinSize
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}

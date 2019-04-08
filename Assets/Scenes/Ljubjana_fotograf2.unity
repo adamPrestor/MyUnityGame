@@ -605,24 +605,25 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Normalka (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
+      value: "NORMALKA (v stari Avstriji osnovna \u0161ola v glavnem de\u017Eelnem
         mestu s popolnim u\u010Dnim programom)"
       objectReference: {fileID: 0}
     - target: {fileID: 114649324172696494, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
       value: "Pred teboj je kongresni trg. S klikom na mi\u0161ko naredi fotografijo.\n\n\u010Ce
-        ti slika ne bo v\u0161e\u010D brez skrbi! S klikom na fotograf jo lahko popravi\u0161."
+        ti slika ne bo v\u0161e\u010D brez skrbi! S klikom na fotoaparat jo lahko
+        popravi\u0161."
       objectReference: {fileID: 0}
     - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -262.19403
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 304.68246
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224805426191135762, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -637,12 +638,12 @@ Prefab:
     - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: 206.52405
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 256.01068
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224995287859823636, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -652,12 +653,12 @@ Prefab:
     - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.x
-      value: -261.90906
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_LocalPosition.y
-      value: 146.18228
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224521777414390442, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
@@ -735,7 +736,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controlled_Camera: {fileID: 1664535495}
+  hide_Test: {fileID: 1753813205}
   cameraIndex: 3
+  beforeClick: "Pred teboj je kongresni trg. S klikom na mi\u0161ko naredi fotografijo.
+    \ \u010Ce ti slika ne bo v\u0161e\u010D brez skrbi! S klikom na fotoaparat jo
+    lahko popravi\u0161."
+  afterClick: "Pred teboj je kongresni trg. S klikom na mi\u0161ko naredi fotografijo.
+    \ \u010Ce ti slika ne bo v\u0161e\u010D brez skrbi! S klikom na fotoaparat jo
+    lahko popravi\u0161."
 --- !u!114 &1753813203
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -753,3 +761,9 @@ RectTransform:
   m_PrefabParentObject: {fileID: 224947444517552042, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 1753813197}
+--- !u!114 &1753813205 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114270371989281216, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1753813197}
+  m_Script: {fileID: 11500000, guid: d30c193e42d8f93428db1c1e87cef3ab, type: 3}

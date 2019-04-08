@@ -29,7 +29,7 @@ public class CannonControl : MonoBehaviour {
     {
         if (Solved)
             return;
-        if (Rotation == 7 && slot.childCount > 0)
+        if (Rotation == 6 && slot.childCount > 0)
         {
             Hide_test.show_selected(cg);
             Hide_test.show_selected(cg1);

@@ -432,7 +432,7 @@ Prefab:
     - target: {fileID: 114926393588085422, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
       propertyPath: m_Text
-      value: "Vabilo za pevovodjo in u\u010Ditelja v Pan\u010Devu, v Srbiji."
+      value: "VABILO ZA PEVOVODJO IN U\u010CITELJA V PAN\u010CEVU, v Srbiji."
       objectReference: {fileID: 0}
     - target: {fileID: 225892332172788356, guid: b5dfd0929fb6f9044bbef91f78d1594f,
         type: 2}
