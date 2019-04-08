@@ -10,6 +10,22 @@ public static class AlbumConstants
     private static GameObject[] pages;
     private static GameObject previous;
     private static GameObject next;
+    private static int imageNumber = -1;
+    private static bool[] shown = null;
+
+    public static int ImageNumber
+    {
+        get { return imageNumber; }
+        set
+        {
+            imageNumber = value;
+        }
+    }
+
+    public static bool[] Shown
+    {
+        get { return shown; }
+    }
 
     public static int page
     {
@@ -20,6 +36,16 @@ public static class AlbumConstants
             previous_page = current_page;
             current_page = value;
         }
+    }
+
+    public static void SetShown()
+    {
+        shown = new bool[ImageNumber];
+    }
+
+    public static void ChangeShown(int idx)
+    {
+        shown[idx] = !shown[idx];
     }
 
     public static void setPages(GameObject[] template)

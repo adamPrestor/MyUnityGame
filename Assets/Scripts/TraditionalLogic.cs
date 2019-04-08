@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 public class TraditionalLogic : MonoBehaviour, IHasChanged {
@@ -28,13 +29,25 @@ public class TraditionalLogic : MonoBehaviour, IHasChanged {
         {
             if (slot.childCount > 0 && slot.name == slot.GetChild(0).name)
             {
-                Destroy(slot.GetChild(0).GetComponent<DragHandealer>());
+                Transform temp = slot.GetChild(0);
+                Destroy(temp.GetComponent<DragHandealer>());
+                Destroy(temp.GetComponent<ShowOnHover>());
+                foreach(Transform textBG in temp)
+                {
+                    CanvasGroup cg = textBG.GetComponent<CanvasGroup>();
+                    cg.alpha = 1.0f;
+                    Debug.Log(textBG.name);
+                    foreach(Transform txt in textBG)
+                    {
+                        Debug.Log(txt.name);
+                        txt.GetComponent<Text>().text = "SLOVENCI";
+                    }
+                }
+
                 correct += 1.0f;
             }
         }
-
-        Debug.Log("Correct:" + correct);
-
+        
         if (correct > 0.0f && !AudioSrc.isPlaying)
             AudioSrc.Play();
         

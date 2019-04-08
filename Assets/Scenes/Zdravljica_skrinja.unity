@@ -147,7 +147,7 @@ GameObject:
   - component: {fileID: 317427946}
   - component: {fileID: 317427945}
   m_Layer: 5
-  m_Name: Image
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -275,12 +275,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 882932719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15adb8b656f9cdf4381e9399239c6f0b, type: 3}
+  m_Script: {fileID: 11500000, guid: b9f00f7a70758214998a8e28f5e21455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 0
   hide: 1
   maxCapacity: 1
+  AC: {fileID: 1775802762}
 --- !u!114 &882932722
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -949,3 +950,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b5dfd0929fb6f9044bbef91f78d1594f, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1775802762 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114369686887421140, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1775802761}
+  m_Script: {fileID: 11500000, guid: a9d051e25b638fe43852291cc0f96313, type: 3}

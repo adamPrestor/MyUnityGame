@@ -770,8 +770,8 @@ GameObject:
   - component: {fileID: 899423272}
   - component: {fileID: 899423275}
   - component: {fileID: 899423274}
-  - component: {fileID: 899423273}
   - component: {fileID: 899423276}
+  - component: {fileID: 899423273}
   m_Layer: 5
   m_Name: Slot
   m_TagString: Untagged
@@ -805,12 +805,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 899423271}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 15adb8b656f9cdf4381e9399239c6f0b, type: 3}
+  m_Script: {fileID: 11500000, guid: b9f00f7a70758214998a8e28f5e21455, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   multipleStorage: 1
   hide: 1
   maxCapacity: 3
+  AC: {fileID: 1414598374}
 --- !u!114 &899423274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1231,7 +1232,7 @@ Prefab:
       propertyPath: m_Text
       value: "Davorin Jenko za\u010Dasa svojega \u017Eivljenja ni bil pri\u010Da le
         velikemu razvoju narodnih gibanj, ampak tudi razvoju industrije in mnogim
-        izumom. Lahko bi spoznal ogromno razli\u010Dnih izumiteljev \u2026\n\nKlikni
+        izumom. Lahko bi spoznal ogromno razli\u010Dnih izumiteljev \u2026\nKlikni
         na izumitelja, da bo naprava za\u010Dela delovati."
       objectReference: {fileID: 0}
     - target: {fileID: 224190792889768094, guid: b5dfd0929fb6f9044bbef91f78d1594f,
@@ -1329,6 +1330,12 @@ CanvasGroup:
   m_PrefabParentObject: {fileID: 225023894019353388, guid: b5dfd0929fb6f9044bbef91f78d1594f,
     type: 2}
   m_PrefabInternal: {fileID: 1414598367}
+--- !u!114 &1414598374 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114369686887421140, guid: b5dfd0929fb6f9044bbef91f78d1594f,
+    type: 2}
+  m_PrefabInternal: {fileID: 1414598367}
+  m_Script: {fileID: 11500000, guid: a9d051e25b638fe43852291cc0f96313, type: 3}
 --- !u!82 &1414598376
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1580,7 +1587,7 @@ GameObject:
   - component: {fileID: 1878634439}
   - component: {fileID: 1878634441}
   m_Layer: 5
-  m_Name: Telephone
+  m_Name: 6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1729,7 +1736,7 @@ GameObject:
   - component: {fileID: 1937529762}
   - component: {fileID: 1937529764}
   m_Layer: 5
-  m_Name: Radio
+  m_Name: 8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1809,7 +1816,7 @@ GameObject:
   - component: {fileID: 1962955145}
   - component: {fileID: 1962955147}
   m_Layer: 5
-  m_Name: LightBulb
+  m_Name: 7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
